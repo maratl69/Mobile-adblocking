@@ -1,0 +1,26 @@
+name: Update filter lists
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: pip install requests
+      - run: python merge.py sources-always.txt always.txt "My Always-On Filters"
+      - run: python merge.py sources-away.txt away.txt "My Away Filters"
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add always.txt away.txt
+          git commit -m "Auto-update filters" || echo "No changes"
+          git push
