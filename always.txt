@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: kIlyKZtZYL6E5ylv5UCUxg
-! Diff-Path: ../patches/11/11-s-1786098306-3600.patch
+! Checksum: h52LZ0nJz/ENDvnwu2S6GQ
+! Diff-Path: ../patches/11/11-s-1786358106-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.30
-! TimeUpdated: 2026-08-07T10:21:58+00:00
+! Version: 2.0.71.31
+! TimeUpdated: 2026-08-10T10:31:45+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -15202,7 +15202,7 @@ book.trivago.com##+js(set, RISKX.setSid, noopFunc)
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Sun, 09 Aug 2026 17:04:53 +0000
+! Last modified: Mon, 10 Aug 2026 03:57:31 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15758,6 +15758,9 @@ pdftoshokan.com##+js(nowoif, ok_)
 !#if cap_html_filtering
 pdftoshokan.com##^script:has-text(/ad.?Config|prepare.?Pop|\/popunder|ads_host/)
 !#endif
+
+! https://github.com/uBlockOrigin/uBlock-discussions/discussions/968#discussioncomment-17958264
+x.com#@#+js(prevent-xhr, /i/api/1.1/flow/viewer.json)
 
 
 ! --- Source: https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt ---
