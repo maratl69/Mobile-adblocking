@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: u9zG8gTkmm26pxdFuIeyUA
-! Diff-Path: ../patches/11/11-s-1786375730-3600.patch
+! Checksum: 1JVA/jtszVZCf6umYB7OMA
+! Diff-Path: ../patches/11/11-s-1786440424-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.32
-! TimeUpdated: 2026-08-10T15:25:49+00:00
+! Version: 2.0.71.34
+! TimeUpdated: 2026-08-11T09:23:51+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2475,6 +2475,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+yuga.ru##.mobile_fox
 ura.news##div[class^="publication-top-advertisement_publication-top-advertisement__"]
 aftership.com##div[class^="ptp-ad"]
 suckinghat.com##.spot-block:has([data-zoneid])
@@ -3058,6 +3059,8 @@ financial-field.com###glia-custom-container
 financial-field.com##.ats-placeholder
 financial-field.com##.fluct-overlay
 thehealthsite.com##.footerNav-add
+ekonomist.com.tr##.container > div[style*="min-height:"]:has(> .nts-ad)
+ekonomist.com.tr##div[style*="height:"][style*="margin-bottom:"]:has(> .nts-ad)
 ekonomist.com.tr##div.display-mobile:has(> div.empower-ad)
 leslez.com##.opt
 talk.jp##.comments > div[class^="display_container"]:not(.comment)
@@ -15206,7 +15209,7 @@ book.trivago.com##+js(set, RISKX.setSid, noopFunc)
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Mon, 10 Aug 2026 13:12:25 +0000
+! Last modified: Tue, 11 Aug 2026 10:00:53 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15358,12 +15361,12 @@ web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.proto
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24745 - https://voe.sx/e/2z9smej3tebe
 ! VOE sites
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=stevenfamilyedge.com,important
-stevenfamilyedge.com##+js(nowoif)
-stevenfamilyedge.com##+js(set, console.clear, undefined)
-stevenfamilyedge.com##+js(acs, globalThis, break;case)
-stevenfamilyedge.com##+js(acs, WebAssembly, atob)
-||stevenfamilyedge.com^$badfilter
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=nicolehappyoutside.com,important
+nicolehappyoutside.com##+js(nowoif)
+nicolehappyoutside.com##+js(set, console.clear, undefined)
+nicolehappyoutside.com##+js(acs, globalThis, break;case)
+nicolehappyoutside.com##+js(acs, WebAssembly, atob)
+||nicolehappyoutside.com^$badfilter
 
 ! next-episode .net
 !next-episode.net##+js(rmnt, script, '/[\s\S]{0,}head[\s\S]{1900,}/')
