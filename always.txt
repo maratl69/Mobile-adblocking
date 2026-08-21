@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: akTltblKmcr5fjkRhtFzjg
-! Diff-Path: ../patches/11/11-s-1787282858-3600.patch
+! Checksum: ZH95NdD5h2c4zxtVYB/2BA
+! Diff-Path: ../patches/11/11-s-1787297072-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.46
-! TimeUpdated: 2026-08-21T03:24:26+00:00
+! Version: 2.0.71.47
+! TimeUpdated: 2026-08-21T07:21:07+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -8453,7 +8453,8 @@ google.*##.gws-product_ads__close-button
 yandex.*##.infinity-zen__content div.feed-item:has(div[data-statlog="directfeed.title"])
 !
 ! Yandex.Eda
-eda.yandex.ru##main > div[style^="margin-bottom:"]:has(> div[class] div[class] > img[src*="get-market-adv"])
+eda.yandex.ru##main > div[style^="margin-bottom:"]:has(> div[class] div[class] > img[src*="get-market-adv"]):remove()
+eda.yandex.ru##div[class]:has(> div[class] > div[class] > ul.scroll-snap-slider > li.scroll-snap-slide > div[style] > button[aria-label] > img[src^="https://avatars.mds.yandex.net/get-market-adv/"])
 !
 ! Yandex.Search
 ! Search mobile(not tablet)
@@ -15233,7 +15234,7 @@ ds.163.com##+js(set, Sentry.configureScope, noopFunc)
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Thu, 20 Aug 2026 02:50:57 +0000
+! Last modified: Fri, 21 Aug 2026 05:05:14 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15744,6 +15745,9 @@ pdftoshokan.com##+js(nowoif, ok_)
 !#if cap_html_filtering
 pdftoshokan.com##^script:has-text(/ad.?Config|prepare.?Pop|\/popunder|ads_host/)
 !#endif
+
+! https://github.com/uBlockOrigin/uAssets/issues/34183
+archpropertygroup.com,sugarcreekcommons.com#@#.privacy-controls-banner
 
 
 ! --- Source: https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt ---
