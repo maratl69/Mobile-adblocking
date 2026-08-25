@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: VSpRRmK6rqfhYYYITgeMrg
-! Diff-Path: ../patches/11/11-s-1787578050-3600.patch
+! Checksum: jpGIx1l7CBw35CTJvPvrYA
+! Diff-Path: ../patches/11/11-s-1787656424-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.50
-! TimeUpdated: 2026-08-24T13:23:52+00:00
+! Version: 2.0.71.51
+! TimeUpdated: 2026-08-25T11:10:23+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2474,6 +2474,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+worldfn.net##.blogroll_ads
 kursiv.media##.section-header.widgets-title-mobile
 aspor.com.tr##html[data-smartbanner] body:style(padding-top: 0 !important;)
 aspor.com.tr##html[data-smartbanner] header:style(top: 0 !important;)
@@ -15236,7 +15237,7 @@ ds.163.com##+js(set, Sentry.configureScope, noopFunc)
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Mon, 24 Aug 2026 13:53:11 +0000
+! Last modified: Tue, 25 Aug 2026 15:25:43 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15753,6 +15754,20 @@ archpropertygroup.com,sugarcreekcommons.com#@#.privacy-controls-banner
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34221
 oferty.praca.gov.pl#@#.cdk-overlay-container
+
+! https://github.com/uBlockOrigin/uAssets/issues/34187
+igorslab.de##.herald-main-content > .row > .herald-module:not([data-col]):has(> .herald-txt-module div[id*="-"][class] > div[id*="-"][class*="target"] a[href][rel="noopener"] img)
+igorslab.de##div.widget[class*="-widget"][id*="-widget-"]
+igorslab.de##a[aria-label*="Banner"]
+igorslab.de##.herald-sidebar-right > .widget:not([id*="widget"])
+igorslab.de###content ~ .herald-slide
+igorslab.de##.herald-sticky
+igorslab.de###extras > #single-sticky + div[class]:not([id]):has(a[href][target="_blank"] img)
+igorslab.de##.entry-content > #skio-article-bar ~ div[id][class]:not([class*="igorslab"]):has(a[href][target="_blank"] img)
+/^https:\/\/www\.igorslab\.de\/[a-z0-9]+\/[\/a-zA-Z0-9_-]+$/$image,1p,match-case,domain=igorslab.de
+
+! https://github.com/uBlockOrigin/uAssets/issues/34237
+/identity/token/verify?browser_id=$badfilter
 
 
 ! --- Source: https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt ---
