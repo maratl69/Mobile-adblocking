@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: jpGIx1l7CBw35CTJvPvrYA
-! Diff-Path: ../patches/11/11-s-1787656424-3600.patch
+! Checksum: MyHKJ4oZ4LBM9ejFl6jzmg
+! Diff-Path: ../patches/11/11-s-1787732480-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.51
-! TimeUpdated: 2026-08-25T11:10:23+00:00
+! Version: 2.0.71.52
+! TimeUpdated: 2026-08-26T08:18:30+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2474,6 +2474,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+weathernews.jp###yahoo_ad
 worldfn.net##.blogroll_ads
 kursiv.media##.section-header.widgets-title-mobile
 aspor.com.tr##html[data-smartbanner] body:style(padding-top: 0 !important;)
@@ -9187,7 +9188,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/unbreak.txt ---
 ! Title: uBlock filters – Unbreak
-! Last modified: Wed, 19 Aug 2026 15:42:15 +0000
+! Last modified: Wed, 26 Aug 2026 09:35:33 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock Origin, to unbreak sites broken as a result of 3rd-party filter lists enabled by default.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -15234,6 +15235,10 @@ ds.163.com##+js(set, Sentry.configureScope, noopFunc)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/238706
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=airtelxstream.in
+
+! https://github.com/uBlockOrigin/uAssets/issues/34251
+@@||googletagmanager.com/gtag/js$script,redirect-rule,domain=alltron.ch
+
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
