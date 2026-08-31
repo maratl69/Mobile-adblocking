@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: gct+S6GXgRcda7R0ZBi+LA
-! Diff-Path: ../patches/11/11-s-1788168253-3600.patch
+! Checksum: c3S6PhtOypxwV4w5IhWRGw
+! Diff-Path: ../patches/11/11-s-1788193186-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.61
-! TimeUpdated: 2026-08-31T09:20:39+00:00
+! Version: 2.0.71.62
+! TimeUpdated: 2026-08-31T16:15:47+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2474,6 +2474,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+||katitube.com/kati/mobil/
+katitube.com###main div[align="center"]:contains(Advertising)
 transferfeed.com##div.row:has(> div > div#snack-top)
 donanimhaber.com##div[id*="AdvContainer"]
 mantan-web.jp##aside[style="width:100%; padding:10px 0; background:rgb(238, 238, 238);"]
@@ -9190,7 +9192,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/unbreak.txt ---
 ! Title: uBlock filters – Unbreak
-! Last modified: Wed, 26 Aug 2026 09:35:33 +0000
+! Last modified: Mon, 31 Aug 2026 16:42:49 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock Origin, to unbreak sites broken as a result of 3rd-party filter lists enabled by default.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -13044,7 +13046,8 @@ riteaid.com##^html > body:not(.catalogsearch-result-index):upward(1) > head > sc
 
 ! https://github.com/easylist/easylist/issues/14805
 ! https://github.com/uBlockOrigin/uAssets/issues/16606
-@@/akam/13/*$script,xhr,1p,domain=easyjet.com|ing.nl
+! https://github.com/uBlockOrigin/uAssets/issues/34317
+@@/akam/13/*$script,xhr,1p,domain=aw-lab.com|easyjet.com|ing.nl
 
 ! https://github.com/uBlockOrigin/uAssets/issues/16071#issuecomment-1418675044
 @@/init.js|$script,xhr,1p,domain=crunchbase.com
