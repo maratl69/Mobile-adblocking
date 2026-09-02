@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: pGLiJi0DtDmmU3WmFBpMjQ
-! Diff-Path: ../patches/11/11-s-1788340846-3600.patch
+! Checksum: I7B5JX44ntTQHP6hJEqIOg
+! Diff-Path: ../patches/11/11-s-1788344366-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.66
-! TimeUpdated: 2026-09-02T09:17:13+00:00
+! Version: 2.0.71.67
+! TimeUpdated: 2026-09-02T10:16:32+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -8752,6 +8752,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 ! Solving problems: problematic apps must be excluded by adding `~package_name` to these rules.
 !                   The most of excluded apps - browsers. They should not be matched.
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/239663
 ! https://github.com/AdguardTeam/AdguardFilters/issues/235426
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228276
 ! https://github.com/AdguardTeam/AdguardFilters/issues/221986
@@ -15250,7 +15251,7 @@ ds.163.com##+js(set, Sentry.configureScope, noopFunc)
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Mon, 31 Aug 2026 01:43:41 +0000
+! Last modified: Wed, 02 Sep 2026 13:38:45 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15760,12 +15761,6 @@ pdftoshokan.com##+js(nowoif, ok_)
 pdftoshokan.com##^script:has-text(/ad.?Config|prepare.?Pop|\/popunder|ads_host/)
 !#endif
 
-! https://github.com/uBlockOrigin/uAssets/issues/34183
-archpropertygroup.com,sugarcreekcommons.com#@#.privacy-controls-banner
-
-! https://github.com/uBlockOrigin/uAssets/issues/34221
-oferty.praca.gov.pl#@#.cdk-overlay-container
-
 ! https://github.com/uBlockOrigin/uAssets/issues/34187
 igorslab.de##+js(rmnt, script, rescue)
 igorslab.de##.herald-main-content > .row > .herald-module:not([data-col]):has(> .herald-txt-module div[id*="-"][class] > div[id*="-"][class*="target"] a[href][rel="noopener"] img)
@@ -15780,8 +15775,8 @@ igorslab.de##a[target*="-"]:has(img[src^="blob:"])
 igorslab.de##.herald-above-footer
 /^https:\/\/www\.igorslab\.de\/[a-z0-9]+\/[\/a-zA-Z0-9_-]+$/$image,1p,match-case,domain=igorslab.de
 
-! https://github.com/uBlockOrigin/uAssets/issues/34237
-/identity/token/verify?browser_id=$badfilter
+! https://github.com/AdguardTeam/AdguardFilters/commit/5c28205f2e1baccf177db23ee0df2fd15090238d
+sugoren.com#@#.widget
 
 
 ! --- Source: https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt ---
