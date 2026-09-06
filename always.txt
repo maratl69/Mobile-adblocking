@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: LB/iGnYeHsYEXeSACPiHBw
-! Diff-Path: ../patches/11/11-s-1788546055-3600.patch
+! Checksum: 3y+bz4/GKX7kWrXYEQuRFw
+! Diff-Path: ../patches/11/11-s-1788686272-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.73
-! TimeUpdated: 2026-09-04T18:17:19+00:00
+! Version: 2.0.71.75
+! TimeUpdated: 2026-09-06T09:14:31+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2476,6 +2476,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+football-zone.net###c2_click_endofarticle_JFA_adidas_sp
+fineplay.me##.sp.banner_contents
 fullvideos.tv##.u-ad-mobile-top-banner
 topics.smt.docomo.ne.jp###ga-cp_more:style(border-bottom: none !important;)
 topics.smt.docomo.ne.jp###sports_topics_area:style(border-bottom: none !important;)
@@ -9207,7 +9209,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/unbreak.txt ---
 ! Title: uBlock filters – Unbreak
-! Last modified: Mon, 31 Aug 2026 16:42:49 +0000
+! Last modified: Sun, 06 Sep 2026 01:47:52 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock Origin, to unbreak sites broken as a result of 3rd-party filter lists enabled by default.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -15259,10 +15261,14 @@ ds.163.com##+js(set, Sentry.configureScope, noopFunc)
 ! https://github.com/uBlockOrigin/uAssets/issues/34251
 @@||googletagmanager.com/gtag/js$script,redirect-rule,domain=alltron.ch
 
+! https://github.com/uBlockOrigin/uAssets/issues/34371
+||cdn.shopify.com/extensions/*/ba_tracking.js$domain=ridge.com,important
+ridge.com##+js(set, baMet.register, noopFunc)
+
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Sat, 05 Sep 2026 15:42:23 +0000
+! Last modified: Sat, 05 Sep 2026 21:46:20 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15704,9 +15710,7 @@ chzzkban.xyz##+js(trusted-suppress-native-method, Node.prototype.contains, '{"cl
 
 ! https://github.com/uBlockOrigin/uAssets/issues/26527
 historicaerials.com##+js(aeld, load, showFallbackModal)
-historicaerials.com##+js(trusted-create-html, #historicaerials_g_728x90_ATF, <div id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0" width="1" height="1" data-load-complete="true"></iframe></div>)
-historicaerials.com##+js(trusted-create-html, #historicaerials_g_160x600_Left, <div id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Left_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Left_0" width="1" height="1" data-load-complete="true"></iframe></div>)
-historicaerials.com##+js(trusted-create-html, #historicaerials_g_160x600_Right, <div id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Right_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Right_0" width="1" height="1" data-load-complete="true"></iframe></div>)
+historicaerials.com##+js(trusted-create-html, #historicaerials_g_728x90_ATF, <div id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0" width="2" height="2" data-load-complete="true"></iframe></div>)
 @@||historicaerials.com^$ghide
 
 ! https://github.com/uBlockOrigin/uAssets/issues/31585
