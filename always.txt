@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: oNMDzC9orcquTiz1BexBFQ
-! Diff-Path: ../patches/11/11-s-1789381135-3600.patch
+! Checksum: QG5upNTMLtICeVhNRmHSpg
+! Diff-Path: ../patches/11/11-s-1789399188-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.96
-! TimeUpdated: 2026-09-14T10:15:20+00:00
+! Version: 2.0.71.99
+! TimeUpdated: 2026-09-14T15:16:02+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2477,6 +2477,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+finance.yahoo.co.jp##div[class^="styles-module"] > div._MMON_noh1b_1
+tokyoartbeat.com##.adHeightSmall
+sabah.com.tr##.promo
 turkiyegazetesi.com.tr##div[style="display: block; width: 100%; height: 250px;"]
 severeporn.com##.bottom-nav
 torrentfreak.com##.sponsors-midfeed
@@ -3637,7 +3640,6 @@ forbes.com##div[data-testid="ad-container"]
 express.co.uk##.stories > ul > li:has(> div.native-slot)
 visualcapitalist.com##div[id^="IC_"][id*="x"]
 mamagirl.jp###sp_all_instream
-39mag.benesse.ne.jp###ad-gallery
 op.gg###video-deck-detail-ad
 gendai.media##div.flex:has(> div[class] > div[style^="width"] > div[data-testid^="FR_SP_"])
 gendai.media##div[data-testid^="second-rectangle-ad"]
@@ -4096,7 +4098,6 @@ hokurikushinkansen-navi.jp###y_ad_parent
 golfdigest-minna.jp##.sp_header_ads
 game.hiroba.dpoint.docomo.ne.jp,kantangame.com##.c-ad-max-w336-min-h250
 b-para.co,blcollection.co###full-overlay
-39mag.benesse.ne.jp##.cmnTopBnr
 gentosha-go.com###sgo_280_wrapper
 gentosha-go.com###JP_SGO_SP_article_footer_2nd
 dic.pixiv.net###ad_sp_toparticle
@@ -5834,8 +5835,6 @@ trhaber.com##div[class^="align-items-center"][style^="height"]
 ismedia.jp,jbpress.ismedia.jp##.m-sponsord
 jbpress.ismedia.jp##.rtTaoolaElem
 okkazeo.com,jbpress.ismedia.jp,news.abplive.com##div[style="min-height:280px;"]
-39mag.benesse.ne.jp##.ad-inarticle-banner
-39mag.benesse.ne.jp##div[style="min-height:600px;"]
 st.benesse.ne.jp###div-M_UP_bnr_320x50
 lnews.jp##.sp-ad-height-100
 lnews.jp##.sp-ad-height-250
@@ -15296,7 +15295,7 @@ hktvmall.com##+js(set, Object.prototype.componentInScreen, noopFunc)
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Mon, 14 Sep 2026 05:41:54 +0000
+! Last modified: Mon, 14 Sep 2026 13:52:52 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15831,12 +15830,13 @@ igorslab.de##span[aria-label][role="img"][style*="data:image"]
 igorslab.de##span[style]:has(svg path)
 igorslab.de##span[aria-label][role="img"][style*="data:image"] + a
 igorslab.de##svg image[href^="data:image/"]
-igorslab.de##:is(span,small)[class]:has-text(/^\s*(Advertisement|Werbung|广告)\s*$/)
+igorslab.de##[class]:has-text(/^\s*(Advertisement|Werbung|广告)\s*$/)
 igorslab.de##div[class]:matches-css-before(content: /^\s*\"(Advertise۞nt|Werbung|广告)\"\s*$/)
 igorslab.de##img:remove-attr(/data-.+/)
 igorslab.de/community/#@#img:remove-attr(/data-.+/)
 igorslab.de##+js(no-fetch-if, %22vt%22)
 ||igorslab.de/wp-content/plugins/igorslab-ads-suite/
+igorslab.de##.ilgha-scale-frame:has(.ilgha-related-similar)
 
 
 ! --- Source: https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt ---
