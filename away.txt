@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt ---
 ![Adblock Plus 2.0]
-! Checksum: 3f4zAChtQUY3cOBvkHvlTA
-! Diff-Path: ../patches/2_without_easylist/2_without_easylist-s-1789550411-3600.patch
+! Checksum: W/BkK6AcGNJNnMKDsfjD8w
+! Diff-Path: ../patches/2_without_easylist/2_without_easylist-s-1789568380-3600.patch
 ! Title: AdGuard Base filter
 ! Description: This filter is necessary for quality ad blocking.
-! Version: 2.4.90.84
-! TimeUpdated: 2026-09-16T09:15:58+00:00
+! Version: 2.4.90.89
+! TimeUpdated: 2026-09-16T14:15:36+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -13085,6 +13085,8 @@ youporn.com##+js(remove-node-text, script, /window\.[\s\S]*?_zone_[\s\S]*?{"zone
 !
 ! NOTE: Regular rules
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/241514
+thelist.com##+js(abort-current-script, document.createElement, __adblocker)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241490
 fapgoat.com##+js(set-constant, flashvars.protect_block, '')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241323
@@ -30751,6 +30753,7 @@ kursjs.pl##+js(set-constant, canRunAds, true)
 ! variatkowo.pl - antiadblock
 @@||variatkowo.pl/wp-content/*/dh-anti-adblocker/assets/js/prebid-ads-*.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76989
+businessinsider.com.pl##ad-default
 businessinsider.com.pl##.onet-ad
 businessinsider.com.pl##.adsContainer
 businessinsider.com.pl##.adSlotWidget
@@ -40056,7 +40059,7 @@ zeperfs.com,randomlists.com,gameinfo.io,ernesto.it,cdromance.com,linkjust.com,up
 ! ##.block-video > div.table
 severeporn.com,porntrex.*,mygoodporn.tv,modporn.com,havefunporn.com,eroinside.com,tabootube.*,jav.re,transvids.tv,cartoonporn24.com,camwhores.ru.com,cliphunter.com,wxx.wtf,jizzoncam.com,camwhores.video,moreamateurs.com,faptor.com,porndude.wtf,pornwex.tv,pornfd.com,area51.porn,pornrabbit.com,milf-porn.xxx,sextaped.com,pornxpert.com,perverttube.com,fapnow.xxx,epicgfs.com,scatkings.com,pornflix.to,xbjav.com,heavyfetish.com,tabootube.xxx,amateur8.com,maturetubehere.com,crazyporn.xxx,pornissimo.org,lesbian8.com,enf-cmnf.com,filtercams.com,bigassporn.tv,porn00.org,keekass.com,fuckit.cc,camwhoresbay.com,camwhoreshd.com##.block-video > div.table
 ! ##body .code-block
-timesofkarachi.pk,faqwiki.us,grammarhow.com,geeksdigit.com,transfernewslive.com,coincentral.com,wizgenerator.com,powerpyx.com,vivamaxstream.com,gizmochina.com,droidwin.com,simsvip.com,vice.com,iseekgirls.com,creditshui.com,pornxnow.me,softfully.com,cricfy.net,otakuporn.com,aitoolsfree.org,isekaitube.com,nexusgames.to,coachesdatabase.com,rockstarintel.com,sampledrive.org,vistanet.it,nudemasta.com,mangaread.org,boxingnewsonline.net,lewdgames.to,pokemongohub.net,romslab.com,lokkio.it,sharetheurls.com,opfanpage.com,canonrumors.com,flamecomics.me,repacklab.com,proserialkey.com,fullmatch.info,torrentmac.net,game-repack.site,ispreview.co.uk,nxbrew.net,news.fidelityhouse.eu,poscigi.pl,environmentenergyleader.com,econostrum.info,repack-games.com,cryptopolitan.com,asuratoon.com,chatgbt.one,njbeachcams.com,nokiapoweruser.com,tricksndtips.com,naijaremix.com,rockandrollgarage.com,firstcuriosity.com,bigbrothernetwork.com,flamescans.org,tech-latest.com,nintendoeverything.com,game-2u.com,ps4pkg.com,asurascans.com,anime7.download,netchimp.co.uk,howifx.com,digitbin.com,coffeenerd.blog,nsw2u.*,thegeekpage.com,watchseinfeld.cc,dandadanmanga.org,vgkami.com,tvtonight.com.au,warsawnow.pl,silverspoon.site,asura.gg,getdroidtips.com,crackshere.com,watchasian.ac,qzlyrics.com,marugujarat.in,linuxcapable.com,apkmb.com,techgeekbuzz.com,designcorral.com,otakukan.com,monsterspost.com,policeresults.com,browserhow.com,chromeunboxed.com,journeybytes.com,tutcourse.com,opportunitydesk.info,freecoursesites.net,tektutorialshub.com,fossbytes.com,borncity.com,profitableventure.com,guru99.com,whatisthemeaningofname.com,techpp.com,troypoint.com,bakabuzz.com,conservativebrief.com,xyzcomics.com,jujmanga.com,myhealthgazette.com,cryptodirectories.com,secondlifetranslations.com,thewincentral.com,firmwarefile.com,bicfic.com##body .code-block
+dailypost.ng,timesofkarachi.pk,faqwiki.us,grammarhow.com,geeksdigit.com,transfernewslive.com,coincentral.com,wizgenerator.com,powerpyx.com,vivamaxstream.com,gizmochina.com,droidwin.com,simsvip.com,vice.com,iseekgirls.com,creditshui.com,pornxnow.me,softfully.com,cricfy.net,otakuporn.com,aitoolsfree.org,isekaitube.com,nexusgames.to,coachesdatabase.com,rockstarintel.com,sampledrive.org,vistanet.it,nudemasta.com,mangaread.org,boxingnewsonline.net,lewdgames.to,pokemongohub.net,romslab.com,lokkio.it,sharetheurls.com,opfanpage.com,canonrumors.com,flamecomics.me,repacklab.com,proserialkey.com,fullmatch.info,torrentmac.net,game-repack.site,ispreview.co.uk,nxbrew.net,news.fidelityhouse.eu,poscigi.pl,environmentenergyleader.com,econostrum.info,repack-games.com,cryptopolitan.com,asuratoon.com,chatgbt.one,njbeachcams.com,nokiapoweruser.com,tricksndtips.com,naijaremix.com,rockandrollgarage.com,firstcuriosity.com,bigbrothernetwork.com,flamescans.org,tech-latest.com,nintendoeverything.com,game-2u.com,ps4pkg.com,asurascans.com,anime7.download,netchimp.co.uk,howifx.com,digitbin.com,coffeenerd.blog,nsw2u.*,thegeekpage.com,watchseinfeld.cc,dandadanmanga.org,vgkami.com,tvtonight.com.au,warsawnow.pl,silverspoon.site,asura.gg,getdroidtips.com,crackshere.com,watchasian.ac,qzlyrics.com,marugujarat.in,linuxcapable.com,apkmb.com,techgeekbuzz.com,designcorral.com,otakukan.com,monsterspost.com,policeresults.com,browserhow.com,chromeunboxed.com,journeybytes.com,tutcourse.com,opportunitydesk.info,freecoursesites.net,tektutorialshub.com,fossbytes.com,borncity.com,profitableventure.com,guru99.com,whatisthemeaningofname.com,techpp.com,troypoint.com,bakabuzz.com,conservativebrief.com,xyzcomics.com,jujmanga.com,myhealthgazette.com,cryptodirectories.com,secondlifetranslations.com,thewincentral.com,firmwarefile.com,bicfic.com##body .code-block
 ! ##.ai_widget
 animecorner.me,zarabiajprzez24.pl,watchhentai.xxx,app-how-to-use-it.com,linuxcapable.com,designcorral.com,thecustomrom.com,digitalthinkerhelp.com,browserhow.com,sqlserveregitimleri.com,udemycourses.me,eckovation.com##.ai_widget
 ! ###id-custom_banner
@@ -40099,11 +40102,8 @@ $image,3p,denyallow=googleapis.com,domain=vipbox1.org
 !
 ! NOTE: Specific rules
 !
-gloucestershirelive.co.uk##div[data-tmdatatrack-type="commercial"]:style(display: none !important; height: 0 !important;)
-gloucestershirelive.co.uk##header.tab-focus-all-elems:style(top: 0 !important;)
-gloucestershirelive.co.uk##.commercial-gpt-style
-gloucestershirelive.co.uk##div.commercial-label-style.aGsgs
-gloucestershirelive.co.uk##div[data-testid^="commercial-"]
+dailypost.ng##.dp-global-leaderboard
+onedio.co###mansetAlti-container
 cheshire-live.co.uk##div[data-testid^="ncu-"]
 cheshire-live.co.uk##div[class*="BoxStyles_commercial_"]
 cheshire-live.co.uk##div[data-testid="commercial-label-gpt"]
@@ -46258,7 +46258,7 @@ rahim-soft.com##.theiaStickySidebar > .widget_text:has(> .textwidget > p > .adsb
 allegiantair.com##a[data-hook="header-merchandise-banner_link"]
 convertio.co##.softobar-container
 vidsrc2.*##body > div[style*="position: absolute;"][style*="inset:"][style*="z-index:"]
-techbixby.com,ssdhostting.com,zflix.me,xporn.mom,moviesapi.to,watchluna.to,flixcdn.cyou,iqsmartgames.com,pornbusy.com,av.seeks.cloud,pns.pro,4meplayer.pro,seekplays.com,dlsrv.online,vidnest.fun,yeptube.*,vids.st,area.waffi.cloud,nutripulse.one,vercel.app,zdrive.to,1moviesz.to,apksum.com,xvideos-full.com,freemanga.me,funlove.info,javsubidn.tv,streamvid.dev,vidnest.live,vidnest.io,familyporn.tv,5play.app,bingespree.net,spencerdevs.xyz,easyvidplayer.com,cloudhostingz.com,sharedwebs.com,fitnessplanss.com,porn4days.blue,embedplayer.site,animahd.com,exposestrat.com,embedsports.top,vidplayer.live,vik1ngfile.site,fbol.top,sterham.net,embed4me.com,megatukmax.xyz,primewire.pw,primewire.*,primewire.tf,ytapi.cc,mygomp3.com,imagebam.com,ezplayer.me,datavaults.co,clickapi.net,y2down.cc,themezon.net,serverguidez.com,streamup.ws,vidlink.pro,cdn.hentaianimezone.com,themezon.net,galaxyporn.net,teknoasian.com,downloadyoutubesubtitles.com,alex71.com,kecapku.com,vidfast.vc,pornharlot.net,meong.club,hianimez.*,travelironguide.com,kreditexperte.online,shortnest.com,vikingf1le.us.to,mixzdrive.com,get.linkbulks.com,play.upns.live,dropzy.io,dayuploads.com,filespayouts.com,ranoz.gg,zovo.ink,manhwahentai.me,1movielinkbd.com,ytmp3.la,swiftuploads.com,techbloogs.com,oii.la,englismovies.pro,tpi.li,go.cloutgist.com,brbeast.com,vidsrc2.*,tutwuri.id,lokerwfh.net,insmyst.com,iir.la,tvi.la,cosplay18.pics,hianime.*,mobiletvshows.site,movies4u.*,x-x-x.tube,pornx.to,4khd.com,dlhd.*,kissanime.*,vidsrc.*,pahe.*##+js(no-window-open-if)
+onionplay.st,onionplay.*,techbixby.com,ssdhostting.com,zflix.me,xporn.mom,moviesapi.to,watchluna.to,flixcdn.cyou,iqsmartgames.com,pornbusy.com,av.seeks.cloud,pns.pro,4meplayer.pro,seekplays.com,dlsrv.online,vidnest.fun,yeptube.*,vids.st,area.waffi.cloud,nutripulse.one,vercel.app,zdrive.to,1moviesz.to,apksum.com,xvideos-full.com,freemanga.me,funlove.info,javsubidn.tv,streamvid.dev,vidnest.live,vidnest.io,familyporn.tv,5play.app,bingespree.net,spencerdevs.xyz,easyvidplayer.com,cloudhostingz.com,sharedwebs.com,fitnessplanss.com,porn4days.blue,embedplayer.site,animahd.com,exposestrat.com,embedsports.top,vidplayer.live,vik1ngfile.site,fbol.top,sterham.net,embed4me.com,megatukmax.xyz,primewire.pw,primewire.*,primewire.tf,ytapi.cc,mygomp3.com,imagebam.com,ezplayer.me,datavaults.co,clickapi.net,y2down.cc,themezon.net,serverguidez.com,streamup.ws,vidlink.pro,cdn.hentaianimezone.com,themezon.net,galaxyporn.net,teknoasian.com,downloadyoutubesubtitles.com,alex71.com,kecapku.com,vidfast.vc,pornharlot.net,meong.club,hianimez.*,travelironguide.com,kreditexperte.online,shortnest.com,vikingf1le.us.to,mixzdrive.com,get.linkbulks.com,play.upns.live,dropzy.io,dayuploads.com,filespayouts.com,ranoz.gg,zovo.ink,manhwahentai.me,1movielinkbd.com,ytmp3.la,swiftuploads.com,techbloogs.com,oii.la,englismovies.pro,tpi.li,go.cloutgist.com,brbeast.com,vidsrc2.*,tutwuri.id,lokerwfh.net,insmyst.com,iir.la,tvi.la,cosplay18.pics,hianime.*,mobiletvshows.site,movies4u.*,x-x-x.tube,pornx.to,4khd.com,dlhd.*,kissanime.*,vidsrc.*,pahe.*##+js(no-window-open-if)
 hogwarts.cafe##body[class*="adthrive-"]:not(.home) .site-footer-wrap:style(margin-bottom: 0 !important;)
 retromania.gg##.banner > *
 startpage.com##:matches-path(/search) #main > div[class^="css-"]:has(> div[class^="css-"] > p[class^="css-"]:contains(/Annoncer|Anzeigen|Ads|Anuncios|Publicités|Advertenties|Annonser|Reklamy|Anúncios/))
@@ -60803,16 +60803,16 @@ circleofcricket.com##div.container-full.add:has(> a[href]:first-child)
 ! Reach plc
 lancs.live##div[data-tmdatatrack-id="placeholder"]
 lancs.live##.topbox-cls-placeholder
-rsvplive.ie,lancs.live##aside[class^="RHRBlock_right-aside-wrapper"]
-rsvplive.ie,lancs.live,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,liverpoolecho.co.uk##div[class*="BoxStyles_commercial"]
-rsvplive.ie,lancs.live,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,liverpoolecho.co.uk##div[class^="Article_below-article-commercial-box"]
-rsvplive.ie,lancs.live,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##.commercial-box-style
-dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##section[data-testid^="commercial-"]
-rsvplive.ie,lancs.live,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##div[data-testid^="commercial-"]
-rsvplive.ie,lancs.live,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##aside span > span.react-loading-skeleton
-lancs.live,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##aside > div[class^="sc-"]:has(> span > span.react-loading-skeleton)
-rsvplive.ie,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##header[data-testid="header"]:style(top: 0 !important;)
-rsvplive.ie,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##div[data-testid^="commercial-above-header-box-"]:style(display: none !important;)
+gloucestershirelive.co.uk,rsvplive.ie,lancs.live##aside[class^="RHRBlock_right-aside-wrapper"]
+gloucestershirelive.co.uk,rsvplive.ie,lancs.live,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,liverpoolecho.co.uk##div[class*="BoxStyles_commercial"]
+gloucestershirelive.co.uk,rsvplive.ie,lancs.live,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,liverpoolecho.co.uk##div[class^="Article_below-article-commercial-box"]
+gloucestershirelive.co.uk,rsvplive.ie,lancs.live,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##.commercial-box-style
+gloucestershirelive.co.uk,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##section[data-testid^="commercial-"]
+gloucestershirelive.co.uk,rsvplive.ie,lancs.live,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##div[data-testid^="commercial-"]
+gloucestershirelive.co.uk,rsvplive.ie,lancs.live,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##aside span > span.react-loading-skeleton
+gloucestershirelive.co.uk,lancs.live,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##aside > div[class^="sc-"]:has(> span > span.react-loading-skeleton)
+gloucestershirelive.co.uk,rsvplive.ie,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##header[data-testid="header"]:style(top: 0 !important;)
+gloucestershirelive.co.uk,rsvplive.ie,dailystar.co.uk,birminghammail.co.uk,mirror.co.uk,manchestereveningnews.co.uk,liverpoolecho.co.uk##div[data-testid^="commercial-above-header-box-"]:style(display: none !important;)
 !
 ! MixDrop
 miixdrop.top,miiixdrop.net,miiixdrop.com,miixdrop.net,vinovo.to,xpornium.net,mdy48tn97.com##+js(no-window-open-if)
@@ -67470,6 +67470,7 @@ implbits.com#@#.banner_container
 !
 ! NOTE: Specific rules
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/241554
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241026
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241303
 ! aglint-disable no-invalid-modifiers
@@ -69396,6 +69397,8 @@ $websocket,domain=300mbfilms.io|lib.rus.ec
 !
 ! NOTE: Anti-adblock
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/241203
+gledaitv.live###abort-overlay
 ! https://github.com/AdguardTeam/AdguardFilters/issues/229499
 ||filmifen.com/templates/filmi/js/adb.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/216027
@@ -69440,11 +69443,6 @@ play.nova.bg##+js(no-xhr-if, /adsbygoogle|googima\.js/)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/159344
 @@||vivo.bg/gpt.js
 money.bg,webcafe.bg,topsport.bg##+js(set-constant, isuBlock, false)
-! https://github.com/AdguardTeam/AdguardFilters/issues/157410
-gledaitv.live##div[id^="anti-adblock-"]
-gledaitv.live###abDetectorModal
-gledaitv.live##+js(no-setTimeout-if, advertisement)
-gledaitv.live##+js(set-constant, ABDetector, noopFunc)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/170783
 ||cdn.bg-gledai.*/fuck_
 /rotate.php?id=$script,domain=bg-gledai.*
@@ -69537,11 +69535,11 @@ kliuki.bg###container > div[style="float:left;"] > div[style]
 
 ! --- Source: https://easylist.to/easylist/easylist.txt ---
 [Adblock Plus 2.0]
-! Version: 202609161104
+! Version: 202609161631
 ! Title: EasyList
-! Last modified: 16 Sep 2026 11:04 UTC
+! Last modified: 16 Sep 2026 16:31 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 18cb73682bc18dc8744962fa82f3248eaa83464d
+! Commit: 45bd87dd18e16f675e7ed0870bcf6f47a7161f0d
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -85610,6 +85608,7 @@ browsershots.org#@#.advert_area
 ||40fromfrontend.net^
 ||40voxia.net^
 ||4171ea7508.com^
+||41fun8xi9zh53ic.cfd^
 ||41hckkm9.xyz^
 ||41terraen.net^
 ||41v9m8nu42hm9l.cfd^
@@ -85787,6 +85786,7 @@ browsershots.org#@#.advert_area
 ||5ivy3ikkt.com^
 ||5j4m4y41x5mgwb8.cfd^
 ||5kov1f2o.xyz^
+||5ktb9epcyo9r1ewtiwpiymr.rest^
 ||5kwr7hfm2c9729xgjp.cfd^
 ||5leosgto.xyz^
 ||5mn7cf73.xyz^
@@ -85919,6 +85919,7 @@ browsershots.org#@#.advert_area
 ||6settings.net^
 ||6u8no5fq2f2r51.rest^
 ||6ujk8x9soxhm.com^
+||6v3e9t6g71vc4fcq9ljwuev4iqo.rest^
 ||6v41p4bsq.com^
 ||6v5lljx5tj283h.rest^
 ||6wiv9qrwyqb4o2t4p4.cfd^
@@ -86493,6 +86494,7 @@ browsershots.org#@#.advert_area
 ||absorbabjureconnoisseur.com^
 ||absorbedscholarsvolatile.com^
 ||absorbinginject.com^
+||absorbscrimped.com^
 ||absorbsspooksdictum.cfd^
 ||absorptionservant.com^
 ||absorptlogia.qpon^
@@ -86642,6 +86644,7 @@ browsershots.org#@#.advert_area
 ||ackdewsntmybn.online^
 ||ackfqyzrdulxc.space^
 ||acknowledgepronounablaze.com^
+||acktontables.com^
 ||aclktrkr.com^
 ||aclouddinkingchakra.cfd^
 ||acltickza.in^
@@ -87651,6 +87654,7 @@ browsershots.org#@#.advert_area
 ||akosaytrnwxag.website^
 ||akovwzgtauqfh.online^
 ||akoxwanaydqya.space^
+||akqjnxmo.com^
 ||akrotertarsalpacked.cfd^
 ||akrxfobddpgzo.space^
 ||aksfwtoeorsre.site^
@@ -87724,6 +87728,7 @@ browsershots.org#@#.advert_area
 ||alfredtrimfaith.com^
 ||algaetriedplants.cyou^
 ||algatesdist.cyou^
+||algdotolycefm.site^
 ||algebarhooted.qpon^
 ||algesisgutsier.cfd^
 ||algificunkist.cfd^
@@ -89213,6 +89218,7 @@ browsershots.org#@#.advert_area
 ||babbittshalier.cyou^
 ||babbitttalitha.cyou^
 ||babblyrondeau.qpon^
+||babkastroubly.cyou^
 ||babmc.com^
 ||baboolpeenge.qpon^
 ||baboonitovah.cyou^
@@ -91566,6 +91572,7 @@ browsershots.org#@#.advert_area
 ||calligraphyanatomy.com^
 ||calligraphyscoldsparrow.com^
 ||callosebraggleseorita.cyou^
+||callumbrangle.com^
 ||callyourinformer.com^
 ||calm-hell.pro^
 ||calmbytedishwater.com^
@@ -92448,6 +92455,7 @@ browsershots.org#@#.advert_area
 ||cipangofabric.cyou^
 ||cipangonone.com^
 ||cipezicsdpmzi.space^
+||cipgvqwylbcoa.site^
 ||cipqzgarguxht.online^
 ||circargrecoueenation.cyou^
 ||circlejavgg124.fun^
@@ -92560,6 +92568,7 @@ browsershots.org#@#.advert_area
 ||cksslmqxgddtw.space^
 ||ckubjahpwqzsc.online^
 ||ckumasvcknkzk.online^
+||ckvbtyjnsuvxl.space^
 ||ckwcowyajixtb.online^
 ||ckxqzbbhiwpkc.space^
 ||ckzkucfmuzzif.space^
@@ -92830,6 +92839,7 @@ browsershots.org#@#.advert_area
 ||cmtrkg.com^
 ||cmxfbwwuwdyjq.site^
 ||cmyafglevu.com^
+||cmyyrxuwxglbs.space^
 ||cn846.com^
 ||cnabusictviht.site^
 ||cndhzrfxylfkj.site^
@@ -92970,6 +92980,7 @@ browsershots.org#@#.advert_area
 ||collectortack.com^
 ||collectout4000.net^
 ||collectrum.com^
+||collisecodeme.cyou^
 ||collisionparanoiacrayon.com^
 ||collockalaunt.cfd^
 ||collopmessmen.qpon^
@@ -93030,6 +93041,7 @@ browsershots.org#@#.advert_area
 ||commendhealthagitation.com^
 ||commercialregretful.com^
 ||commercialvalue.org^
+||commiseratebeamingbarricade.com^
 ||commission-junction.com^
 ||commissioncommerce.com^
 ||commissionkings.ag^
@@ -94358,6 +94370,7 @@ browsershots.org#@#.advert_area
 ||darenasseize.qpon^
 ||darerlalls.cfd^
 ||daresayfurca.qpon^
+||darienfriablejewely.cfd^
 ||darienlambert.qpon^
 ||daringdemand.com^
 ||daringmillennium.com^
@@ -95576,6 +95589,7 @@ browsershots.org#@#.advert_area
 ||donnertwronger.shop^
 ||donorstuffed.com^
 ||donsbirring.cfd^
+||donsysenores.qpon^
 ||donthackery.qpon^
 ||donttbeevils.de^
 ||donutpassenger.com^
@@ -96862,6 +96876,7 @@ browsershots.org#@#.advert_area
 ||efpdkrgrluqec.store^
 ||efpsschecslmc.online^
 ||efrheeqcwgxsb.online^
+||efrhsliflahsfd.com^
 ||efrwdjavjkiqw.online^
 ||efryqqbee.com^
 ||efsmeoapcmipq.space^
@@ -97221,6 +97236,7 @@ browsershots.org#@#.advert_area
 ||empiotwxidzgh.space^
 ||empirecdn.io^
 ||empireeyelid.com^
+||empirycarole.com^
 ||employerupsideliterally.com^
 ||empond.com^
 ||emporiagarbill.qpon^
@@ -98716,6 +98732,7 @@ browsershots.org#@#.advert_area
 ||fikerysenesceanhimae.qpon^
 ||fikshvoprcesm.website^
 ||filamentthree.com^
+||filarstupex.qpon^
 ||filasofighit.com^
 ||filerquipus.qpon^
 ||filetarget.com^
@@ -100484,6 +100501,7 @@ browsershots.org#@#.advert_area
 ||gipsiesthyrsi.com^
 ||gipsmisplay.qpon^
 ||gipsydeceivedepoch.com^
+||gipsydelinquent.com^
 ||gipsyharryparasite.com^
 ||gir1p8pqbbt12xkx25xk8ib5.cfd^
 ||giraffeconfrontationreseptivereseptive.com^
@@ -101717,6 +101735,7 @@ browsershots.org#@#.advert_area
 ||harpselodes.shop^
 ||harrenmedianetwork.com^
 ||harridaphizog.com^
+||harrietkpuesicomfort.cfd^
 ||harrowspoilu.qpon^
 ||harsh-award.com^
 ||harshlysupportedsleazy.com^
@@ -103229,6 +103248,7 @@ browsershots.org#@#.advert_area
 ||iegzaknrowaju.online^
 ||iehbhejfnetvc.site^
 ||ieifbbjstmaho.space^
+||ieignhmkzrnlj.online^
 ||ieiyqbcjpksbk.website^
 ||iekfxxkrpjock.space^
 ||ieladhfhoiclv.online^
@@ -103278,6 +103298,7 @@ browsershots.org#@#.advert_area
 ||iginimhtppjum.website^
 ||igkhupjtzyaaa.space^
 ||igldquktgmqin.website^
+||iglesiacondue.qpon^
 ||iglinptrmtzff.site^
 ||igloochay.cfd^
 ||igloohq.com^
@@ -103864,6 +103885,7 @@ browsershots.org#@#.advert_area
 ||insinewsabeca.shop^
 ||insipidsenorbaw.cyou^
 ||insistent-worker.com^
+||insistenthistory.pro^
 ||insistslive.qpon^
 ||insitepromotion.com^
 ||insnative.com^
@@ -104571,6 +104593,7 @@ browsershots.org#@#.advert_area
 ||javgg.eu^
 ||javgnrvqljberi.com^
 ||javmg.com^
+||javqtdeyux.com^
 ||javvfpufjkwlf.website^
 ||jawigcqrumbez.space^
 ||jawingrounge.cfd^
@@ -105095,6 +105118,7 @@ browsershots.org#@#.advert_area
 ||jomphoelubekg.site^
 ||jonglemmerbaby.cfd^
 ||jonnockkeglers.qpon^
+||jonrmgxcshyqx.space^
 ||joohugreene.net^
 ||jooiqfoclhybf.online^
 ||joojarseyfjqi.site^
@@ -105126,6 +105150,7 @@ browsershots.org#@#.advert_area
 ||jouwaikekaivep.net^
 ||jovialcadence.com^
 ||jovialmobile.pro^
+||jovqyymoawqqw.top^
 ||jovypickeer.qpon^
 ||jowarfamish.shop^
 ||jowarmeered.com^
@@ -105549,6 +105574,7 @@ browsershots.org#@#.advert_area
 ||jzpg3f8jv5c59f5lurip8gzui.rest^
 ||jzpgspqbmbhxk.site^
 ||jzqbyykqebrzl.top^
+||jzrjnphuxkayy.online^
 ||jzrmxnvcniwmj.online^
 ||jztxtlsupbqcu.site^
 ||jzuivotw.com^
@@ -105726,6 +105752,7 @@ browsershots.org#@#.advert_area
 ||kddlljplazsfp.website^
 ||kdfjlppcvgbdj.space^
 ||kdfxyazua.com^
+||kdhhpgbbnfgwl.online^
 ||kdhwaqcwpqvwo.website^
 ||kdjyejumiotmh.online^
 ||kdkpsqklemvnu.site^
@@ -106373,6 +106400,7 @@ browsershots.org#@#.advert_area
 ||krantzbanuyo.shop^
 ||krbximeplialf.online^
 ||krddufisqivnq.website^
+||krdktxzcfvfrg.site^
 ||krdtvkoyuhwjs.site^
 ||krfaihltnqyrr.website^
 ||krfqlrxvmoyrj.online^
@@ -107324,6 +107352,7 @@ browsershots.org#@#.advert_area
 ||liftedd.net^
 ||liftmendrubbed.cfd^
 ||liftopbdklkxg.space^
+||ligatedblender.qpon^
 ||ligatorlotusin.cfd^
 ||ligatus.com^
 ||liggebailor.cyou^
@@ -107876,6 +107905,7 @@ browsershots.org#@#.advert_area
 ||lowybecroak.cyou^
 ||loxicsprungdashpot.cyou^
 ||loxitdat.com^
+||loxommacypris.qpon^
 ||loxpelasgi.qpon^
 ||loy356.site^
 ||loyaldiddlesgrego.qpon^
@@ -107981,6 +108011,7 @@ browsershots.org#@#.advert_area
 ||lsqiggjoiqgzj.online^
 ||lssocybaoqyeu.online^
 ||lstgddss.com^
+||lsupumrollw.com^
 ||lsvfzskgudyyr.site^
 ||lswdjtngkdhbe.website^
 ||lswteiiyfccwt.site^
@@ -108144,6 +108175,7 @@ browsershots.org#@#.advert_area
 ||lvycnhdzsg.com^
 ||lvyowwyvymbv.top^
 ||lvyrokjbvvoor.top^
+||lvyrokjwmlllr.top^
 ||lvyvxkmvrjrul.online^
 ||lw1z4e5zuqhlfetegbmfgi.cfd^
 ||lwahyysblqbez.site^
@@ -108727,6 +108759,7 @@ browsershots.org#@#.advert_area
 ||mbkkrjbdhhdef.online^
 ||mblflnffjycng.online^
 ||mbltzqounmuzh.space^
+||mbmrttiprx.com^
 ||mboshmpgkndsc.site^
 ||mbovegchkeacl.online^
 ||mbrbtdivelmlv.website^
@@ -109997,6 +110030,7 @@ browsershots.org#@#.advert_area
 ||munjeettraiked.cfd^
 ||munsifharksfaraon.cyou^
 ||muntingweens.qpon^
+||mup59xtq57582uhelu5uz91fqlwp3tmk9w.cfd^
 ||mupicuxmrmpvh.online^
 ||muqjqnbequqbp.online^
 ||muqkagqtltdzp.website^
@@ -110423,6 +110457,7 @@ browsershots.org#@#.advert_area
 ||nauervqyecwbx.space^
 ||naughty-black.com^
 ||naughty-industry.pro^
+||naulageoutbeam.cfd^
 ||naupsithizeekee.com^
 ||nauseajerreed.cyou^
 ||nauseamouths.com^
@@ -110773,6 +110808,7 @@ browsershots.org#@#.advert_area
 ||ngxvojbpnjtjv.space^
 ||ngy1fklz2jm9jx1.rest^
 ||nhatsadwafljs.site^
+||nhbfgogbsmnifv.com^
 ||nhh8ue2leutpkj1hziel.cfd^
 ||nhhclkljqimut.online^
 ||nhhnebxgqxtqp.space^
@@ -111815,6 +111851,7 @@ browsershots.org#@#.advert_area
 ||odhdnbucgpwly.website^
 ||odicoscan.shop^
 ||odicurinary.cyou^
+||odinitedetraytopmaul.cyou^
 ||odklzhubnglgy.space^
 ||odkyzeztcfylw.space^
 ||odldzgdjzbksz.site^
@@ -112239,6 +112276,7 @@ browsershots.org#@#.advert_area
 ||onclickpulse.com^
 ||onclicksuper.com^
 ||oncosisbedelve.qpon^
+||ondqytiskpgyp.site^
 ||oneclck.net^
 ||onedmp.com^
 ||onedragon.win^
@@ -112550,6 +112588,7 @@ browsershots.org#@#.advert_area
 ||orvietnmqxcgm.online^
 ||orymaza.qpon^
 ||orzukuzorpxvp.online^
+||osahsadctgzfa.site^
 ||osakaboras.shop^
 ||osamachoice.com^
 ||osamacom.com^
@@ -113065,6 +113104,7 @@ browsershots.org#@#.advert_area
 ||painspleasebuilds.com^
 ||painsucre.com^
 ||paintingforgive.com^
+||paintsubtree.cyou^
 ||paintydevelela.org^
 ||pairsdismissedralph.com^
 ||pairturnnumerous.com^
@@ -113782,6 +113822,7 @@ browsershots.org#@#.advert_area
 ||phbtjvjsamolb.website^
 ||phcbuolvbodxd.online^
 ||phczfkaoemyuv.site^
+||phelchvbvogco.site^
 ||phfbjshvukodu.site^
 ||phgop1.com^
 ||phialedamende.com^
@@ -114235,6 +114276,7 @@ browsershots.org#@#.advert_area
 ||plfavetxktgvw.space^
 ||plgfbhohqpaiq.website^
 ||plgtxprvrgume.site^
+||plhojqilqcdkw.site^
 ||pliableunsnaky.qpon^
 ||pliantdummyexasperation.com^
 ||plicaecerates.cfd^
@@ -115330,6 +115372,7 @@ browsershots.org#@#.advert_area
 ||pullenaventreamulae.qpon^
 ||pullerycozed.cfd^
 ||pulleycorns.cfd^
+||pullingasilidbac.cfd^
 ||pulpilymackled.cyou^
 ||pulpyads.com^
 ||pulpybizarre.com^
@@ -115869,6 +115912,7 @@ browsershots.org#@#.advert_area
 ||qj2cpl6l2pwjuzrgv38kuyu.rest^
 ||qjaioccuzbmud.site^
 ||qjgnmndhtsvks.site^
+||qjgqefrkcuokn.website^
 ||qjjckhourpvey.site^
 ||qjqmyapfebbvb.space^
 ||qjsepjbndeeot.site^
@@ -116345,6 +116389,7 @@ browsershots.org#@#.advert_area
 ||qxipoaozxpedk.space^
 ||qxjgrlobfkjtv.site^
 ||qxmggcmwfywcs.website^
+||qxmvywrkypkwq.space^
 ||qxolfkilrlgiz.space^
 ||qxpxrbettkskb.space^
 ||qxqjccxfiihvf.online^
@@ -116526,6 +116571,7 @@ browsershots.org#@#.advert_area
 ||ralishswarmer.com^
 ||rallierknowns.cyou^
 ||rallytrck.website^
+||ramekinkaput.cfd^
 ||ramentwere.cfd^
 ||ramlvunszdcxt.website^
 ||rammackprorex.cyou^
@@ -117117,6 +117163,7 @@ browsershots.org#@#.advert_area
 ||remissapricothomey.com^
 ||remissnecessaryunderneath.com^
 ||remixanfeeld.cyou^
+||remixitched.shop^
 ||remnanttrickyoccurrence.com^
 ||remorseful-foot.com^
 ||remorsefuldaughter.com^
@@ -118329,6 +118376,7 @@ browsershots.org#@#.advert_area
 ||rxwlksstrsfsre.com^
 ||ryapalta.com^
 ||ryaqlyayyeba.top^
+||ryastalest.cfd^
 ||ryddiuaiixndo.site^
 ||rydresa.info^
 ||rydtkrsegqpze.website^
@@ -118399,6 +118447,7 @@ browsershots.org#@#.advert_area
 ||saatydsobhrtk.space^
 ||sabaismuramido.cfd^
 ||sabaothbivvy.qpon^
+||sabatonpeise.cfd^
 ||sabatonrhamn.qpon^
 ||sabbathwumman.shop^
 ||sabbatsslighty.cfd^
@@ -120404,6 +120453,7 @@ browsershots.org#@#.advert_area
 ||sophisticatedpin.com^
 ||sophomorelink.com^
 ||sophtamarkmen.qpon^
+||sopiteakania.cfd^
 ||sopitegriping.cfd^
 ||sopwmgdtpscnd.space^
 ||sopxcaozjplss.site^
@@ -121564,6 +121614,7 @@ browsershots.org#@#.advert_area
 ||suwytid.com^
 ||suxbduziqbblv.store^
 ||suxmmptepcpiq.space^
+||suyczprfuaijt.online^
 ||suzanne.pro^
 ||suzzpmzdxwqkr.space^
 ||suzzvbiflqrru.online^
@@ -121814,6 +121865,7 @@ browsershots.org#@#.advert_area
 ||szixwtkqobfaa.online^
 ||szlcgeoxvoqzs.online^
 ||sznzfsidzwfiz.space^
+||szoasnwwzknyo.space^
 ||szpyqrgh.xyz^
 ||szpzwvdcpedjl.site^
 ||szqtqbtfyjpwd.online^
@@ -124374,6 +124426,7 @@ browsershots.org#@#.advert_area
 ||uncrossamarity.qpon^
 ||uncrownbarf.qpon^
 ||uncterilitasory.com^
+||uncurbcompted.com^
 ||uncurbsatresy.shop^
 ||uncxggzlzlrww.website^
 ||uncysiante.com^
@@ -124841,6 +124894,7 @@ browsershots.org#@#.advert_area
 ||uqijlljfxmfbi.website^
 ||uqjtqvzdujsjh.online^
 ||uqletjdcbcwwtf.com^
+||uqmjafixfuxjj.site^
 ||uqoqqnokfburn.online^
 ||uqorvvojegngl.site^
 ||uqoxtbwmhofzc.site^
@@ -125211,6 +125265,7 @@ browsershots.org#@#.advert_area
 ||vaccineverifyweaker.com^
 ||vaconaamercesksar.qpon^
 ||vacruwsug.com^
+||vactubhipa.in^
 ||vacuistwhiten.qpon^
 ||vacuumcoconut.com^
 ||vacuumpressuredisarray.com^
@@ -125560,6 +125615,7 @@ browsershots.org#@#.advert_area
 ||vextshiatsu.cyou^
 ||veymqlpxnqbih.website^
 ||vfamnpvtqmhpw.site^
+||vfbyodygylncy.site^
 ||vfdsfnvcaqyjd.space^
 ||vffkhnbxpncce.site^
 ||vffncubbivrcm.website^
@@ -125779,6 +125835,7 @@ browsershots.org#@#.advert_area
 ||viqonnkopkkjp.site^
 ||viraginjasyruths.cyou^
 ||viral782.com^
+||viralcharpitosmolar.qpon^
 ||viralesstrette.cyou^
 ||viralmediatech.com^
 ||viralnewsbd.xyz^
@@ -125882,6 +125939,7 @@ browsershots.org#@#.advert_area
 ||vklzhsplergwb.site^
 ||vkofmhfpfjyak.online^
 ||vkoqaquif.com^
+||vkoxgtewzadqi.site^
 ||vkpwnuxlgtepw.website^
 ||vkqowkbmcjzin.online^
 ||vkynuspzupokz.website^
@@ -126257,6 +126315,7 @@ browsershots.org#@#.advert_area
 ||vwsezpkqtgaez.site^
 ||vwshvtlrdkdwl.site^
 ||vwsyliuxjxlfm.online^
+||vwtscypakdekl.site^
 ||vwxyozrzwikcy.site^
 ||vwyiggzaqmnrb.space^
 ||vwzrmuzcjxpkh.space^
@@ -126876,6 +126935,7 @@ browsershots.org#@#.advert_area
 ||wetrackgames.com^
 ||wetterbirses.qpon^
 ||weuaubbolvxby.website^
+||weumldwuivrxl.space^
 ||wevrwqjaomzbz.top^
 ||wevsykjaretpf.online^
 ||wewearegogogo.com^
@@ -127871,6 +127931,7 @@ browsershots.org#@#.advert_area
 ||wwmvemdbbdsgm.site^
 ||wwnowdnguuklz.site^
 ||wwnsbcmmcaeqe.website^
+||wwolofckv.com^
 ||wwoujxaxvklvk.online^
 ||wwpoclwtiyuau.site^
 ||wwpon365.ru^
@@ -128860,6 +128921,7 @@ browsershots.org#@#.advert_area
 ||ycabzuutwyjqh.online^
 ||ycafuymxouvbq.store^
 ||ycaihhkovkgwt.website^
+||ycandltss.com^
 ||ycawzjpzbzgvl.online^
 ||ycckcvaqnbiqa.store^
 ||yccsuvitctcyc.site^
@@ -128890,6 +128952,7 @@ browsershots.org#@#.advert_area
 ||yczpwjtvggloo.online^
 ||ydcjrqvjveneo.online^
 ||ydczzgccyfrmj.website^
+||yddafikqjptvd.space^
 ||ydduszefhnscz.website^
 ||ydiggeurkhusl.store^
 ||ydiiowyprhnyz.online^
@@ -129327,6 +129390,7 @@ browsershots.org#@#.advert_area
 ||yqgbrupozdfrn.site^
 ||yqgyfmjmtnace.online^
 ||yqhbbppxapnzx.site^
+||yqjmtiuooduls.com^
 ||yqjsyabpzegzd.space^
 ||yqkpihoutfeef.website^
 ||yqkyaxdt.net^
@@ -146765,6 +146829,7 @@ investing.com##div[data-test="ad-slot-visible"]
 symbaloo.com##div[data-test="homepageBanner"]
 producthunt.com##div[data-test^="ad-slot-"]
 startribune.com##div[data-testid$="-ad"]
+themirror.com##div[data-testid*="commercial"]
 costco.com##div[data-testid="AdSet-all-sponsored_products_-_search_bottom"]
 costco.com##div[data-testid="AdSet-all-sponsored_products_-_search_top"]
 semafor.com##div[data-testid="ad-body"]
@@ -147693,6 +147758,7 @@ opensubtitles.org##tr[style]:has([src*="php"])
 oneindia.com##ul > li:has(> div[class^="adg_"])
 etsy.com##ul[data-results-grid-container] li:has([id^="ad-listing-title-"])
 wolt.com##ul[data-test-id="VenueVerticalListGrid"] > li > div.cb-elevated:has(button[data-test-id="AdvertisingLabel"])
+wolt.com#?#div:has(> div > div > div > div > div > div > p:has-text(Sponsored))
 ! taboola
 nme.com###taboola-below-article
 oneindia.com###taboola-mid-article-thumbnails
@@ -150932,10 +150998,10 @@ gamcore.com##li.d-md-block > a[rel]
 
 ! --- Source: https://easylist-downloads.adblockplus.org/easylistitaly.txt ---
 [Adblock Plus 1.1]
-! Checksum: BbQYzmbUfb5KV8+65MOVGw
-! Version: 202609161102
+! Checksum: KIKjwWX8augyCVecErUoKQ
+! Version: 202609161621
 ! Title: EasyList Italy
-! Last modified: 16 Sep 2026 11:02 UTC
+! Last modified: 16 Sep 2026 16:21 UTC
 ! Expires: 1 days (frequenza di aggiornamento)
 ! Homepage: https://easylist.to/
 ! Licenza: https://easylist.to/pages/licence.html
@@ -154456,6 +154522,10 @@ greenme.it##aside[style="margin: 8px auto; display: flex; justify-content: cente
 italiafruit.net##banner
 commentimemorabili.it##center[style="margin:10px auto;text-align:center;min-height:250px;"]
 primapaginanews.it##di[style^="width:260px;height:153px;"]
+subito.it##div[class$="_adviewTop"]
+subito.it##div[class$="_banner"]
+subito.it##div[class$="_listingTop"]
+subito.it##div[class$="smart-adv-lira"]
 gnoccatravels.com##div[class*="b-nner"]
 insella.it##div[class*="banner_"]
 ilgiornaleditalia.it##div[class*="banner_article-dx-"]
@@ -155185,7 +155255,7 @@ tuttoandroid.net,tuttotech.net#?#.card.dark:has(span:has-text(Adv))
 
 ! --- Source: https://curbengh.github.io/phishing-filter/phishing-filter.txt ---
 ! Title: Phishing URL Blocklist
-! Updated: 2026-09-16T00:32:29Z
+! Updated: 2026-09-16T12:18:41Z
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://gitlab.com/malware-filter/phishing-filter
 ! License: https://gitlab.com/malware-filter/phishing-filter#license
@@ -155295,7 +155365,6 @@ tuttoandroid.net,tuttotech.net#?#.card.dark:has(span:has-text(Adv))
 0phdtj.info
 0q36wp-624423-waq6ul-btq5.pages.dev
 0qwk5f.lat
-0t0vu-40f-4bjk-o4cc2-11-09-2026-hh.pages.dev
 0telc0.weebly.com
 0todm-info291.shop
 0utl00klive.framer.website
@@ -155345,7 +155414,6 @@ tuttoandroid.net,tuttotech.net#?#.card.dark:has(span:has-text(Adv))
 121723398207.vercel.app
 123.254.108.116
 12306.evergreenfin.ltd
-1234567.amorevip.vip
 123corriu.weebly.com
 12428461842-gskantmbsuknbnus.start.page
 126-new.weebly.com
@@ -155491,7 +155559,6 @@ tuttoandroid.net,tuttotech.net#?#.card.dark:has(span:has-text(Adv))
 1u91up.info
 1uanl-edu-mx.weebly.com
 1ug2t33.hair
-1url.at
 1v33u-dvyulg-b6fxw3-2rg5u.pages.dev
 1v3wn38.hair
 1v3x90i0.rpcld.co
@@ -155613,7 +155680,6 @@ tuttoandroid.net,tuttotech.net#?#.card.dark:has(span:has-text(Adv))
 28wus7w.lol
 29046175.xyz
 2907pygnb.z13.web.core.windows.net
-295488.xyz
 29831-icloud.com
 29cc9-qum3w-tcqk-ch1-9vj.pages.dev
 2a6e354e.0ee9711ad2ec6d4cff432a62.workers.dev
@@ -155694,6 +155760,7 @@ tuttoandroid.net,tuttotech.net#?#.card.dark:has(span:has-text(Adv))
 328315906745954326.weebly.com
 32lakeelm09.weebly.com
 32pm38-usb-euw67i-cc2kt-skicc.pages.dev
+33333333-8r7.pages.dev
 334556789.weebly.com
 339785383240122093.weebly.com
 33h7w2.hair
@@ -156344,9 +156411,11 @@ tuttoandroid.net,tuttotech.net#?#.card.dark:has(span:has-text(Adv))
 8myvisionfcu.weebly.com
 8o1-cil-p35-7ywss9-mwhnd.pages.dev
 8r5hh6.info
+8r5p6e-qw999agreg-2p1z9k8m4s-7m8p.pages.dev
 8rm1-0wnvq-7rsl-pvoh-1tee.pages.dev
 8rtl9-ip5x1-bguq-nys-da2kb.pages.dev
 8rv4pkn.hair
+8s7q0g-qw999agreg-mbtz2x8p1m9-fsgc.pages.dev
 8vk5prw.hair
 8vz2mxr.skin
 8ww0r-ujbbr-j76ed-u1hr44.pages.dev
@@ -156359,6 +156428,7 @@ tuttoandroid.net,tuttotech.net#?#.card.dark:has(span:has-text(Adv))
 9000-firebase-jashdasd123-1781315945331.cluster-mdgxqvvkkbfpqrfigfiuugu5pk.cloudworkstations.dev
 9000-firebase-ship-1779913820229.cluster-zti5ytzhlffjiqj6bp4giuli3u.cloudworkstations.dev
 9000-firebase-tels-1780054135955.cluster-zti5ytzhlffjiqj6bp4giuli3u.cloudworkstations.dev
+900599.cc
 901299qwoepvbnf.weebly.com
 9013351951-1.github.io
 901reullyaf851edbc9.weebly.com
@@ -156502,6 +156572,7 @@ a8m5jj-p4o-g3wtd-x61pf-zvpg97.pages.dev
 a8qhs.wiki
 a8rona.sbs
 a9cary.qpon
+a9ecc2650b8a.vercel.app
 aaaaaaaaaa.myportfolio.com
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com
 aaaaatttttttmail.boxmode.io
@@ -156565,7 +156636,6 @@ abdelkader.domici948239.pro
 abdeloum.urge284671.pro
 abdoul.jour848037.pro
 abdrsd.github.io
-abdullahabodayya-jpg.github.io
 abegabeg.weebly.com
 abelinogabriel5dbe3.myportfolio.com
 abertoexpres.vercel.app
@@ -156687,7 +156757,6 @@ access-divace-bridge.typedream.app
 access-edua-wab.pineapple.page
 access-hfb.firebaseapp.com
 access-hfb.web.app
-access-ledger-login-ledger.typedream.app
 access-port-ggl0rw3zkononuwgjpgwgsh.vercel.app
 access-ruabby-io.wixstudio.com
 access-update-access-uprade.weebly.com
@@ -156731,7 +156800,6 @@ account-att-net.webflow.io
 account-device-register.com
 account-id-au.web.app
 account-iive.com
-account-issues.net
 account-lbpiaccess.firebaseapp.com
 account-lbpiaccess.web.app
 account-ndaax.webflow.io
@@ -157032,7 +157100,6 @@ adminweb66.weebly.com
 admnistrator8docsfilesserviceinstant784huo7889s9sssusfffff.pages.dev
 admnvwyindhtm1.weebly.com
 adobe-knwrgjnwghnwhrkfnejwnfkje.pages.dev
-adobecloud.pro
 adobepdf-readingfile-online.weebly.com
 adobepdfinio.weebly.com
 adoblepdf2.weebly.com
@@ -157071,6 +157138,7 @@ aefnyuali.web.app
 aegismosaic.xyz
 aehsp.021110f6-5146-4ad7-abf0-b91adf8d5ff3.click
 aemnnsd.info
+aenterofexcellenc.com
 aeon.oifmfod.cn
 aepedrosa.com
 aephotograph.com
@@ -157178,7 +157246,6 @@ ahmian.com
 ahshyallegrolokalnie.pl-835347547.click
 ai-defichain.pages.dev
 ai-isaac.gitbook.io
-ai.kc1oud.com
 ai1k-8hqs-q4zalq-l1uv-eclo8.pages.dev
 ai2theworlds.github.io
 ai66vzhbb.cc.rs6.net
@@ -157317,6 +157384,7 @@ alfinbancopep.z13.web.core.windows.net
 alfinenlineabanco.z13.web.core.windows.net
 alfonce.ext5723518.pro
 algeelivlogin.gitbook.io
+algerienquestion.github.io
 algotextil.com.br
 alhazmico.com
 aliakokalasteamworkspace.myclickfunnels.com
@@ -157977,6 +158045,7 @@ allegro.9017348916743.lat
 allegro.90329hi5u4y7.xyz
 allegro.90t23489tg.shop
 allegro.91023747462349134.lat
+allegro.912376h745.forum
 allegro.91289h405h045.mom
 allegro.9139120h5.cfd
 allegro.9209288774g.lat
@@ -161183,8 +161252,10 @@ anyhuduyjfd.web.app
 anz-ref7136.firebaseapp.com
 anz-ref7136.web.app
 ao0lf-5tr-71qw74-dtw-2af.pages.dev
+aoe3.heavengames.com
 aoeygkwcfzrq.021110f6-5146-4ad7-abf0-b91adf8d5ff3.click
 aoimmigration.com
+aojedef.com
 aol-e9a78.firebaseapp.com
 aol-e9a78.web.app
 aoljk-po0c.weebly.com
@@ -161200,7 +161271,6 @@ apac.orbitor.dev
 apai9hs2rgs2-pages-dev.translate.goog
 apaitoun-enkrisi.firebaseapp.com
 apaitoun-enkrisi.web.app
-apartament.biz
 apchanrun.com
 aperoto.wixstudio.com
 aperture-stitch-9657-cypress.s3.eu-west-3.amazonaws.com
@@ -161365,7 +161435,6 @@ app.trueqrcode.com
 app.trysit.info
 app.trysti.ink
 app.tupiazaaeniineea-barscopiaza.com
-app.wave-whatsapp.com
 app.web-sender.com
 app.y.gy
 app11.easysendyapp.com
@@ -161413,6 +161482,7 @@ applinkzzz.weebly.com
 applive-homepages.wixstudio.com
 applive-ledgrguide.wixstudio.com
 applivs-desktop.wixstudio.com
+applogincloude.life
 appltau30hs.info
 apply-job.github.io
 apply-on-free-here.surge.sh
@@ -161610,7 +161680,6 @@ appwalletconnect.wixstudio.com
 appwallt-trexez.wixstudio.com
 appxfin.com
 appysalons.com
-april-cliff18.pages.dev
 aprobadobdv.webcindario.com
 aproccessing.firebaseapp.com
 aproccessing.web.app
@@ -162100,7 +162169,6 @@ atualizebradescopj.net
 atualizepj-topaz.digital
 atuokwxfm.firebaseapp.com
 atuokwxfm.web.app
-atuolo.icu
 aub-zflx-dco5-9zydl-i8l-9p5.pages.dev
 auberge-lorraine-levaltin.fr
 auburn-unicu-acc-sc.weebly.com
@@ -162129,6 +162197,7 @@ aus-sydney-0365.web.app
 ausff.firebaseapp.com
 ausff.web.app
 ausiestatement.weebly.com
+auspost.addqwe.com
 auspost.customerserviceqd.com
 auspost.customerserviceqe.com
 auspost.customerserviceqf.com
@@ -162145,7 +162214,6 @@ autenticacao-telecom.com
 autenticacao-ufba-br.framer.wiki
 autenticacaocmd-gov.com
 autenticacaocmd-suporte.com
-autenticar-datos.iceiy.com
 autenticarbradesco.com
 autenticartcuent2pasos.iceiy.com
 autenticarusuario.com
@@ -162316,6 +162384,7 @@ aware-assistant-407030.framer.app
 aware-research-270929.framer.app
 aware-seat-774154.framer.app
 aware-university-930573.framer.app
+awarenesss.cfd
 aweiomertial.weebly.com
 awerippltrvun.weebly.com
 aweruimerdasinre.weebly.com
@@ -162360,7 +162429,6 @@ ayji3e.info
 ayl0kr.webwave.dev
 aymshopping.com
 ayniplast.pe
-ayomide202005.github.io
 ayudadirecta.org
 ayudas-gestion-anulares.infy.click
 az.edftgh.cam
@@ -163595,6 +163663,7 @@ bbbbbtttteeelllwebm.weebly.com
 bbbj.eu.cc
 bbcihq.zuijinhaoma.com
 bbdjdkimmd34.000webhostapp.com
+bbejahhc.r.bh.d.sendibt3.com
 bbest-pt.web.app
 bbfgrowers.daeworks.com
 bbghhjhfgfggh.weebly.com
@@ -163790,6 +163859,7 @@ berdaszplimertuin.weebly.com
 bergabung18.ezua.com
 berhandbagestionfr.firebaseapp.com
 beriomerwasiner.weebly.com
+berkshire-hathavvay.club
 berliner-sparkasse.apcovernightdiplomat.xyz
 berlitnunbgg.firebaseapp.com
 berlitnunbgg.web.app
@@ -163863,7 +163933,6 @@ bewildered-fruit-952216.framer.app
 bex.godaddysites.com
 bex43452789840.weebly.com
 bexmb23.weebly.com
-beyondfitness.com.br
 beyourself.start.page
 bezahlen.net
 bfdfxcdfvdf.weebly.com
@@ -164040,7 +164109,6 @@ bijzonderekunst.nl
 bik.standard.us-east-1.oortstorages.com
 bik1nc.webwave.dev
 bilightonline.com
-billanddonne.direct.quickconnect.to
 billgudposthnlbg.weebly.com
 billing-status-check.firebaseapp.com
 billing-status-check.web.app
@@ -164725,9 +164793,9 @@ bravera-t1.web.app
 bravera-w1.firebaseapp.com
 bravera-w1.web.app
 braxziloutlo.weebly.com
+brayden-15.pages.dev
 brazilwebupdate.weebly.com
 brd-652645.com
-brd-ge-trezr.pages.dev
 brdge-uswebs.wixstudio.com
 breakable-absolute-878052.framer.app
 breakable-retention-486791.framer.app
@@ -165193,7 +165261,6 @@ business-meta.farekey.com
 business-meta.ijbe.org
 business-meta.iwenyan.com
 business-metasupports.tiiny.site
-business-metta-integrity.vercel.app
 business-supports-center.pages.dev
 business-supports-centers.pages.dev
 business-team-416516841.firebaseapp.com
@@ -165253,6 +165320,7 @@ bybit-login-app.typedream.app
 bybitnloginmk.gitbook.io
 byfidelity.webflow.io
 byfqsy.com
+byit.support
 bymmygc.com
 bymnail.weebly.com
 byqoq.com
@@ -165882,6 +165950,7 @@ cgfghghhgghgffdf.framer.wiki
 cgggct6.weebly.com
 cgichpp.com
 cgxyrukl2jhfyktuyikgcjt5kk-fhrytuhk2gzsrydtufyig.teemill.com
+ch-pak-informations.bolt.host
 ch-saintgaudensfr.weebly.com
 ch-stomerfr.weebly.com
 ch.atomy.com
@@ -166125,6 +166194,7 @@ cj450703.tw1.ru
 cjldh.com
 cjslakesidegrill.com
 cjxgcinln.firebaseapp.com
+ck200009.tw1.ru
 cksredi.pages.dev
 cl-uc.weebly.com
 clad.zzyssllh.cn
@@ -166139,7 +166209,6 @@ claimrefunds-irs.misecure.com
 clarkigentillevieux.firebaseapp.com
 clarkigentillevieux.web.app
 clarkus.weebly.com
-claro-em-dia.com
 clarokendari.com
 claroutmservice.com
 clash-of-clans0.weebly.com
@@ -166233,6 +166302,7 @@ cloud-23526.firebaseapp.com
 cloud-23526.web.app
 cloud-a34c2.firebaseapp.com
 cloud-a34c2.web.app
+cloud-abdd.americanarmy490.workers.dev
 cloud-appsuite.wixstudio.com
 cloud-bridge-intro.wixstudio.com
 cloud-ed980.firebaseapp.com
@@ -166251,7 +166321,6 @@ cloud2land.com
 cloudflare-captcha.net
 cloudmich-a7968.firebaseapp.com
 cloudmich-a7968.web.app
-cloudupdated.us
 cloudy-absolute-236990.framer.app
 clozer.io
 clt1710760.bmeurl.co
@@ -166296,10 +166365,7 @@ cmstartledgr.wixstudio.com
 cmut-mobl.com
 cmut-monespace.bolt.host
 cmvkc.weebly.com
-cn-gui-whatsapp.com.cn
 cn-oyi-okx.com.cn
-cn-peer-whatsapp.com.cn
-cn-ping-whatsapp.com.cn
 cn-wap-fengniaogame.com
 cn-web-yoolive.com
 cn.1mebetx.com
@@ -166386,11 +166452,11 @@ coinbasebackup.com
 coinbaseportalaccess.com
 coinbasepro10000.webcindario.com
 coinbaseverify.vercel.app
+coinbse-extesnsion.framer.website
 coinbsxeproxlogen.gitbook.io
 coinbuseprologon.wixstudio.com
 coinbxcewalet.gitbook.io
 coincat.org
-coincbsewallit.gitbook.io
 coincraddle.cc
 coiniybessiprrologn.godaddysites.com
 coinmarket-io-en.wixstudio.com
@@ -166406,6 +166472,7 @@ cold-sun-20d0.siceerruhrltakt3622.workers.dev
 colegioconexao.com.br
 colegiocumbres.org
 colegioluren.edu.pe
+colibridistribuidora.com.br
 colinashfield.com
 colis-relai.com
 colisreprogramme.com
@@ -166458,6 +166525,7 @@ comcast-108616.square.site
 comcast-account.square.site
 comcast-account.weeblysite.com
 comcast-domain.weeblysite.com
+comcast-ebon.vercel.app
 comcast-help-home.weebly.com
 comcast-mobile.webflow.io
 comcast-xfiintybkjhm.weeblysite.com
@@ -166472,6 +166540,7 @@ comcastconnect.webflow.io
 comcastconnect.weebly.com
 comcastemailnet.weebly.com
 comcastinfo.weebly.com
+comcastinfoupdatenow.weebly.com
 comcastinternetserver.weebly.com
 comcastinvoice.weebly.com
 comcastkkfhfhhffgdffd.weebly.com
@@ -166484,6 +166553,7 @@ comcastmailserver.weebly.com
 comcastmailserverupdate.weebly.com
 comcastmailsignin.weebly.com
 comcastmailupdateaccount.weebly.com
+comcastmemberupdate.weebly.com
 comcastnetmailnet.weebly.com
 comcastnetmailservice.weebly.com
 comcastnetwork.weebly.com
@@ -166655,6 +166725,8 @@ confirmardatohbd.webcindario.com
 confirmarprodu.webcindario.com
 confirmation-accountverify.start.page
 confirmation-appeal.start.page
+confirmation-order-gg.sbs
+confirmation-order-payu.sbs
 confirmation-primesaccounts.com
 confirmation-your-account-2023.start.page
 confirmation2023-recovery-pageess.start.page
@@ -166953,7 +167025,6 @@ correotdeaeducoe.weebly.com
 correoupdating.weebly.com
 correouy-service-2026-no-fifame914215320.mindeltaler-bau.de
 correspondenciaonline.com
-corresponding-tomato-coyan6wg.edgeone.dev
 corretorabm.com.br
 corrieossap0maillsrverxyz.pages.dev
 corrifoee.weebly.com
@@ -167004,6 +167075,7 @@ coxon8.godaddysites.com
 coxsite.webflow.io
 cp-serverdata393030.firebaseapp.com
 cp-serverdata393030.web.app
+cp-trc.marinenexus.info
 cp.handhonline.net
 cp436858.sitebeat.crazydomains.com
 cp96524.tw1.ru
@@ -167217,6 +167289,7 @@ crhoris-8569.twil.io
 cricketbetbd.com
 crimsonmods.com
 cripthub.org
+crisp-wood.pages.dev
 crlzaq.webwave.dev
 crm.layton.ru
 crmastercard.cc
@@ -167394,6 +167467,7 @@ cwngs51lkwg-pxqzvpli-9ce26c-cwn77c-cku.pages.dev
 cwpanama-migration.weebly.com
 cwpanama-update.weebly.com
 cwpeuz.info
+cx3liveo.sviluppo.host
 cx61897.tw1.ru
 cxd2yl-plrkny-9st7e-ryn88.pages.dev
 cxdirecto.top
@@ -167448,6 +167522,7 @@ d.yzh.li
 d0wcreo.shop
 d1-eta.vercel.app
 d131b80a-9b6a-4719-a4fd-b2f7beaa9c33-00-tyex5w8ljwxl.riker.replit.dev
+d1jemqk05k0kst.cloudfront.net
 d26z9x.blogspot.de
 d26z9x.blogspot.ru
 d2dfc544-399b-45a9-8d61-2d0e4f9e452e-00-1udgw3ohkf664.riker.replit.dev
@@ -167497,6 +167572,7 @@ daieikagakuseiki.co.jp
 daily-lynx-193002.framer.app
 daily-wombat-924160.framer.app
 dairian-washington-s-school.teachable.com
+daisy-yard-garden.pages.dev
 daiyxtaki.firebaseapp.com
 daiyxtaki.web.app
 dakloun.firebaseapp.com
@@ -167925,6 +168001,7 @@ desktop-unknown.wixstudio.com
 desktop-update-en.wixstudio.com
 desktop-us-ledgre.wixstudio.com
 desktop-used.wixstudio.com
+desktop.core-whatapps.com
 desktopap-live.wixstudio.com
 desktopapp-studiocdn.wixstudio.com
 desktopeng.wixstudio.com
@@ -168077,7 +168154,6 @@ dhl-express-outre-mer.com
 dhl-expresss.weebly.com
 dhl.cmvwp-ie.org
 dhl.com-paiement.fr
-dhl.iformalia.es
 dhl.info-shipment.org
 dhlaustralia.weebly.com
 dhlcrs.cc
@@ -168191,6 +168267,7 @@ disabled-peach-m28zu4sp.edgeone.dev
 disables-fanspages-account2023.start.page
 disc-aqua-e56n.squarespace.com
 disclosepack.myportfolio.com
+discord-web.com
 discorddota.com
 discordsdota.com
 discordseas.pro
@@ -168228,6 +168305,7 @@ distribmondrelay.com
 distribution-reprogramation.com
 districtchronicles.com
 districtcourtsouth.com
+ditzzz.ezzzyy.de
 divace-ndexio.wixstudio.com
 divepeds.com
 diverse-team-879582.framer.app
@@ -169287,6 +169365,7 @@ ecuadoravanza.webcindario.com
 ecuadorayudas--ayudasecu.replit.app
 ecuadordainicio.webcindario.com
 ecuadordavida.webcindario.com
+ecuadorec.replit.app
 ecuadorenlinea-3237--ecuadoerdejnn.replit.app
 ecuadorincentivo.webcindario.com
 ecuadorlcentivo.webcindario.com
@@ -169437,6 +169516,7 @@ ehq2q1-uom2-v8a-ste-38j52p.pages.dev
 ehthtjzvd.firebaseapp.com
 ehthtjzvd.web.app
 ehttt.top
+ei1i7-qqt-v6l4-2qu9k-08-09-2026-hh.pages.dev
 ei641-w9db-l5dq-2s2q8v-prkum.pages.dev
 eiafd-83rfv-8cicw-wgo-e5t.pages.dev
 eid.restore-w875321.com
@@ -169642,7 +169722,7 @@ en-desktop-live.wixstudio.com
 en-desktop-lives.wixstudio.com
 en-desktopapps.wixstudio.com
 en-dydx.wixstudio.com
-en-en-kraken.com
+en-en-kraken.com.en-domain.com
 en-entro-apps.wixstudio.com
 en-ex-adus-ext.wixstudio.com
 en-ex-odus-extn.wixstudio.com
@@ -169712,6 +169792,7 @@ encryptedfileserver.weebly.com
 encuestaecuador.lat
 endesktop-ldger.wixstudio.com
 endesktop-ledgr.wixstudio.com
+endeveteasetsxmimgqiye.vercel.app
 endive-iris-7232.squarespace.com
 endives.propagation-d2vvh.pro
 endocirugia.com.ar
@@ -169822,7 +169903,6 @@ enter-auth-see-siwwshuu.github.io
 enter-desktop.wixstudio.com
 enter-rabby-io-uss.wasmer.app
 enterpirise.org
-enterprise-group-company-view.45307969.workers.dev
 enthusiastic-cassava-092831.framer.app
 entida-amarilla.webcindario.com
 entrafacil.com.py
@@ -169854,6 +169934,7 @@ envisn.onrender.com
 eomnail.weebly.com
 eon.myteammyway.net
 eorkgofnfdrase.weebly.com
+ep-au-tsirdg6k8303-c6hnc0e8dbbubred.z02.azurefd.net
 epaperdocxfile.sbs
 epasacv.com
 epaykueevqxm.ca6a8b74-32ac-45ea-84f0-fb607b8789ab.click
@@ -170014,6 +170095,7 @@ essschools.com
 esstttcccusstomersetttinnggs.weebly.com
 estaciorequestcancellation.weebly.com
 estarrcfe2.myportfolio.com
+estate-ledger-varada-staging.pages.dev
 estatesync-dev-346221.firebaseapp.com
 estatesync-dev-346221.web.app
 estudiantesunapnew.weebly.com
@@ -170362,7 +170444,6 @@ fabulous-head-294440.framer.app
 facbok-verify.start.page
 facbokhelp-centre.start.page
 facbook-systeam.start.page
-facbookapp.vercel.app
 faccebook.com.vn
 face-mob-fzla.000webhostapp.com
 face5boosk.webcindario.com
@@ -170373,18 +170454,18 @@ facebook-106359.square.site
 facebook-account.start.page
 facebook-ads-acc1.github.io
 facebook-appeal.w3spaces.com
-facebook-clone-zeta.vercel.app
 facebook-com.gitbook.io
 facebook-downloader.czhyk.biz.id
 facebook-page-verified.com
 facebook-program.invoice-ads-process.com
-facebook-seven-alpha.vercel.app
 facebook-verification-badge.com
 facebook.com-marketplace-item-205492994010.23499520.com
 facebook.gapesta.my.id
 facebook.letsauth.org
 facebook.market-34545647656.club
+facebook.meweb.kz
 facebook.popstudios.com.sv
+facebook.sagers.com
 facebook1029.github.io
 facebookcenter100029385712.firebaseapp.com
 facebookcenter100029385712.web.app
@@ -170475,8 +170556,6 @@ faecbook.vn
 faf-cuni-cz.bdpf-pf.online
 fafwreooj.firebaseapp.com
 fafwreooj.web.app
-faicbok.vercel.app
-faicboook.vercel.app
 failed-recipient-add.firebaseapp.com
 failed-recipient-add.web.app
 fainege.com
@@ -170548,6 +170627,7 @@ farmapay-replica.vercel.app
 farmersend.com
 farmerssbnk.weebly.com
 farmrio-site.vercel.app
+farren.webdesignla.info
 faruq.boxmode.io
 fascicolo-sanitario.com
 fashionnvren.com
@@ -170862,7 +170942,6 @@ finbradesco.com
 fincenalliance.com
 finch-caper-2wpl.squarespace.com
 findash.ghost.io
-findmydevice.click
 fine-begin-674537.framer.app
 fine-feature-003719.framer.app
 finedropmultilub.com
@@ -170960,9 +171039,9 @@ flag-24167805.royal-eng.ps
 flag-37212174.royal-eng.ps
 flag-84857437.royal-eng.ps
 flagcollection.com
-flagscape.bankofmaeica.com
 flamvido11.weebly.com
 flare.shafultonb.com
+flashfreight.pages.dev
 flashobmen.net
 flashusdt2026.github.io
 flat-bread-04ca.cloudflareaccess.com
@@ -170986,7 +171065,6 @@ flintaxidrsme.online
 flippr.in
 flixnet-videos.vercel.app
 flixstreamingr.com
-flnanzonlinegvbmf.net
 floating.sfo2.digitaloceanspaces.com
 flomahensinflowrcho.firebaseapp.com
 flomahensinflowrcho.web.app
@@ -171011,8 +171089,6 @@ flowrodovias-pag.lovable.app
 flowserveinc.weebly.com
 flowto.it
 flrk.shop
-fls-a2bd1439-7f9f-41eb-91dd-be01b8da9914.laravel.cloud
-fls-a2c06490-fc61-4ef8-95a7-68d9b72fbce7.laravel.cloud
 fluffy-disco-ebon.vercel.app
 fluid-footprint-036602.framer.app
 fluidrock.cfd
@@ -171037,6 +171113,9 @@ fm-a064f.web.app
 fmbnc-acctservices.firebaseapp.com
 fmbnc-acctservices.web.app
 fmbrmotchecks.vercel.app
+fmi-recovery-ld.help
+fmi-recovery.live
+fmidevice-location.com.tr
 fmlawrencebank.weebly.com
 fmntmd.webwave.dev
 fmpqwyp.cn
@@ -171109,7 +171188,6 @@ form-ap1-493052.public.500apps.org
 form-ap1-561450.public.500apps.org
 form-ap1-565807.public.500apps.org
 form-filing.com
-form-p5x4.vercel.app
 form.nativeforms.com
 form.platoforms.com
 form.regularisationtax.com
@@ -171150,6 +171228,7 @@ formulario-digital-citas-apkm-2026.cr-web.workers.dev
 formulario-digital-registro-akmnj-2026.cr-web.workers.dev
 formulario-gestion-2026-amnhk.cr-web.workers.dev
 formulario-registro-gestion-2026-aklm.cr-web.workers.dev
+formulariodelbdveninea.github.io
 formulariodesolicitudbhdexpress--allaym02.replit.app
 forney-construction.myportfolio.com
 forologikesenimeroseis.firebaseapp.com
@@ -171159,11 +171238,13 @@ forologikespllirofories.web.app
 forologikespplirofories.firebaseapp.com
 forologikespplirofories.web.app
 forpetbuys.com
+forrestchase.gztxyy.com
 forsakimya.com
 fort67.com
 fortbendisdaccess.weebly.com
 forterasecure.weebly.com
 fortezavog.weebly.com
+fortmax.live
 fortniteskinsallfree.weebly.com
 fortufr-a460c.firebaseapp.com
 fortufr-a460c.web.app
@@ -171333,6 +171414,7 @@ frequent-industry-913696.framer.app
 frequent-skills-269676.framer.app
 fresh-direction-253289.framer.app
 fresh-recipient-843412.framer.app
+freshbeer.co.nz
 freshupdate.standard.us-east-1.oortstorages.com
 fresti.pt
 frettaconstrucoe1.websiteseguro.com
@@ -171449,7 +171531,6 @@ fuvius.de
 fuz.za.com
 fuzawin.com
 fuzzy-baguette-686005.framer.app
-fuzzy-umbrella-orcin.vercel.app
 fvdfvfdsaas.weebly.com
 fw2744.craftum.io
 fw8lya.casa
@@ -171503,7 +171584,6 @@ ga.yydcvf.cam
 ga8icc.cfd
 gabbiano4vento.blob.core.windows.net
 gadyshh.weebly.com
-gaelik.com
 gaera79taga.start.page
 gafitulin.ru
 gagiywuoc.firebaseapp.com
@@ -171546,6 +171626,7 @@ garanti-tr.web.app
 garawilsie.myportfolio.com
 garawilsie270a.myportfolio.com
 garbeado.click
+garden-copper.pages.dev
 gardonvillecustomercare.weeblysite.com
 garenalff.com
 garminilgeen.webflow.io
@@ -171574,6 +171655,7 @@ gateway.royal-eng.ps
 gatewaypackersandmovers.com
 gatiems.com
 gaub-gmbh.de
+gaubec-caubeer.com
 gautamandgautam-byizfzvunb.edgeone.dev
 gawhybnoc.firebaseapp.com
 gawhybnoc.web.app
@@ -171652,7 +171734,6 @@ gencatverifytchws.weebly.com
 genccatveri.weebly.com
 genealogy.silverelk.net
 generacsr.com
-general-drab-six.vercel.app
 general-trading.weebly.com
 general231.myportfolio.com
 generalafraidparameters--five-nine.repl.co
@@ -171848,7 +171929,6 @@ giftshop-vip.yachts
 giftshopss.work
 gill-jones-s-school.teachable.com
 gimenixlogn.gitbook.io
-gimixmlogen.gitbook.io
 gimmenilogin.gitbook.io
 ginaruiz.com
 ginger-brisk-knob-qz-wrap.s3.sa-east-1.amazonaws.com
@@ -172415,7 +172495,6 @@ govq.lat
 govt-police.club
 govtment.sbs
 govuk-hmrc-status.com
-govuk-svelte-demo.vercel.app
 goyalsassociates.com
 gpcconcrete.co.nz
 gpfcuonl.weebly.com
@@ -172423,6 +172502,7 @@ gpggrcdum.firebaseapp.com
 gpggrcdum.web.app
 gpmpnf.fnjsbkt.cn
 gpppw.top
+gps-icloudsupport.pro
 gq36h6nz916j8hyp3v5n.s3.eu-west-3.amazonaws.com
 gqehegqgkdpf.com
 gr-mygov.firebaseapp.com
@@ -173058,6 +173138,7 @@ hintergrundradar.click
 hipcv.com
 his-examine-armor-nascar.trycloudflare.com
 hissing-knowing-citipati.glitch.me
+historic-lime-ooqxdqeq.edgeone.dev
 hitdifferentupdate.framer.website
 hitechweblogestionfr.firebaseapp.com
 hitechweblogestionfr.web.app
@@ -173377,7 +173458,6 @@ hostpoint.ch.11be028f.tcorner.fr
 hostpoint.ch.121c0291.net2care.com
 hostpoint.ch.148002bf.net2care.com
 hostpoint.ch.14ec02c0.net2care.com
-hostvipxfl.com
 hotdoc-rf-pending.com
 hoteldetrojan.com
 hotels-cloudbeds.bolt.host
@@ -173487,7 +173567,6 @@ htpxfinityyycomcastlogin.weebly.com
 htr-fdsw.wasmer.app
 htt.standard.us-east-1.oortstorages.com
 httpprallycuweb.weebly.com
-https--www--roblox.com
 https-fiberyio.fibery.io
 https-sso-uphold-com-autth-t-cdn-me.typedream.app
 https-wwwv-roblox.co
@@ -173622,7 +173701,6 @@ hypovereinsbank.meinkundenbereich.org
 hyr105.wixstudio.com
 hys.appleenespanol.com
 hysionglobal.com
-hytjst.shop
 hytrdsfrg.weebly.com
 hyyywl.com
 hz9-b1mk-5eg61-j7myx-j7e1nq.pages.dev
@@ -173634,7 +173712,6 @@ i-nfo-xqgkqzqx.weeblysite.com
 i-obmen.net
 i-wyomingcommunity.firebaseapp.com
 i-wyomingcommunity.web.app
-i.gal
 i0ikao.info
 i0k.cc
 i2mind.com
@@ -173716,12 +173793,13 @@ icewarpwebclientbright.weebly.com
 ichnology.cfd
 icljqh003.urest.org
 icloud-imagens.com
-icloud.trienkhaiweb.com
 icloudbusca.support
 icloudbuscar.id
+iclouddsoporteapple.click
 icloudflnd.info
 icloudmailservice.sviluppo.host
 icloudrastreio.live
+icloudxtzsopoe.click
 icmktg.n0c.world
 iconixww-62ae3.firebaseapp.com
 iconixww-62ae3.web.app
@@ -173972,7 +174050,6 @@ impregto.com
 improvesbridge.wixstudio.com
 imptmessage.w3spaces.com
 imsappservice02.azurewebsites.net
-imstoken.com.cn
 imxprs.com
 imygkb.com
 in-mr-reprog.bolt.host
@@ -174234,11 +174311,9 @@ insta-support.org
 instablogs.github.io
 instagraam-login.vercel.app
 instagram-cam.vercel.app
-instagram-clone-one-mu.vercel.app
 instagram-nepal.github.io
 instagram-password-recovery.vercel.app
 instagram-reset-password.vercel.app
-instagram-ssew.vercel.app
 instagram-uson.vercel.app
 instagram.callidoralk.com
 instagram5-byte.github.io
@@ -174309,7 +174384,6 @@ interface-uniswap.vercel.app
 interiakastliverecsbrokeers.com
 interiakastlivereesbrokeers.com
 interiakastliveretsbrokeers.com
-intermezzoconsultoria.com.br
 intermodalequipments.com
 internacional.ghltq.com
 internacional.zufsu.com
@@ -174321,6 +174395,7 @@ internal-tribute-826952.framer.app
 internalrevenue.us
 international.webcindario.com
 internationlaozonef1.myportfolio.com
+internet-explorer-11.soft-base.pro
 internetbtbtbt.wixstudio.com
 internetzoomediaplsll.weebly.com
 interpella005e0.firebaseapp.com
@@ -174374,7 +174449,6 @@ invfort.one
 invigorated-growth-940425.framer.app
 invisible-path-670355.framer.app
 invitale.xyz
-invitationmastercard.com
 invite.afterservice.vip
 invite.go2omega.com
 invoice-0004.blogspot.no
@@ -174601,6 +174675,7 @@ isnst.weebly.com
 iso-digital.eliteacademia.id
 isocomputercity.co.za
 isonic.weebly.com
+isoportegps-lcloud.pro
 ispfpage.weebly.com
 isprointroapp.durablesites.com
 isr--uc--pt.weebly.com
@@ -174695,7 +174770,6 @@ iwuaawdjdwja.com
 iy7kwx.top
 iydheybdse.w3spaces.com
 iyfdtusryxcuviuklfyidtu-dtusrzydtkuyufdytsukdyj.teemill.com
-iyube.shop
 iz5jxz.webwave.dev
 iz7kc-4ev-s4jr-722p-imzlhq.pages.dev
 izethyiuekwdmxcgjxtud-as47tuyikvqmfhcgjvhkazsf.teemill.com
@@ -174737,11 +174811,9 @@ jade--hs-de.weebly.com
 jadlogaavis.vercel.app
 jagdambamobiles.com
 jak127.org
-jalebinspice.com
 jamaicaprestigerooms.com
 jambon.mrelay-etape.com
 jambon.propagation-d2vvh.pro
-james-co-ledger-app.pages.dev
 jamescheng-gemini.zeabur.app
 jamiesomers05.ac-page.com
 jankalyanmission.com
@@ -174812,6 +174884,7 @@ jessegray.co.nz
 jessicasarkadi.weebly.com
 jessicawaderealestate.com
 jetgradeadhesive.com
+jetjeffersons.com
 jetsmartpromos.webcindario.com
 jetzt.aktualisierung2026.xyz
 jeudiunjour.firebaseapp.com
@@ -175248,7 +175321,6 @@ kharchi.ope8622501.pro
 khd.649.mytemp.website
 khdfx.com
 khemaissia.urge843284.pro
-khtyt.shop
 kiamdrive474exch.github.io
 kicincbaccr3d0ma.webcindario.com
 kiciuonlogxn.gitbook.io
@@ -175284,6 +175356,7 @@ kiron.hr
 kishvandnews.ir
 kit-vichy-dercos.vercel.app
 kita-quote-wt6k5i5yoz.edgeone.dev
+kitarist.si
 kitchenidea.co.uk
 kitit4454.weebly.com
 kitsbauducco-brown.vercel.app
@@ -175325,6 +175398,7 @@ kkkksgsgdfdjfdhhfdhlhdflhxkkkk-dpxklwputyu8.edgeone.dev
 kkmmdo-wallet.webflow.io
 kkq1ki.bgp04.sbs
 kkrakkennllogain.webflow.io
+kkruccoiunss-login.webflow.io
 kku-account.weebly.com
 klamotte-vivaldihaus.de
 klantendienstics.firebaseapp.com
@@ -175488,7 +175562,6 @@ klelnanzeigen-deutsch.srvc-erhalten.com
 klelnanzeigen-deutsch.srvccheckin.icu
 klelnanzeigen.id83923423.info
 klhdkj.com
-klierclin.com
 kllllllla.weebly.com
 klmaiil.weebly.com
 klmnop.pages.dev
@@ -175709,6 +175782,7 @@ kureshnameshindex.firebaseapp.com
 kureshnameshindex.web.app
 kurz-link.de
 kusdkufududuuxux.weebly.com
+kusumupraity9.github.io
 kutt.ar-email.com.br
 kuucnlgen.gitbook.io
 kuucoianlogin.webflow.io
@@ -175819,6 +175893,7 @@ ladger-live.wixstudio.com
 ladger-livelebger.wixstudio.com
 ladger-liveus.wixstudio.com
 ladgerlive--en-us.wixstudio.com
+ladgerstart.gitbook.io
 ladgr-livedesktop.wixstudio.com
 ladgrlive-eng.wixstudio.com
 ladgrliveapps.wixstudio.com
@@ -175840,6 +175915,7 @@ lahka-f50cf.web.app
 lahmw.com
 laiaki.mystagingwebsite.com
 laika1314.com
+laissetoiallez.xyz
 lajrecomstrts.gitbook.io
 lakeheadu-hep.weebly.com
 lakelandw.weebly.com
@@ -175891,7 +175967,6 @@ lasmejoresoportunidadesmxfall.com
 lassuranceretraite.net
 lastquarterr.com
 lastsupper.co.tz
-lasucursal-virtual.vercel.app
 lasue8404525.weeblysite.com
 lasvegasbeyond.com
 lasyaja.github.io
@@ -175979,7 +176054,6 @@ ldztyfgxf.firebaseapp.com
 ldztyfgxf.web.app
 le-registre-des-societes-francaises.fr
 le-registre-societes-francaises.fr
-le-registres-des-societes-francaises.fr
 le-registres-societes-francaises.fr
 le64connexion.godaddysites.com
 leadflowgeneration.com
@@ -176087,11 +176161,9 @@ ledger-in.wixstudio.com
 ledger-live-app-us-web.typedream.app
 ledger-livelogin-e7-en-us-cdn-gamma.vercel.app
 ledger-lives-desktop.square.site
-ledger-offline-journal.pages.dev
 ledger-recovery.support
 ledger-security-checker.com
 ledger-security-notice.com
-ledger-system-2fa.pages.dev
 ledger-wallet.vercel.app
 ledger-wallets-auth-edges.vercel.app
 ledger-wallets-auth-graphical.vercel.app
@@ -176328,6 +176400,7 @@ lifeseniorservices.myportfolio.com
 lighousconsulting.com
 light-mercury-688751.framer.app
 light-universe-073910.framer.app
+light.s-drc2.cloud.gcore.lu
 lightbluefirsthandcores--five-nine.repl.co
 lightcord.xyz
 lightfinity53.com
@@ -176466,6 +176539,7 @@ live-desktop-intro.wixstudio.com
 live-desktopeng.framer.ai
 live-desktophelp.wixstudio.com
 live-download-us.wixstudio.com
+live-dwnlod-ledger.pages.dev
 live-en-ledaegr.wixstudio.com
 live-en-leddgr.wixstudio.com
 live-en-ledgors.wixstudio.com
@@ -176605,7 +176679,6 @@ lkjhgfk.w3spaces.com
 lkkaiside.com
 lkntansr.net
 lksdtq-zucw-lg6l6-906-bit.pages.dev
-ll.bergeno.com
 llantasdelpacifico.co.cr
 llbbs.zeabur.app
 lledgercomstrt.gitbook.io
@@ -176621,7 +176694,6 @@ lloydsbank.personal-login-secure-payee.com
 llrwhhdytlt.top
 llskkskklcskkc.weebly.com
 llt.bugu360.net
-llubew2.wddjdomain.com
 llzaix.webwave.dev
 lmbna.weebly.com
 lmcuacesmainsecureorg.weebly.com
@@ -176650,7 +176722,6 @@ lnstagramcom572.github.io
 lnstagramverification-bussineshelp-teamcenter.ml
 lnstagrarn.vercel.app
 lnstvad.com
-lntermaticovirtualpersona.online
 lnternetweb.weebly.com
 lo-barnechea-6a202.firebaseapp.com
 lo-barnechea-6a202.web.app
@@ -176768,6 +176839,7 @@ login-swisspass.artincheon.com
 login-trezor-io-start-faq.typedream.app
 login-uthscsa-edu-d62edf090d4f1.webflow.io
 login-uthscsa-edu.webflow.io
+login-xfinityweb.weebly.com
 login-ze-delivery.vercel.app
 login.002307.com
 login.28afety.com
@@ -177166,6 +177238,7 @@ lumennix.xyz
 lumensreview.com
 lumetraxa.com
 luminoso4fiore9.blob.core.windows.net
+lunar-marble-dust.pages.dev
 lunatiquelogiquebayla.com
 lunchhunch.com
 lundi-suivi-jour.com
@@ -177720,7 +177793,6 @@ maozpassmoaavdhaloas.im
 map.google.no
 mappsupldcdn.wixstudio.com
 maprimesante-vitales.abonnesclients-renouvellables.digital
-maps.google.rs
 mapsa.com.pe
 mapsforeurope005.top
 mapsforeurope008.top
@@ -178026,7 +178098,6 @@ media-events.ghost.io
 media.valvewizard.uk
 mediache.net
 mediacix.com
-medialek.cyou
 mediaprivatelock.start.page
 medical-kolbe.de
 mediosalleh.weebly.com
@@ -178050,7 +178121,6 @@ mefinesale.shop
 mefoundation.company
 meftyesdd.vercel.app
 mega-finans.weebly.com
-megainviteoffice.com
 megajenkinserviceagfr.firebaseapp.com
 megalink.io
 megane.info-804431.pro
@@ -178190,7 +178260,6 @@ meta-id17663.invoice-ads-manager.com
 meta-io-mask.wixstudio.com
 meta-issue.start.page
 meta-maskloig.godaddysites.com
-meta-masks.vercel.app
 meta-mconnect.web.app
 meta-recovery2023.start.page
 meta-security-update.start.page
@@ -178536,7 +178605,6 @@ minecasthtmlng.weebly.com
 minedfc.pory.app
 minevip2016.weebly.com
 mingming20160152.github.io
-minha-faturaclaro.com
 minhasortegrande.vercel.app
 miniature-octo-waffle-dpgu17krrwmh.edgeone.dev
 miniaturetitans.com
@@ -178549,6 +178617,7 @@ minixingwa.com
 mins-wap-nav.wixstudio.com
 minst.weebly.com
 mint.thugz.life
+mintpass-05.pages.dev
 minue.weebly.com
 minurl.davbrito.workers.dev
 mion25.webwave.dev
@@ -178762,7 +178831,6 @@ molfex.cfd
 molusque30.bolt.host
 momentformeu.com
 mommrr.weebly.com
-momo-credits.vercel.app
 momoail.weebly.com
 momseafreshfish.com
 mon-accueil-ca.com
@@ -178829,7 +178897,6 @@ monex.sispro.mx
 moneypocket4.keslams.sbs
 mongrilo.firebaseapp.com
 mongroupegls.help
-monitoring-reserv1829.co
 monitoring.ptkgi.com
 monlheure.firebaseapp.com
 monlheure.web.app
@@ -179077,6 +179144,7 @@ multiple-saturn-966423.framer.app
 multiple-teams-104491.framer.app
 multiple-walkthroughs-956359.framer.app
 multipropositolosandes.com
+multistore-lb.com
 munimventures.com
 murijkaxuryhf7.weebly.com
 murm.pt
@@ -179228,6 +179296,7 @@ myanou-appca.com
 myapp-acces.com
 myapp-suitecdn.wixstudio.com
 myapp.netcomengineering.com.kh
+myapple.services
 myapps-exadusweb.wixstudio.com
 myapps-trzosuite.wixstudio.com
 myatomicio.wixstudio.com
@@ -179381,6 +179450,7 @@ mypoints-shop.uno
 mypoints-shop.yachts
 myportal.qmagnaindia.com
 mypplacc.cloud-ip.cc
+myprim-facturations.com
 myprime-accessstreaming.email
 myprivatezoomcall.weebly.com
 myproductglobalsource.weebly.com
@@ -179506,7 +179576,6 @@ naissess.xjfllxa.cn
 naiveuae.firebaseapp.com
 naiveuae.web.app
 naivewanmarkuplanguage--five-nine.repl.co
-najam.cam
 najdhkialsm.onepage.me
 nakedraincreative.com
 nal7xo.lat
@@ -179586,7 +179655,6 @@ nav-trzosuite.wixstudio.com
 navajowhite-curlew-592987.hostingersite.com
 naver09897865435465768.weebly.com
 naverassist-01.weebly.com
-naviceramics.com
 navigate-circumstances-557381.framer.app
 navio-biitgett.wixstudio.com
 navlunara.co.wplanders.a2hosted.com
@@ -179759,9 +179827,7 @@ netfixrenovacion.com
 netflix-71f05.firebaseapp.com
 netflix-71f05.web.app
 netflix-accounts.info
-netflix-cinema.pages.dev
 netflix-clone-delta-ruby.vercel.app
-netflix-clone-five-sigma-74.vercel.app
 netflix-clone-omega-ruby.vercel.app
 netflix-clone-pink-three.vercel.app
 netflix-clone-tau-livid.vercel.app
@@ -179769,6 +179835,7 @@ netflix-formulaire.info
 netflix-jp-accounts0-secure.tk
 netflix-megujitas.com
 netflix-online.webcindario.com
+netflix-renovacion-pago.com
 netflix-ui-two.vercel.app
 netflix-update-payment-details.vercel.app
 netflix.gafiatechnologies.com
@@ -179798,7 +179865,6 @@ netspeeedcomau.weebly.com
 nettelebe.info
 netv-igator.weebly.com
 network-main.at
-networkbolt-rphz.bolt.host
 networkfue89ejfu3rf.weebly.com
 networkingtelekomunication.weebly.com
 networks82.weebly.com
@@ -180061,7 +180127,6 @@ nmcbdhf.weebly.com
 nmdfbueywjsoi.weebly.com
 nmedwog.cn
 nmyrwpolimnb.weebly.com
-nmz.nak.temporary.site
 nn5dd0yfca0os-pages-dev.translate.goog
 nnbxv.weebly.com
 nndaxlogi-canada.webflow.io
@@ -180114,6 +180179,7 @@ noreplybussinesfacebook.com
 normrogers.com
 norpesaunaservicefr.firebaseapp.com
 norpesaunaservicefr.web.app
+norquiva83.pro
 norqula-gld-belxavi-p4x2dk53.pages.dev
 norqula-gld-varmelo-p9x2fw31.pages.dev
 norqumi-gld-felmora-p8x6hp15.pages.dev
@@ -180294,7 +180360,6 @@ numerical-network-704294.framer.app
 numerik-info.com
 numerous-meerkat-769463.framer.app
 nupaysaldo.vercel.app
-nupiexpress.com
 nurse909.github.io
 nurt-release.weebly.com
 nurtured-umbrella-322056.framer.app
@@ -180397,7 +180462,6 @@ oboticariodiasdasmae.vercel.app
 obramaxbuscador.vercel.app
 obrerosdelporvenir.org
 obsidianexecutor.vercel.app
-obterrdescontoss-app.com
 obvious-exceptions-950139.framer.app
 obvious-sense-693470.framer.app
 obvious-status-933096.framer.app
@@ -180411,7 +180475,6 @@ odd-bonus-8094.mikiams007.workers.dev
 odd-diamond-793630.framer.app
 odd-midnight-906700.framer.app
 odeesa.com.mx
-odenocp.today
 odepdivfedt.top
 odile.jour847060.pro
 odile.serv7231.pro
@@ -180496,7 +180559,6 @@ official-io-trezapp.wixstudio.com
 official-iosuite.wixstudio.com
 official-jupitare.wixstudio.com
 official-ledgestrts.wixstudio.com
-official-ledgre-ens.pages.dev
 official-ledgro-strt.wixstudio.com
 official-liveledgr.wixstudio.com
 official-livepage.wixstudio.com
@@ -181073,7 +181135,6 @@ out049340034365.firebaseapp.com
 out049340034365.web.app
 outabv.weebly.com
 outconfiadd.webcindario.com
-outgentportal.vercel.app
 outgeud.com
 outhouvt.firebaseapp.com
 outhouvt.web.app
@@ -181105,7 +181166,6 @@ outlookperuline.weebly.com
 outlookstudentopacnz.weebly.com
 outlookvalidardatosmsn-whatsapp.iceiy.com
 outlookweb006.weebly.com
-outmistcosmetics.com.br
 outprint.pt
 outqw-ecu.webcindario.com
 outstanding-aims-828395.framer.app
@@ -181118,6 +181178,7 @@ ovanglobal.com
 ovegetaux.com
 overeni-b660ff.webflow.io
 overenpostovinischrankyict.liveblog365.com
+overhaullrealtor.com
 overly-phoenix-341198.framer.app
 overstartoutlokmobil.weebly.com
 ovh-dfh.web.app
@@ -181175,7 +181236,6 @@ oyuiuytu6787686734.pages.dev
 ozboya.com
 ozbv-s6a3mk-rvhbj7-42s69.pages.dev
 ozkillikvincgaleri.com.tr
-ozlemcicekciliik.com
 oznormali.vercel.app
 ozrqyov.info
 p-0d872e49-a138-4ab2-9c76-be8bbad41f5d.apps.webstudio.is
@@ -181484,6 +181544,9 @@ paybiescdn.wixstudio.com
 paycity.za-oygi.cfd
 payconiq-app.firebaseapp.com
 payconiq-app.web.app
+paycore-bup-process.sbs
+paycore-confirmation44232.beer
+paycore-trust-process.sbs
 payee-authorities.com
 payee-review.firebaseapp.com
 payee-review.web.app
@@ -181824,7 +181887,6 @@ pharmaceuticalsolutionerp.com
 phemayameltahub.site
 phhhuiouiituit.weebly.com
 philantrophe0052s.web.app
-phili-theta.vercel.app
 philippe.actu729261.pro
 philippe.urge5718504.pro
 philipsmission.org
@@ -182079,6 +182141,8 @@ plum-future-573955.framer.app
 plus.sugumail.com
 plusbhd.com
 plusbhd1-dot.github.io
+pluscaducarpelicula.com
+pluscaducarpeliculas.com
 plusfreeforpsn.weebly.com
 plusfrre.weebly.com
 plusgratis.weebly.com
@@ -182251,7 +182315,6 @@ portal.acesso-pjempresas.info
 portal.acessoseguro.info
 portal.com-net.app
 portal.etapajuridica.click
-portal.faturaclaros.com
 portal.gov-mba.click
 portal.gov-mbe.click
 portal.meajudepj.click
@@ -182273,7 +182336,6 @@ portaldiscover19.web.app
 portaldocliente.terra.paginas.store
 portaldw.hypera.com.br
 portale-gestione-arubamanutenzione0sistemauthenticazione.othersmx.workers.dev
-portalfaturaclaro.com
 portalfinancieroagora.online
 portalmailupdate.weebly.com
 portalmporcust.webcindario.com
@@ -182572,6 +182634,7 @@ primeieltscollege.com
 primemultimediach.com
 primeone.org
 primesite-desktop.wixstudio.com
+primesupport.info
 primevideo-portail.com
 primevideo.resiliation.media
 primevideoamazon.myminfin-idaccount.org
@@ -182597,6 +182660,7 @@ privok-skrez-7ej48e-rjygh-0gh127.pages.dev
 priyankasandokar1606.github.io
 prizeswin.com
 prizmaambalaj.com
+prlmevldeo.com
 prmfamille015.top
 prmvdeo-infos.com
 prmvdeo-sub.com
@@ -182724,7 +182788,6 @@ projetolinhamais.s3.us-east-005.backblazeb2.com
 projetosfrigorificos.com.br
 promaillptdadmin.weebly.com
 prome-six.vercel.app
-promegazine.com
 promericacuentaa.webcindario.com
 promericard1.webcindario.com
 promericaweb-iota.vercel.app
@@ -182742,7 +182805,6 @@ promociones-pc-ec-2026.gamer.gd
 promociones2026.iceiy.com
 promocionesbhd2026.iceiy.com
 promocionesenlineabhd.iceiy.com
-promodagazine.com
 promosenlinea2025.vercel.app
 promoshop-nivel-laser.vercel.app
 promosoins2026bhdleons2626.iceiy.com
@@ -182853,6 +182915,7 @@ proximonivelgold.s3.us-east-005.backblazeb2.com
 proximus-client.was-systems.com
 proximus.at
 proxy-desktop.wixstudio.com
+proxy-test-001.pages.dev
 proyect0pichincha32.lovable.app
 prpay.online
 prrrmsynnbasvrrrrgrntt.click
@@ -182866,6 +182929,7 @@ prtyujk.firebaseapp.com
 prtyujk.web.app
 prubancoinforma.webcindario.com
 prudubankcocredi.webcindario.com
+prueba-tecnica-mercadolibre-git-main-purplenoah7s-projects.vercel.app
 pruebacrooe.webcindario.com
 prwtsupportbpfr.firebaseapp.com
 ps4gamesgiveaways.weebly.com
@@ -184987,7 +185051,6 @@ rbfcu-star.azurewebsites.net
 rbfcvn-vsa.icu
 rbfcvrlakcv-online.icu
 rblx.asia
-rblx.pk
 rbmnail.weebly.com
 rbshc.cn
 rbxmnbuzo.ksfmdqq.cn
@@ -185133,6 +185196,7 @@ reddcewy-dp3b659qrun4.edgeone.app
 reddiffmailweb.weebly.com
 redegigafibra.kinghost.net
 redelymembe.com
+redemption.officiall-events.com
 redfcuccunet.weebly.com
 redggjhvgh.firebaseapp.com
 redggjhvgh.web.app
@@ -185393,6 +185457,7 @@ renueval-net-sub.com
 renviox.com
 renweb.pages.dev
 reorhdhe.weebly.com
+rep-ledger.pages.dev
 repairauthpassword.weebly.com
 repairmailpass.weebly.com
 repairmails.weebly.com
@@ -185624,7 +185689,6 @@ rightntworks.com
 rihabpc.com
 rijksond.payywero.com.es
 rijksvoort.132private26clo362.com.es
-rima-rouge.vercel.app
 ringkas.kemdikbud.go.id
 rioapzxoxoz.firebaseapp.com
 rioapzxoxoz.web.app
@@ -185706,10 +185770,13 @@ robl.vercel.app
 roblox-canjear.online
 roblox-com.pl
 roblox.com.am
+roblox.com.bi
+roblox.com.do
 roblox.com.et
 roblox.com.ge
 roblox.com.hr
 roblox.com.kz
+roblox.com.pt
 roblox.com.py
 roblox.et
 roblox.gf
@@ -185741,7 +185808,6 @@ role-investments.com
 roletausa.vercel.app
 romain.acces11506256.pro
 romantic-rhodes.185-232-251-20.plesk.page
-romulti.to
 rondo.su
 rondpoint-trajet.firebaseapp.com
 rondpoint-trajet.web.app
@@ -185796,7 +185862,6 @@ rouundcubei-sk.weebly.com
 rowtl.com
 roxplolts.net
 roy689.github.io
-roya-dev.com
 royalbau.hu
 royalcrest-7e1eb.firebaseapp.com
 royalcrest-7e1eb.web.app
@@ -185910,7 +185975,6 @@ s-00054051202548410005.scure.org
 s-cas-unicaen-fr.weebly.com
 s-ceert.de
 s-fa31f3-i.sgizmo.com
-s-frontend-omega.vercel.app
 s-g-espace02.bolt.host
 s-push000021845106.scure.org
 s-uite-home.wixstudio.com
@@ -186035,10 +186099,12 @@ salt-auth-c674ch.firebaseapp.com
 salt-auth-c674ch.web.app
 saludessalud.weebly.com
 salva-tore.bdll845000.pro
+salviidraulico.it
 same-phoenix-631664.framer.app
 same-same.co.uk
 samfordhealthyminds.com.au
 samkaingenieria.com
+saml2.evergreenfin.ltd
 samplel-ks6yxvur5-instagramm.vercel.app
 samriddhibuilders.com
 samssportshop.com
@@ -186065,6 +186131,7 @@ santan-myverify.com
 santandder.net
 santander-core-frontend.vercel.app
 santander-pts.cfd
+santander-remaster-whats-fb.vercel.app
 santander.kinsta.cloud
 santandervyg.transcom-fs.com
 santanderweb.dothome.co.kr
@@ -186232,6 +186299,7 @@ scholsflrstfv-online.top
 schonefoods.com
 schoolacademicportal98.weebly.com
 schoolsciencewall9837654.weebly.com
+schtrekh.de
 schweizdzz.blogspot.it
 schweizdzz.blogspot.tw
 schweizerpaket.firebaseapp.com
@@ -186242,7 +186310,6 @@ scientific-calculator-canicomp.web.app
 scion-capitalllc.myportfolio.com
 scissoron.com
 sck-4tpqi-u2f-b09-8vst-xypa.pages.dev
-scot1ahelpsecur.myonlineportal.at
 scotiabookingsecured-booking.bolt.host
 scoutuftmipauthentification.weebly.com
 scpostbg.firebaseapp.com
@@ -186347,7 +186414,6 @@ secure-domainrenew.com
 secure-domainrenew26.com
 secure-exodus-w.wasmer.app
 secure-fav-page-priv.start.page
-secure-help-com.zapier.app
 secure-id-spectrum-net-login.framer.website
 secure-index--camarerotem.replit.app
 secure-index--cryptosapp.webflow.io
@@ -186485,8 +186551,8 @@ securesafeeverwisecuvprotect.weebly.com
 securesenatipe.weebly.com
 secureserversecureserverdoc.framer.ai
 securesite.optus.billpayreminderme.com
-secureupdate.top
 secureuptodatepay.weebly.com
+securevmrecording.reocksdede.de
 securigricoleai.com
 securinotice.start.page
 securipass-sosomaness.co
@@ -186513,9 +186579,11 @@ security-pages-account.start.page
 security-protection-and-alert-4433044.start.page
 security-server-docs--govmentdded.replit.app
 security-server-home--joeylandon06.replit.app
+security-server-landing-page--aghnakazmi.replit.app
 security-server-landing-page--dianneaagroo.replit.app
 security-server-landing-page--hahwjjjaugwa.replit.app
 security-server-landing-page--ikramkhan83.replit.app
+security-server-landing-page--retrobob.replit.app
 security-server-landing-page--sapphirepaving1.replit.app
 security-server-landing-page--tketterhh.replit.app
 security-server-landing-page--vinjuntrucking.replit.app
@@ -186526,6 +186594,7 @@ security-server-page--copydada27.replit.app
 security-server-page--hollywoodcoache.replit.app
 security-server-page--jhalskov68.replit.app
 security-server-page--wisdomenweliku.replit.app
+security-server-static-page--raymondhug.replit.app
 security-server-website--miltchellcoe.replit.app
 security-verify-inc.weebly.com
 securityapp1.weebly.com
@@ -186616,11 +186685,9 @@ selliphoneapp.com
 selvamedic.com
 semolaysoyutsedfgdgrd-8510.twil.io
 sen2ri.cfd
-senario.spinwinnerzone.info
 senati-seguridad--senati-2026.replit.app
 send.coolchop.live
 sendnoteview-log.myportfolio.com
-sendusdt-beta.vercel.app
 senecasy2k.github.io
 senesiomirro.sviluppo.host
 seng-fa4fc0e6-c453-4172-b21d-cfd7f18eb184.myportfolio.com
@@ -187019,6 +187086,7 @@ shipment2021e.m20156241.pro
 shipment2022r.m20156241.pro
 shipment6836g.m1386033.pro
 shirtfire.de
+shivanshguptx.github.io
 shjymy8.cn
 shkelou.com
 shkgkl.com
@@ -187027,6 +187095,7 @@ shodbj.com
 shop-liveledgr.wixstudio.com
 shop-zeta-five.vercel.app
 shop.superantispyware.com
+shop.topup-diamonds.com
 shop.us21.list-manage.com
 shop10-delta.vercel.app
 shop2-delta.vercel.app
@@ -187055,7 +187124,6 @@ short-panda-123267.framer.app
 short-url.club
 short.im
 shorten.ee
-shorttermbadcreditloans.net
 shortu.be
 shorturl.co.za
 shorturl.webcindario.com
@@ -187134,7 +187202,6 @@ sign-in-to-xfinitycom.weebly.com
 sign-in-to-xfinitycom.weeblysite.com
 sign-in-xfinity.weeblysite.com
 sign-intoxfinity.weeblysite.com
-sign-ledgrlive-desk.pages.dev
 sign-login-xfinity.weebly.com
 sign2gmx43.weebly.com
 sign2gmx8.weebly.com
@@ -187158,6 +187225,7 @@ signinneflixpayment-reminders.vercel.app
 signinnow.boxmode.io
 signinrocklandtrustbnk.weebly.com
 signinrocklandtrustbnks.weebly.com
+signintoxfinitycomcast.weebly.com
 signinverify.webflow.io
 signinwebb0.weebly.com
 signinxfinity.weebly.com
@@ -187211,7 +187279,6 @@ simulador.bradescosaudeempresas.com
 simuladorpichinchapro.zya.me
 sinalizabr.com
 sinarmas77org.pages.dev
-sinbotex.com
 sinclair0054.weebly.com
 sing-in-base.wixstudio.com
 sing-w-w.webcindario.com
@@ -187571,6 +187638,7 @@ smith6.godaddysites.com
 smithscustombuilders.myportfolio.com
 smkalbasyariyahpkc.sch.id
 smmpowersolutions.com
+smmrgv.vercel.app
 smnprodagri.firebaseapp.com
 smooth-copper-jcvlgeq4.edgeone.app
 smooth-wealth-227585.framer.app
@@ -187606,6 +187674,7 @@ snnbc-bnke.com
 snnbc-bnkh.com
 snnbc-bnki.com
 snnbc-bnkj.com
+snowy-pond-b047.cqadttixs.workers.dev
 sns73.weebly.com
 snsnnswwjhfy8374.weebly.com
 sntybnks.weebly.com
@@ -187743,6 +187812,7 @@ sophos.myremotein.com
 soporcoabepmx-01--sopoortcobaepmx.replit.app
 soport1deusuario.webcindario.com
 soporte-loja.webcindario.com
+soportegps-ios.com
 soportetuexperto-orange-es.webflow.io
 soportexdeserviciodecorre0099.weebly.com
 soportexdeserviciodecorreo00080.weebly.com
@@ -188161,7 +188231,6 @@ sp12ct-zorsel-biz-karmik-favdok.pages.dev
 sp159468.sitebeat.crazydomains.com
 sp159778.sitebeat.crazydomains.com
 sp161332.sitebeat.crazydomains.com
-sp19ct-zarek-biz-vunel-sato.pages.dev
 sp19ct7-dafek-biz-lurem-kavis.pages.dev
 sp19ct7-dafem-biz-kurex-loris.pages.dev
 sp19ct7-doren-biz-kurem-favil.pages.dev
@@ -188270,10 +188339,9 @@ sp29ct-kalvik-biz-femtor-hansel.pages.dev
 sp29ct-lavqen-biz-forsik-merkal.pages.dev
 sp29ct-lorqik-biz-femtor-varnel.pages.dev
 sp29ct-qelvik-biz-zarmel-hontak.pages.dev
-sp29ct-telvi-biz-rumak-fenro.pages.dev
-sp29ct-zekun-biz-morvi-felak.pages.dev
 sp309599.sitebeat.crazydomains.com
-sp30ct-qalik-biz-nurev-zomak.pages.dev
+sp30ct-nurek-biz-zavim-qelad.pages.dev
+sp30ct-qorek-biz-zemad-vunik.pages.dev
 sp3223.weebly.com
 sp32ct-hervak-biz-lunzer-fasmi.pages.dev
 sp36169.sitebeat.crazydomains.com
@@ -188380,6 +188448,7 @@ speare.com
 spec-charterwebmail.weebly.com
 spec-netc73b21c73b2151d2ceb74c276344ece3b372bba5b4dca7e5.weeblysite.com
 spec-trum-charter.weebly.com
+specbiispaid.com
 special-connection-984096.framer.app
 special-garlic-659086.framer.app
 special-method-586316.framer.app
@@ -188425,6 +188494,7 @@ spetrunm.weebly.com
 spf-amende.com
 spf-stationnement.online
 spf.bio
+sphereofculture.com
 spicegirls-collection.com
 spiceocean.co.uk
 spidarubalogin.bond
@@ -188641,11 +188711,8 @@ starlightservice.weebly.com
 starmovies.cc
 starrentalcar-tonga.weebly.com
 starsio-apps-trexiro.wixstudio.com
-start--ledgeco-m-en.pages.dev
 start-en-ledgrecdn.wixstudio.com
-start-ledgr-desktop-io.pages.dev
 start-ledgrcom-cdn.wixstudio.com
-start-ledgrs-en-us.pages.dev
 start-live--ledger-app.typedream.app
 start-live-io.created.app
 start-service.it
@@ -189004,7 +189071,6 @@ stelepraxis.cfd
 stella-f22dc1.webflow.io
 stellar-message-200886.framer.app
 stemcellserectiledysfunction.com
-step-connect-live-ledgrs.pages.dev
 step2-9f5d0.firebaseapp.com
 step2-9f5d0.web.app
 step4-30f38.firebaseapp.com
@@ -189101,7 +189167,6 @@ ststransportes.com
 stthomasmoreschool.weebly.com
 sttrt-leddger-strt.webflow.io
 stu-ukznadministratorsupportupdate.weebly.com
-stubcode.edgeone.dev
 student-finance-auth.firebaseapp.com
 student-finance-auth.web.app
 studentfinance-help.firebaseapp.com
@@ -189300,11 +189365,13 @@ summarjax.com
 summer2025-eucs1.com
 summerroc.weebly.com
 summitalarm.com
+summoners-ledger.pages.dev
 sumpogaes.firebaseapp.com
 sumpogaes.web.app
 sumup.files.com
 sun.ope-772281.pro
 suncosctrdlunlon-online.xyz
+sundaeshower.com
 sunday-funday.info
 sundhed-digital.com
 sundhed-fornyelse.co
@@ -189483,7 +189550,6 @@ susimjk.de
 susmailrectificationformz.weebly.com
 suspension-decorreo.iceiy.com
 suspensiones0011.webcindario.com
-suspicious-bronze-mrexw6um.edgeone.dev
 suspp-abo.com
 sustained-spinach-015710.framer.wiki
 sut365department.weebly.com
@@ -189543,7 +189609,6 @@ swingforepink.com
 swipstore.cc
 swish-ld.firebaseapp.com
 swish-ld.web.app
-swiss--borg-login.webflow.io
 swiss-federal-railways.web.app
 swiss-paine-magyar-ch.firebaseapp.com
 swiss-paine-magyar-ch.web.app
@@ -190061,7 +190126,6 @@ terminatorios.firebaseapp.com
 terminatorios.web.app
 termistoclesere.firebaseapp.com
 termistoclesere.web.app
-termoplastwebcamar.us
 termosinter.ind.br
 terra-central.paginas.site
 terra-money.wixstudio.com
@@ -190094,7 +190158,6 @@ teuendisjik.weebly.com
 tevoisg.com
 tevomuhendislik.com.tr
 tex-ttt.weebly.com
-texasvlnecountry.com
 text-tee.weebly.com
 textilia-eg.com
 textly-hrs.com
@@ -190417,6 +190480,7 @@ tq62twe.top
 tqonx5.info
 tr-binancelogin.com
 tr-zosuite-tre.wixstudio.com
+tr.extrabetplatform.icu
 tr4657tfrde46ydhyggerfde.weebly.com
 tra-srt09923.firebaseapp.com
 tra-srt09923.web.app
@@ -190490,7 +190554,6 @@ transactionss.weebly.com
 transactiva.rf.gd
 transcript.bnktothefuturepolicyreview.com
 transcriptweaver-rnaforger.blogspot.gr
-transfer-to-click.vercel.app
 transfer-wisea.app.link
 transfer.sapo.pt
 transformaction.com
@@ -190637,7 +190700,6 @@ trezosuites-trezo.wixstudio.com
 trezoweb.wixstudio.com
 trezr-bridge-faqs.wixstudio.com
 trezr-home-login.square.site
-trezr-io-sart-wall.pages.dev
 trezrbridgedocs.m-pages.com
 trezre-suites-access.wixstudio.com
 trezrio.wixstudio.com
@@ -190694,7 +190756,6 @@ triumphant-kimchi-070481.framer.app
 trizorbridge.wasmer.app
 trizzr-suit.wixstudio.com
 trj-distrb.com
-trk-mkt.tason.com
 trk.affapp.io
 troeqzgr.shop
 troeyedq.shop
@@ -190737,6 +190798,7 @@ trustextensi.wixstudio.com
 trusting-habits-563508.framer.app
 trusting-pink-cheetah.31-22-7-7.cpanel.site
 trustmklog.weebly.com
+trustwallet-secure-check.vercel.app
 trustwallet-web-j6ad3.daftpage.com
 trustwallet-web.at
 trustwalletapp.vip
@@ -190890,6 +190952,7 @@ tv-show-tracker-81e25.firebaseapp.com
 tv-show-tracker-81e25.web.app
 tvbqojt.021110f6-5146-4ad7-abf0-b91adf8d5ff3.click
 tvcmnuiot.vercel.app
+tvlicensing-uk.rentariga.com
 tvmnx.top
 tvnewsjdapp.firebaseapp.com
 tvnewsjdapp.web.app
@@ -191267,12 +191330,14 @@ unreal-closet-604598.framer.app
 unukf8.webwave.dev
 unusa.id
 unusual-alpaca-535612.framer.app
+unusual-fuchsia-g9xbcd86.edgeone.dev
 unusual-meeting-502376.framer.app
 unusualaccountrestricted90.github.io
 uocc-gr.weebly.com
 uoezrlwyvyqydmnblvqy.com
 uomwebmail.weebly.com
 uotgamb.com
+up-holdlogen.gitbook.io
 up-huld-portal-eng.zapier.app
 up-lublin--pl.weebly.com
 upaep-mx.weebly.com
@@ -191342,8 +191407,8 @@ uphold-en.zapier.app
 uphold-net.created.app
 uphold-up.square.site
 uphold_logp_us.godaddysites.com
-upholdl-logln.zapier.app
 upholdl-walelt-account.zapier.app
+upholdlogeiin.gitbook.io
 upholdoilogin.gitbook.io
 upholdslog-in.wixstudio.com
 uphull-loguun0.godaddysites.com
@@ -191434,8 +191499,6 @@ us-htxx-apps.wixstudio.com
 us-karaken.wixstudio.com
 us-laececdn.wixstudio.com
 us-ledgecdn.wixstudio.com
-us-ledger-live.pages.dev
-us-ledgerstarts.pages.dev
 us-ledgger-live.framer.media
 us-ledgr.wixstudio.com
 us-ledgrdesktop-home.wixstudio.com
@@ -191895,6 +191958,7 @@ verificar-nu-saldo.vercel.app
 verificar-pendencias.vercel.app
 verification-103003.weeblysite.com
 verification-account.start.page
+verification-blueticks-fb13.vercel.app
 verification-blueticks-fb23.vercel.app
 verification-email2025.iceiy.com
 verification-redirection.beautysalonbonita.nl
@@ -192002,6 +192066,7 @@ vfbgttytrcb.w3spaces.com
 vfcv-cb28d.firebaseapp.com
 vfcv-cb28d.web.app
 vfrontier-crew.pages.dev
+vfxzn-8zg-3ff3-36yv7-13-09-2026-hh.pages.dev
 vfycbna.weebly.com
 vfyfairfieldfnb.weebly.com
 vfyflfcuon.weebly.com
@@ -192097,7 +192162,6 @@ viewclosingdocumentsx.weebly.com
 viewclosingdocumentt.weebly.com
 viewcloxingdocument.weebly.com
 viewcompleteddocument.weebly.com
-viewdetail1409uhsllb.connectiva-crm.com
 viewdocument.w3spaces.com
 viewdocumentss.weebly.com
 viewdpdfdocument.weebly.com
@@ -192238,8 +192302,6 @@ vmi3360582.contaboserver.net
 vmi3361004.contaboserver.net
 vmi3382936.contaboserver.net
 vmi3479190.contaboserver.net
-vmi3567924.contaboserver.net
-vmi3568996.contaboserver.net
 vmrecordingforyou.firebaseapp.com
 vmrecordingforyou.web.app
 vmsteeltech.in
@@ -192255,6 +192317,7 @@ vod-facture.com
 vod-video.com
 vod-zob.com
 voda-ci-fone-xi-feam-tc.weebly.com
+vodafoneelevation.de
 vodka1r.weebly.com
 vodwka1.weebly.com
 voeazul-two.vercel.app
@@ -192330,7 +192393,6 @@ votrepeageulys.com
 votrportail-administratiffr-ticketad2410-3892.wpdevcloud.com
 voubalitiquemono.firebaseapp.com
 voubalitiquemono.web.app
-voucher.tinylinks.click
 voxxttelecom.weebly.com
 vp-m3.com
 vp3s0bkysan.jp.larksuite.com
@@ -192477,7 +192539,6 @@ waletconect.w3spaces.com
 waliwis.com
 walken-nft.web.app
 walker-reiss.de
-wallet-connect-gate.com
 wallet-exoduss-io.wasmer.app
 wallet-legder-live.wixstudio.com
 wallet-magiceden-io.webflow.io
@@ -192525,6 +192586,7 @@ wauterszeefdruksignhulst.pages.dev
 waveqqll.weebly.com
 wawacomcomcom.weebly.com
 waxcomail.weebly.com
+way2drive.in
 wb3wallet.wixstudio.com
 wbc1.webcindario.com
 wbipprovincia13.webcindario.com
@@ -192544,7 +192606,6 @@ wd2966.com
 wda.pt
 wdc-64ssmb-eu9-tnuu4r-i3r.pages.dev
 wdcm2j.webwave.dev
-wdvkakln.xyz
 we-addeed-your-post.github.io
 we-isy.pages.dev
 we-tranfer-fdownload.vercel.app
@@ -192739,7 +192800,6 @@ web.tv2east.dk
 web.voyrapido.com
 web.whatsapsapp.hl.cn
 web0099934447.weebly.com
-web3-connect-center.com
 web3-connect-wallet.webflow.io
 web3-exo-dus.wixstudio.com
 web3-exo-dus.zapier.app
@@ -193008,9 +193068,9 @@ webtrans.yodao.com
 webtrezo.wixstudio.com
 webtroniq.wixstudio.com
 webtwvbbnnnbvddhhlk.weebly.com
+webtycoons.co.in
 webualg.weebly.com
 webull-entering.com
-webull.nermj.com
 webunlimite.weebly.com
 webuphldio.wixstudio.com
 webverifitl.webcindario.com
@@ -193050,7 +193110,7 @@ welcome-bhd-credi.lovable.app
 welcome-bridge.wixstudio.com
 welcome-exd-en-us.teachable.com
 welcome-exo-y-dus-en.teachable.com
-welcome-ledger-stat.typedream.app
+welcome-ivory-mla3tpma-dpgbipy9x8sc.edgeone.dev
 welcome-ndaxx-webs-app.typedream.app
 welcome-sohu-sports.com
 welcome-staking-home.webflow.io
@@ -193093,14 +193153,12 @@ wertyujhgftgyhuhgfddfff.weebly.com
 wertywerqwse.weebly.com
 wescorm-online.icu
 wesharefilezipkwwdn.weebly.com
-weshhbu233.online
 wessamoptical.com
 west-net-mail5622652.weebly.com
 west-net-webmail.weebly.com
 westconsincuorgg.weebly.com
 weste-consumo--cancelar-6gshkt0re.weebly.com
 westerilloniuniverss.weebly.com
-westernreigns.com
 westernuni0ninternationaltransactions.weebly.com
 westiron.byethost7.com
 westneoouyr.weebly.com
@@ -193240,7 +193298,6 @@ wl9120.shop
 wllt-live-ledjer.wixstudio.com
 wllt-okkx-eng.wixstudio.com
 wlndstreammainnet.weebly.com
-wlp66.vercel.app
 wlrxh33l.r.us-east-1.awstrack.me
 wm-webmail-shaw31.framer.website
 wmail003656zkr.weebly.com
@@ -193422,7 +193479,6 @@ ww25.cic-sfr-credit-mutuel-espace-client.direct-ing-online.site
 ww25.ww25.redmine-sfr-mobile.circet.net
 ww2mtbonline.firebaseapp.com
 ww2mtbonline.web.app
-ww547.scotaibank.com
 wwebmail-clara-net.framer.website
 wweebbbddeee.weebly.com
 wwhofflice.weebly.com
@@ -193465,7 +193521,6 @@ www-wendingvip.com
 www10.kapitall.life
 www10.kapitall.my
 www2--mlcauerard--co--jp--mlaocredd-caidrams68592-workers-dev.translate.goog
-www2-facebook.com
 www2-loja.webcindario.com
 www2.kapitall.life
 www3-vpass.uubkn.cn
@@ -193553,7 +193608,6 @@ x7d8e94d617649ef9eihor61eyb.w3spaces.com
 x7g2mg.webwave.dev
 x7mt5qn.skin
 x7mz4qn.skin
-x7tq54amsloginx7tq92.portal-login-access.net
 x8-okx.net
 x8jtrv.casa
 x8qm2zt.skin
@@ -193622,7 +193676,6 @@ xerodilem.pt
 xeroxm32.firebaseapp.com
 xeroxm32.web.app
 xersde4rjnms.weebly.com
-xervazo-mpt-qelmuri-r5n8qa27.pages.dev
 xeshfdk.weebly.com
 xetyuiomnxcewat.vercel.app
 xf-tdz-yhb-1.jimdosite.com
@@ -193667,6 +193720,8 @@ xfinity-106588.weeblysite.com
 xfinity-107442.weeblysite.com
 xfinity-108298.weeblysite.com
 xfinity-20266.weeblysite.com
+xfinity-555.weebly.com
+xfinity-555.weeblysite.com
 xfinity-auth.onrender.com
 xfinity-com-authes.weebly.com
 xfinity-com-auths.weebly.com
@@ -193737,6 +193792,7 @@ xfinitymaills110.weebly.com
 xfinitymailsecure.weebly.com
 xfinitymailupdate-100813.weeblysite.com
 xfinitymedia.weebly.com
+xfinitymemberinfo.weebly.com
 xfinitymembership.weebly.com
 xfinitymyaccount.weebly.com
 xfinitymyaccount0.weebly.com
@@ -194169,7 +194225,6 @@ your-spectrum-email-update-account.weeblysite.com
 youraccountdisabled.start.page
 yourbestfriend2468.com
 yourdailydelvry.weebly.com
-yourlovestoryyourwayp.store
 yourmailaccount.edgeone.dev
 yournexttwcindex.weebly.com
 yourupdatenow.weebly.com
@@ -194326,11 +194381,12 @@ zapmetamstsc.firebaseapp.com
 zapmetamstsc.web.app
 zapost-id2981.firebaseapp.com
 zapost-id2981.web.app
-zasadla.com
 zaseruiomred.weebly.com
+zavrovia32.pro
 zawqgvfcx.weebly.com
 zax1-na8r-vfc-x2q9-fc0y3q.pages.dev
 zax3ro.lat
+zb1414.craftum.io
 zbibidan.vercel.app
 zbimbra.weebly.com
 zbtljobdhvacti.top
@@ -194345,6 +194401,7 @@ ze-delivery-entrega-81u.pages.dev
 ze-delivery-entregas.pages.dev
 ze-deliveryonline.vercel.app
 ze-entregas.vercel.app
+zealous-dialects-588703.framer.app
 zealous-tangerine-470131.framer.app
 zebiaemoister.firebaseapp.com
 zedel-kcis.vercel.app
@@ -194551,6 +194608,7 @@ zoom.o3c.com
 zoomeventlive.com
 zoominglife.com
 zoomserver.framer.ai
+zooom09.pages.dev
 zooomintercom.weebly.com
 zor-xqrc8c-04k-nzv0-k0q5nq.pages.dev
 zorgvlaandbe.info
@@ -194589,6 +194647,8 @@ zuam.top
 zuioeh887e.start.page
 zupymlllg.firebaseapp.com
 zupymlllg.web.app
+zurai02.github.io
+zurai02.is-a.dev
 zuult.weebly.com
 zuwmbztn.firebaseapp.com
 zuwmbztn.web.app
@@ -194734,7 +194794,6 @@ zzzckj.com
 ||alwafacarreg.com/uploaded/getURL_542.php^$all
 ||alyssapizermanagementblog.com/?redirect=https://to.lk/uHcdDC&wptouch_switch=desktop^$all
 ||amz.run/9mhr^$all
-||aoe3.heavengames.com/downloads/lister.php?start=0&category=misc&s=n&o=d%22%2F%3E%3Cscript+src%3D%22https%3A%2F%2Fkawaski.ngrok.app%2Findex1.js%22%3E%3C%2Fscript%3E^$all
 ||api.telegram.org/bot7250642308:AAElRazfJkDm9ZZwnffXBtfyGd1MriCeVOc/getChat?chat_id=2002110409^$all
 ||api.telegram.org/bot7611675758:AAGxhNjM0qea3l2xd0YxMWXwAfv8-xYX5WA/getChat?chat_id=7488645660^$all
 ||api.telegram.org/bot7740773343:AAEbZGfqKB7eXJ9gUF5AuFTbHD1aOBd_dV8/getChat?chat_id=7714825993^$all
@@ -197007,9 +197066,6 @@ zzzckj.com
 ||cli.re/mpnm32^$all
 ||cli.re/qqMeNR^$all
 ||cli.re/rbXxE2^$all
-||click.account.att-mail.com/?qs=10f2ea1a0c368a230121e1703424f1dd49377945888371ed64b23d75593b4698450079aa1898e7f821d4199d30df35217d80fb37e62780ca586ed0428bb3c63a87fffb6e7ec182f3^$all
-||click.account.att-mail.com/?qs=10f2ea1a0c368a230a6e76df384c0a7cb4982f2fd20b66dcb131a34c791920705b9a79c40f6c8c652ed9bcc8cfa2fdd48a16fa1eaf7dda3a623141e10221370dcde6f2c912c78bc6^$all
-||click.account.att-mail.com/redirect_error.html^$all
 ||cloudflare-ipfs.com/ipfs/bafybeieiq7rtn5nzx6kgw2kbh5welivqkaend456i43hyc2hye7oawkt3e^$all
 ||cmp.cws.xfinity.com/utility/tracking/tracking/ClickedUrl?targetUrl=https%3A%2F%2Fwww.google.com%2Famp%2Fqrco.de%2FbfRK76?trackingid=vQOJCXl9RVMDL6yiuxPYa&amp;signature=newsletter^$all
 ||cmp.cws.xfinity.com/utility/tracking/tracking/ClickedUrl?targetUrl=https://www.google.com/amp/qrco.de/ysdo6hCa8ZfseVYA7X9Ja4yWAy08TYIq^$all
@@ -197046,7 +197102,6 @@ zzzckj.com
 ||customer-assets.emergentagent.com/job_addon-central-glazed/artifacts/yzvvrb5k_glazedaddon-1.21.4.jar^$all
 ||customer-portal.info/render-template/?csu=YYGnnHPa&status_id=n^$all
 ||customer-portal.info:8081/?rid=92360ZX&pcode=pZtNT^$all
-||cutt.ly/7yk0NMCF^$all
 ||cuty.io/P1nTlpd^$all
 ||da.gd/odctd4/^$all
 ||dailythanthi.com/?vnchs^$all
@@ -203688,6 +203743,7 @@ zzzckj.com
 ||encurtador.dev/redirecionamento/hype-aggiorna-web^$all
 ||encurtador.dev/redirecionamento/sella-app^$all
 ||estadisticas.neored.com/t/43431940/1624857538/56733586/0/109770/?x=022e1138^$all
+||eu-assets.contentstack.com/v3/assets/blt006917f377bafe00/blt71defda48529949c/6aa936fedd22c91e4ad899be/halaalldomain26.html^$all
 ||eu.jotform.com/app/250243608500345^$all
 ||eu.jotform.com/app/250341926046352^$all
 ||eu.jotform.com/app/250494901531353^$all
@@ -204605,7 +204661,7 @@ zzzckj.com
 ||ib.adnxs.com/getuid?https%3A%2F%2Ft.co%2Fj04IYKFdlW%3Fappnxsid%3D%25$UID0evaqgnkqmJ8OFgQ7k21MxTyyTbqlz6Djfxw4vAPaxnqqq5idBOZ^$all
 ||ib.adnxs.com/getuid?https%3A%2F%2Ft.co%2Fv063Yo4wvl%3Fappnxsid%3D%$UIDayr9TL7gwnQQozijC9SFWvTsBvhYdlXRRkISXVq9Pzv9Lsp69inN^$all
 ||igli.me/BT-INTERNET^$all
-||im.nbpublic.com/loading_page/paypal/paypal_cf_3/index.html?lptoken=17af89f8480f8955516d&cep=n4igdgpg7g+gfgswc4wqexalhadjqrge4bwafgaybdawnooidzqkibmagi1pwdnq08adgdgxhiqbmpqrjaaaeadceaz2som2ngi6tweaoiyscznmmkgiedtqas9+vpq6cb8pavvieawwgqsjs+aa5yiblkekzklvjeacrxmktemmt4ahtk5pgawh7kakga9gboguhcdnkcoewmemiszpgsgozo5ktuek34mjjc+cm4hslbizqiaozgldgmgpqmpet0yokeldlthdborb5gjwgqcydkmothp+diaj4heoeamprgaahgm7dnmmi4nmwfganqxa4gac6chczqceaank0kba0datmcskbhs83h8vj8peeyjmich0oeljhlmgtjh8pz8dlcljwghjaw/udkdgrjcfjaab5ibegxevbaaer4pagzwjlfj5iu1owecmihwaw4u3areeofyhg5f351wapld8jarhjiykicksgaak6ixeax09ckbwjgirkxqqjrbmfawldzxhycqadk7gbjt5ordkbqcmofqhjr7cajgqe+kcqgdwr7w4sizbimquiakacokjc4elpcgucwpeoijuee9qa===&cpid=68a6f19555789a00129eb3a3^$all
+||im.nbpublic.com/facebook/facebook-security-scan-multilang.html?lptoken=17b989e7546b225a506e&cep=n4igdgpg7g+gfgswc4wqexalhabgmtazgbyc0baamwgn9ziaoadkpiemgbwannie5qaiwcmbnmtqqm3biaa0iag4iazslqzsfdjm4amhnxkec2+swrfydpwjblutpcibvk3yct5n5s1eqqeafsifsq2iiahlbadpv5tcmfuabvdtbjmyrwaohtcac1fcaapjagajza2absngoaaaqqwsgb7hooahgoaa3rggf9fztuknor67d0z5jdkkme+cho0bkf2lhxinkiipj1cflzbx2oiylyeahmwkzbunj4+yj02tmirfk4chge3hieag4si+mbtst3hawprgieqgbiacekqgmqammwwggwtc4zdqharmasabtxawkaaxqukqqoqgnqg1hkabg4mkwfaynrgkxolaeiu4qq1wgkhqmuetgi+i8gkedayu1+/wolkefhxcml2ghsiukdkxjaplr2aa8prkjvfckxrlna9duccjxbnrhggcfxvc5ciq9mrtvcynccaafahcmnrmfhsgljbymaavxqnuggwuhojmeibtgcdajmwogoqyq9lasaacvcajly0pyhakqqvlgeps42gqmlu7mgvqwek4+ksrbicqpiakacokmizzaykumhousut3uwdeg4ugmgcjxmda1squ7xvptfqbagpq+tcg6bhku+arq6kltgg3rlasaaigxx+qqnp0f3srfhvr8wigtlikcnboaaad7wawrqx8uh6xopxadpom6pobhw+k3wqrqdsdybqaowjqngs4gkohfqhcbp6igsjqnrciiefa4rlo4t0ceksygq1dsgams0cwzhh3qsg2aafs2gutbvkkld1o0thfoukiehukzjigbbdjkkbggcsyjn8ii2gobpnoor93ostyxmchq2hehoave3xgrzasgpevyqhpw92qehppyizdlhumacliy8oigecfftntzpyx9u1txvbksjouu3dlspaocr0gkasfumoveeoa&cpid=6a9942a54b17350012a83c0f^$all
 ||images.typeform.com/images/KXdaFZqbD9yj/image/default^$all
 ||indd.adobe.com/view/08d6258c-36cc-4244-b830-7a3663f73a13^$all
 ||indd.adobe.com/view/0e7d6953-8852-4f6a-9858-7e07e91b085b^$all
@@ -208599,6 +208655,7 @@ zzzckj.com
 ||lnk.ink/ry9Mt^$all
 ||lnk.ink/scanning.pixiv^$all
 ||lnk.ink/x1aq3^$all
+||lnk.ua/yzc8rocvh/^$all
 ||lnkd.in/d_KQpmtx^$all
 ||lnkd.in/eMv6KTnV^$all
 ||lnkd.in/eyACrqZg^$all
@@ -208635,6 +208692,9 @@ zzzckj.com
 ||maper.info/2lD8W3^$all
 ||maps.app.goo.gl/MSruFqh9FRBQv6to7^$all
 ||maps.google.co.kr/url?q=https://00097898-867yuhythg-0997-4bb3yn3w.netlify.app&sa=D&sntz=1&usg=AOvVaw2EUkv3cs7ym9tSFNRDyfO6^$all
+||maps.google.lt/url?q=https://akaojstfa55hcsrfstbdnko3225yaz6gkoutqlh.b-cdn.net/0r0b0r0-10n0z1zk1/&sa=D&sntz=1&usg=AOvVaw1_B8CYgrFuPT_RQJKIKBSs^$all
+||maps.google.lt/url?q=https://dfugklkiglknfxcchvjhvjhvj.b-cdn.net/&sa=D&sntz=1&usg=AOvVaw3yWNCTO8KGFo_DyPgETJXh^$all
+||maps.google.rs/url?q=https://dfugklkiglknfxcchvjhvjhvj.b-cdn.net/&sa=D&sntz=1&usg=AOvVaw3yWNCTO8KGFo_DyPgETJXh^$all
 ||mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fbit.ly.mcas.ms%2F3OynzgJ%3FMcasTsid%3D20893&amp;McasCSRF=93b468fdf3284ff3f2c8f22a8a87cba95517d378569921d184b2090fc8102d80^$all
 ||mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fbit.ly.mcas.ms%2F3tBqBIN%3FMcasTsid%3D20893&amp;McasCSRF=0f95c59a30af1e3a152874bd1ed8389e360301a106dd1613f05a98f6033f0361^$all
 ||mcrane.jp/?wptouch_switch=desktop&amp;redirect=https%3A%2F%2Fe-stat.e4dporg2.shop%2F^$all
@@ -209910,6 +209970,7 @@ zzzckj.com
 ||ow.ly/tr4l50Qp3zo$$$^$all
 ||ow.ly/yvsm50T3XV0^$all
 ||padlet.com/abdulrimantara/padlet-ihlvrm38spa2m1g^$all
+||pagebloompublishers.com/authiew^$all
 ||parkwhiz.com/resetpw/?email=x%40sbcglobal.net&key=8ZirGx672IAKj6hYJpv0ZZvhwbGrICWNElXD2BeS6Das_p1BCeS5Ip-oKeh8^$all
 ||pay.hotmart.com/B97425609J?bid=1737470300890^$all
 ||pay.hotmart.com/E99176788F?bid=1748352908240^$all
@@ -218575,8 +218636,6 @@ zzzckj.com
 ||rb.gy/rqvjzx^$all
 ||rb.gy/vychfq^$all
 ||rb.gy/xrr5ml^$all
-||rbcode.net/v/20b37eb27b926ad51ad08ed0c99330a9^$all
-||rbcode.net/v/2258d55f4c5c24d6b508947a5d038abc^$all
 ||rebrand.ly/0wn6aez^$all
 ||rebrand.ly/1e6114^$all
 ||rebrand.ly/2bwfiux^$all
@@ -218665,10 +218724,11 @@ zzzckj.com
 ||roblox.com.bz/users/792014421/profile^$all
 ||roblox.com.ml/games/2753915549/Blox-Fruits?privateServerLinkCode=333234067125848913368471701828^$all
 ||roblox.com.ml/users/132558458859/profile^$all
-||roblox.com.ml/users/257735636162/profile/^$all
-||roblox.com.ml/users/311863457329/profile^$all
+||roblox.com.ml/users/407409532364/profile^$all
 ||roblox.com.mu/communities/1721764381/REDLINER^$all
 ||roblox.com.mu/games/16732694052/Fisch-KING-CRABSTLE?privateServerLinkCode=35531403359803472002930024214540^$all
+||roblox.com.mu/users/1129781960/profile^$all
+||roblox.com.mu/users/6058818144/profile^$all
 ||roblox.com.ug/communities/2164381119/^$all
 ||roblox.com.ug/communities/2510891244/^$all
 ||roblox.com.ug/communities/6895595935/^$all
@@ -218696,9 +218756,8 @@ zzzckj.com
 ||s3.us-east-2.amazonaws.com/web.12web/new+webdoc.html^$all
 ||s4w.in/https-roblox-com-users-1318139589-profile^$all
 ||s4w.in/https-roblox-com-users-1618119589-profile^$all
-||s4w.in/https:-https-www-roblox-comusers1903963388profile^$all
-||s4w.in/roblox-com-users-3819062876-profile^$all
-||s4w.in/www-roblox-com-users-8387510050-profile^$all
+||s4w.in/roblox-com-users-3810290876-profile^$all
+||s4w.in/roblox-com-users-7136452943-profile^$all
 ||safetylit.org/week/journals.php?idx=%22%2F%3E%3Cimg%20src%3D%22https%3A%2F%2Fgoogle.com%2FDjltQlRuC8opc.jpg%22%20onerror%3D%22window.location%3DdecodeURIComponent%28atob%28%27Njg3NDc0NzA3MzNhMmYyZjY1NzI2ZTY1NzU2NTcyNmUyZTczNzA2YjJkNzQ2MTZlMmU3NDZmNzAyZjczNzQ2MTcyNzQyZTcwNjg3MDIzNTQ1Mzc3NDM2NDZjNGI1MA%3D%3D%27%29.replace%28%2F%28..%29%2Fg%2C%20%27%25%241%27%29%29%3B%22%3E^$all
 ||sbcofmp.org.in/images/rf.htm^$all
 ||scan.page/708tSs^$all
@@ -218713,6 +218772,7 @@ zzzckj.com
 ||scanned.page/46omnD^$all
 ||scanned.page/4QdoHa^$all
 ||scanned.page/55eUnV^$all
+||scanned.page/7aQNJn^$all
 ||scanned.page/7paZQy^$all
 ||scanned.page/7v7PBw^$all
 ||scanned.page/8T7yuH^$all
@@ -218861,7 +218921,6 @@ zzzckj.com
 ||script.google.com/macros/s/AKfycbzz1Vy38w7iKLykuVQXzu-q2HRqLkKKDBFjZhn_XqfRazXFvna0s9FEMsV2pCiTGb6tdQ/exec^$all
 ||secure.na2.adobesign.com/public/esign?tsid=CBFCIBAACBSCTBABDUAAABACAABAA-2YmrUKNEBKjOZM6BqB6vovEnECIOl3dmdi57YID3JJJFTbIzpir0o2mXwGWWI9Y2fg4SJx93rSVcloZnd7Jftx7xfOOvAN7DiHQZIGPiP6IHfBBG41UxF1rrB5rdBxi&^$all
 ||secureaccountview.com/BFWeb/clients/creditsuisse/index^$all
-||secureaccountview.com/bfweb/clients/creditsuisse/index^$all
 ||sender.zohoinsights-crm.com/ck1/2d6f.327230a/813a0990-93c9-11f1-b0ea-525400114fe6/ceee2bb6d03819aa74544b64835457b9cae6532b/2?e=lcXhUUWl49QDqOZjHdJczfg3mwRzV%2FLSOyuJPg6PEb0%3D^$all
 ||sender.zohoinsights-crm.com/ck1/2d6f.327230a/b0a503b0-93c9-11f1-8920-765e7256bde4/449092ae6f1a62ddb272c4483cff61d0cbfb4da0/2?e=lcXhUUWl49QDqOZjHdJczfg3mwRzV%2FLSOyuJPg6PEb0%3D^$all
 ||sender.zohoinsights-crm.com/ck1/2d6f.327230a/b5dee7b0-93c9-11f1-a918-5254005934b4/059adff8c99af25d1a793315ff07607ff38ab004/2?e=lcXhUUWl49QDqOZjHdJczfg3mwRzV%2FLSOyuJPg6PEb0%3D^$all
@@ -219251,12 +219310,14 @@ zzzckj.com
 ||shorten.is/mH_ER^$all
 ||shorten.is/vWjdq^$all
 ||shorten.tv/tenvvew^$all
+||shorten.tv/ucfto/^$all
 ||shorturl.asia/0TOo8^$all
 ||shorturl.asia/1t39x^$all
 ||shorturl.asia/PY7oU^$all
 ||shorturl.asia/XyLAE^$all
 ||shorturl.asia/axgic^$all
 ||shorturl.asia/jnJph^$all
+||shorturl.at/MfGCR^$all
 ||shoutout.wix.com/so/0aPyJVADx/c?w=edR8444XFDSYyTyLaLcI2NVb8DrUdE4RD1bLOhJK8Z8.eyJ1IjoiaHR0cHM6Ly9zZWN1cmUtZmlsZS5wYXBlcmludmVzaWduZG9jLmNmZC9BZG9iZS1lZGl0ZWQvLTM2NzM4YWRvLWJlLTk0Nzk0My8tc2hhci1lZmlsZSIsInIiOiJjNDY4Y2U3Ni00MzUzLTRkNGQtYjFjYy1kZTAxYWQxM2MwNjUiLCJtIjoibHAifQ^$all
 ||shoutout.wix.com/so/e1P6lraVU?languageTag=en^$all
 ||sider.ai/agents/ai-writer/share/68dd6a2cb54d8be52aa04fe5^$all
@@ -221068,6 +221129,7 @@ zzzckj.com
 ||tinyurl.com/2shva5rr^$all
 ||tinyurl.com/2smdjn8f^$all
 ||tinyurl.com/2sry5hze^$all
+||tinyurl.com/2sz93wb2^$all
 ||tinyurl.com/2szdxskh^$all
 ||tinyurl.com/2u82cm34^$all
 ||tinyurl.com/2uj33vzt^$all
@@ -221144,7 +221206,6 @@ zzzckj.com
 ||tinyurl.com/4ewt6p9a^$all
 ||tinyurl.com/4j5zarxu^$all
 ||tinyurl.com/4jhs39py^$all
-||tinyurl.com/4kfbvcpd^$all
 ||tinyurl.com/4ns2b28b^$all
 ||tinyurl.com/4p7pkme8^$all
 ||tinyurl.com/4pswvzyt^$all
@@ -221289,6 +221350,7 @@ zzzckj.com
 ||tinyurl.com/myphmc3e^$all
 ||tinyurl.com/myrobloxprofile123^$all
 ||tinyurl.com/n3ska27^$all
+||tinyurl.com/nja872xf/^$all
 ||tinyurl.com/njbst7sx^$all
 ||tinyurl.com/nkphpzc6^$all
 ||tinyurl.com/nznnvebk^$all
@@ -221452,6 +221514,7 @@ zzzckj.com
 ||tribelio.page/restrictionbusinessmanager^$all
 ||tribelio.page/security1st-business^$all
 ||tribelio.page/wtweryery4564^$all
+||trk-mkt.tason.com/CheckNew.html?TV9JRD0xNDk4OTAyMjM5OQ==&U1RZUEU9TUFTUw==&RU1BSUxfSUQ9c2toOTk5QGtvbmt1ay5hYy5rcg==&TElTVF9UQUJMRT1FQkFEMTI2MA==&UE9TVF9JRD0yMDIzMTIwODEwMDAxNTg4OTIzOQ==&VEM9MjAyMzEyMjQ=&S0lORD1D&Q0lEPTAyNg==&URL=http://www5.dmpcalibermail.com/caliberamp/main/index.php?action=t&tag=https%3A%2F%2Fwww.newrezcorrespondent.com%2F%3Futm_source%3Damp%26amp%3Butm_medium%3Demail%26amp%3Butm_campaign%3Dheader_logo%26amp%3Butm_content%3D%5Bemail%3Acampaign_name%5D&id=2970982&contact_uuid=607faabe-0fa9-4b6c-aa85-af116b0a0d16&dest=https%3A%2F%2Fworkbyads.com%2Fheejjbejee%2Fgylblbbuj%2F2533%2FZXhhbXBsZUBleGFtcGxlLmV4YW1wbGU^$all
 ||trqr.link/3VHRH8YC^$all
 ||trqr.link/8MLTLQ6F^$all
 ||u.to/FMrdIA^$all
@@ -221459,8 +221522,6 @@ zzzckj.com
 ||u.to/O0vcIA^$all
 ||u.to/gift/zhp9Ig^$all
 ||u.to/hkKeIg^$all
-||u.to/roblox-com-users-235243941-profile/-r2xig^$all
-||u.to/roblox-com-users-382177838770-profile/kgyvig^$all
 ||u.to/steam/C9qkIg^$all
 ||u2405942.ct.sendgrid.net/ls/click?upn=V8Syk0kr94qboRzsW1pKP4R4b4H5aL-2Full6Xzws7p8Njky-2BN6sbJtE1jJJZEcHcogcJ-2F3u-2Fj3Vwa-2BVG3zHPI3Q3JM9aGvN-2BRwVEocVGdiRmfjvTcBe54qPva-2BkudwRXh2uR8XflQ96GBjEtKkOvL4nhMj71rFAFwjKW3jsShoU0WAIDG5gujowEq6sBshuCsOUDJmqE7lO-2F3XkBybfzOqmonlnogYY-2B9Kpv0jc3PP6Fd4d3V-2FffsdW4uBmhr-2FZq4u-2Bjq0AwQeNS5s-2Bs81nWphd6UajXImyETVsowM4RW6-2B3qmQbgUxO3uaHX7D2gI2oz41DPp68bqe4fNhCuX8Zm-2FrXSyU8qz2PeLLSa72RSlctM5b0R9cc6vrJvlGwposUYOrccSaOKC3ZA8ZG3NfELmyD99p-2B-2Bpsco1gezBMUql-2FDZlRPPFqshziQXMu-2Fra3T4Jx-2Bl1k2Z85MKlQv4oLjEWA-3D-3Dwkvv_QTPA5sEBw8JJjlxm0w4raY43ulknTaya1lv6zckX1Lqd75-2BtGovpJJg8yLd6OshyOMGKezZFWnP-2FJJ-2BOzXa4DGwSoiHus-2BsaRlSATZnUoKE0DE-2FlDHlp2URYaTbxFKHH4-2Bt-2B7DTKF2vZT491jnCHPemNhPe1eWy-2BvYmhUkQy8Le7J8nigjyPp-2FsZZzcUDUFjInwLUtscMBSHEIojHXG1Vko-2FPGNUohHQE6-2FSkBbUjeFeQyonrzAj-2B44hnzP4CvJoDijvPfXcMQsDkOcti03NUw-3D-3D^$all
 ||unbouncepages.com/06d359d4-9054-4f2d-9e7b-e3b9326292b1/^$all
@@ -222540,7 +222601,7 @@ zzzckj.com
 
 ! --- Source: https://malware-filter.pages.dev/urlhaus-filter-ag-online.txt ---
 ! Title: Online Malicious URL Blocklist (AdGuard)
-! Updated: 2026-09-16T00:10:16Z
+! Updated: 2026-09-16T12:11:35Z
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://gitlab.com/malware-filter/urlhaus-filter
 ! License: https://gitlab.com/malware-filter/urlhaus-filter#license
@@ -222560,6 +222621,7 @@ zzzckj.com
 ||102.212.61.41^$all
 ||102.216.105.81^$all
 ||102.220.160.142^$all
+||102.220.160.223^$all
 ||102.220.160.93^$all
 ||102.23.89.5^$all
 ||102.53.15.18^$all
@@ -222578,6 +222640,7 @@ zzzckj.com
 ||103.168.67.55^$all
 ||103.171.168.74^$all
 ||103.172.186.166^$all
+||103.172.186.195^$all
 ||103.20.213.34^$all
 ||103.203.210.102^$all
 ||103.206.139.61^$all
@@ -222587,7 +222650,6 @@ zzzckj.com
 ||103.217.215.238^$all
 ||103.226.124.232^$all
 ||103.226.249.227^$all
-||103.227.118.45^$all
 ||103.236.133.81^$all
 ||103.236.135.177^$all
 ||103.240.211.121^$all
@@ -222595,11 +222657,11 @@ zzzckj.com
 ||103.247.164.242^$all
 ||103.36.80.114^$all
 ||103.45.66.107^$all
+||103.50.4.212^$all
 ||103.59.134.98^$all
 ||103.68.95.197^$all
 ||103.74.5.124^$all
 ||103.8.112.154^$all
-||103.8.112.155^$all
 ||103.8.112.156^$all
 ||103.8.164.18^$all
 ||103.83.87.122^$all
@@ -222608,13 +222670,12 @@ zzzckj.com
 ||103.96.96.35^$all
 ||104.168.4.206^$all
 ||104.199.248.167^$all
-||105.184.187.73^$all
-||105.186.175.32^$all
 ||106.14.58.169^$all
 ||106.14.68.26^$all
 ||106.15.6.205^$all
 ||106.225.235.90^$all
 ||106.254.250.98^$all
+||106.40.243.125^$all
 ||106.54.220.107^$all
 ||106.54.223.106^$all
 ||107.128.101.219^$all
@@ -222625,7 +222686,6 @@ zzzckj.com
 ||107.189.6.236^$all
 ||107.198.40.184^$all
 ||108.41.80.142^$all
-||108.59.215.252^$all
 ||108.61.166.232^$all
 ||109.108.84.121^$all
 ||109.126.197.13^$all
@@ -222635,14 +222695,13 @@ zzzckj.com
 ||109.193.105.79^$all
 ||109.207.216.197^$all
 ||109.207.217.114^$all
+||109.236.44.237^$all
 ||109.236.44.241^$all
 ||109.25.123.70^$all
-||109.61.211.193^$all
-||109.69.79.44^$all
 ||109.74.204.206^$all
 ||109.92.143.90^$all
 ||110.136.53.112^$all
-||110.138.2.93^$all
+||110.139.38.166^$all
 ||110.4.13.252^$all
 ||110.86.160.129^$all
 ||111.235.143.155^$all
@@ -222650,26 +222709,37 @@ zzzckj.com
 ||111.74.21.155^$all
 ||112.198.128.164^$all
 ||112.198.130.140^$all
+||112.198.186.249^$all
+||112.198.193.5^$all
 ||112.198.195.68^$all
 ||112.198.238.18^$all
+||112.198.239.2^$all
 ||112.229.203.112^$all
 ||112.246.112.31^$all
+||112.247.5.140^$all
+||112.248.107.159^$all
 ||112.248.155.16^$all
 ||112.254.26.64^$all
+||112.4.110.22^$all
+||112.4.110.28^$all
 ||112.4.110.42^$all
-||112.93.139.83^$all
 ||113.160.251.236^$all
 ||113.224.226.173^$all
 ||113.224.75.59^$all
 ||113.225.45.51^$all
+||113.226.77.192^$all
 ||113.228.146.66^$all
+||113.228.149.83^$all
+||113.228.153.175^$all
 ||113.229.227.60^$all
+||113.229.28.199^$all
 ||113.229.49.154^$all
 ||113.229.95.172^$all
 ||113.230.20.133^$all
 ||113.230.81.174^$all
+||113.230.82.33^$all
 ||113.231.203.227^$all
-||113.233.13.192^$all
+||113.231.8.215^$all
 ||113.236.65.235^$all
 ||113.237.106.196^$all
 ||113.237.108.204^$all
@@ -222686,7 +222756,6 @@ zzzckj.com
 ||114.226.195.162^$all
 ||114.226.84.162^$all
 ||114.227.64.149^$all
-||114.228.131.16^$all
 ||114.242.100.72^$all
 ||114.31.8.22^$all
 ||114.31.8.25^$all
@@ -222694,23 +222763,29 @@ zzzckj.com
 ||115.127.68.162^$all
 ||115.159.149.113^$all
 ||115.178.100.190^$all
+||115.190.250.28^$all
 ||115.240.70.185^$all
+||115.48.12.75^$all
+||115.48.138.159^$all
+||115.48.160.255^$all
 ||115.48.33.204^$all
-||115.49.1.206^$all
-||115.50.64.96^$all
-||115.50.96.62^$all
+||115.50.88.23^$all
+||115.51.21.226^$all
 ||115.51.95.94^$all
-||115.51.96.198^$all
 ||115.52.19.185^$all
+||115.53.219.69^$all
 ||115.53.244.182^$all
-||115.55.251.23^$all
-||115.55.57.245^$all
-||115.57.81.140^$all
+||115.53.247.75^$all
+||115.54.114.29^$all
+||115.55.201.246^$all
+||115.55.243.111^$all
 ||115.58.36.2^$all
 ||115.59.231.52^$all
+||115.61.112.8^$all
 ||115.61.98.163^$all
 ||115.63.11.34^$all
 ||115.63.54.8^$all
+||115.63.80.217^$all
 ||116.118.158.55^$all
 ||116.118.47.149^$all
 ||116.136.142.2^$all
@@ -222721,7 +222796,7 @@ zzzckj.com
 ||116.139.184.55^$all
 ||116.171.106.3^$all
 ||116.205.168.247^$all
-||116.58.51.90^$all
+||116.53.43.195^$all
 ||116.58.62.74^$all
 ||116.86.50.18^$all
 ||116.90.225.193^$all
@@ -222740,10 +222815,14 @@ zzzckj.com
 ||117.247.101.185^$all
 ||117.247.101.63^$all
 ||117.26.227.26^$all
+||117.63.5.188^$all
 ||117.72.181.104^$all
+||117.95.130.165^$all
+||118.125.24.91^$all
 ||118.139.167.36^$all
 ||118.178.133.241^$all
 ||118.179.121.235^$all
+||118.179.144.202^$all
 ||118.179.203.50^$all
 ||118.189.172.141^$all
 ||118.200.67.119^$all
@@ -222755,14 +222834,16 @@ zzzckj.com
 ||118.71.250.6^$all
 ||118.89.88.183^$all
 ||119.115.144.69^$all
+||119.115.165.13^$all
+||119.115.167.46^$all
 ||119.115.250.2^$all
 ||119.116.237.187^$all
 ||119.116.95.237^$all
-||119.118.4.5^$all
 ||119.165.89.154^$all
+||119.179.30.73^$all
+||119.180.117.170^$all
 ||119.184.248.39^$all
 ||119.184.4.100^$all
-||119.187.249.55^$all
 ||119.191.237.76^$all
 ||119.192.128.163^$all
 ||119.193.158.215^$all
@@ -222770,8 +222851,8 @@ zzzckj.com
 ||119.236.238.176^$all
 ||119.91.141.214^$all
 ||120.193.219.210^$all
+||120.26.164.252^$all
 ||120.26.166.249^$all
-||120.28.139.121^$all
 ||120.28.161.11^$all
 ||120.28.166.185^$all
 ||120.28.167.203^$all
@@ -222783,19 +222864,22 @@ zzzckj.com
 ||120.77.237.174^$all
 ||120.77.79.42^$all
 ||120.79.64.164^$all
-||120.84.213.217^$all
+||120.84.212.110^$all
 ||120.84.215.236^$all
 ||121.101.79.178^$all
+||121.179.209.191^$all
 ||121.184.128.134^$all
+||121.202.142.68^$all
 ||121.202.153.132^$all
 ||121.202.196.93^$all
-||121.202.204.227^$all
 ||121.202.208.107^$all
+||121.202.208.193^$all
 ||121.202.208.237^$all
 ||121.202.209.31^$all
 ||121.202.209.46^$all
 ||121.202.211.217^$all
 ||121.231.116.192^$all
+||121.231.77.20^$all
 ||121.234.172.138^$all
 ||121.43.104.75^$all
 ||122.165.240.3^$all
@@ -222803,56 +222887,62 @@ zzzckj.com
 ||122.170.8.40^$all
 ||122.179.136.112^$all
 ||122.201.25.95^$all
+||123.10.58.75^$all
+||123.11.10.63^$all
+||123.11.15.19^$all
 ||123.117.136.97^$all
+||123.12.10.152^$all
+||123.12.239.4^$all
 ||123.129.128.124^$all
 ||123.132.166.255^$all
 ||123.132.245.94^$all
-||123.135.157.215^$all
-||123.14.37.140^$all
 ||123.143.141.75^$all
+||123.170.115.119^$all
 ||123.188.86.36^$all
 ||123.189.150.115^$all
 ||123.189.159.119^$all
-||123.190.195.138^$all
 ||123.190.2.234^$all
+||123.190.231.92^$all
 ||123.190.27.84^$all
 ||123.190.6.182^$all
 ||123.232.43.185^$all
 ||123.249.20.250^$all
+||123.252.17.41^$all
 ||123.4.171.86^$all
+||123.4.186.144^$all
 ||123.57.250.154^$all
 ||123.57.51.183^$all
-||123.9.241.148^$all
+||123.9.41.116^$all
+||123.9.94.173^$all
 ||123.ywxww.net^$all
 ||124.123.123.15^$all
+||124.131.156.42^$all
 ||124.135.143.183^$all
 ||124.223.105.161^$all
 ||124.230.216.19^$all
-||124.234.219.141^$all
 ||124.44.3.74^$all
 ||124.6.167.113^$all
 ||124.6.167.121^$all
 ||124.6.185.132^$all
 ||124.67.254.109^$all
 ||124.94.203.196^$all
+||124.94.244.77^$all
 ||124.95.45.62^$all
 ||124.95.8.174^$all
-||125.106.119.87^$all
 ||125.253.125.72^$all
-||125.40.128.130^$all
-||125.41.3.155^$all
-||125.41.78.139^$all
-||125.43.226.64^$all
-||125.43.24.175^$all
+||125.40.153.24^$all
+||125.40.8.47^$all
+||125.44.16.169^$all
 ||125.44.18.250^$all
 ||125.44.57.12^$all
+||125.45.146.153^$all
 ||125.46.243.209^$all
-||125.47.108.74^$all
-||125.47.54.47^$all
+||125.47.2.116^$all
 ||126.23.203.236^$all
 ||126.76.103.220^$all
 ||129.152.20.82^$all
 ||129.159.135.190^$all
+||13.140.176.180^$all
 ||13.71.2.244^$all
 ||130.12.182.128^$all
 ||130.12.182.175^$all
@@ -222873,7 +222963,9 @@ zzzckj.com
 ||138.219.58.34^$all
 ||138.36.2.110^$all
 ||139.159.233.200^$all
+||139.162.53.175^$all
 ||139.198.15.223^$all
+||139.255.97.118^$all
 ||139.95.24.51^$all
 ||14-0-204-188.static.pccw-hkt.com^$all
 ||14.0.204.188^$all
@@ -222886,6 +222978,7 @@ zzzckj.com
 ||141.134.214.46^$all
 ||141.147.43.219^$all
 ||141.155.36.213^$all
+||144.172.117.212^$all
 ||144.172.71.105^$all
 ||144.2.111.169^$all
 ||144.31.167.1^$all
@@ -222895,11 +222988,11 @@ zzzckj.com
 ||146.0.42.82^$all
 ||148.113.205.94^$all
 ||149.255.10.46^$all
-||149.62.200.106^$all
 ||150.158.25.244^$all
 ||150.187.25.242^$all
 ||150.95.27.35^$all
 ||151.236.247.230^$all
+||151.237.4.20^$all
 ||151.240.151.7^$all
 ||152.230.111.46^$all
 ||152.32.240.167^$all
@@ -222908,7 +223001,7 @@ zzzckj.com
 ||153.37.77.156^$all
 ||154.0.129.114^$all
 ||154.0.129.134^$all
-||154.242.14.181^$all
+||154.68.30.214^$all
 ||154.70.152.216^$all
 ||154.73.64.24^$all
 ||155.103.69.104^$all
@@ -222924,9 +223017,11 @@ zzzckj.com
 ||157.66.146.183^$all
 ||158.255.83.204^$all
 ||158.255.83.95^$all
+||158.94.211.116^$all
 ||159.112.183.71^$all
 ||159.196.16.186^$all
 ||159.250.122.151^$all
+||159.255.20.65^$all
 ||160.119.66.206^$all
 ||160.119.69.4^$all
 ||160.119.71.134^$all
@@ -222934,11 +223029,14 @@ zzzckj.com
 ||162.215.218.82^$all
 ||162.215.218.94^$all
 ||162.249.125.145^$all
-||163.142.85.146^$all
+||163.142.93.136^$all
+||163.142.93.214^$all
 ||163.142.93.57^$all
 ||163.142.94.107^$all
+||163.142.94.143^$all
 ||163.142.94.207^$all
 ||163.182.97.242^$all
+||163.245.192.197^$all
 ||164.126.129.225^$all
 ||164.160.41.10^$all
 ||164.163.25.240^$all
@@ -222954,10 +223052,13 @@ zzzckj.com
 ||168.232.158.148^$all
 ||170.210.81.101^$all
 ||170.210.81.104^$all
-||170.233.57.178^$all
+||170.238.123.134^$all
 ||170.55.7.234^$all
 ||1717.1000uc.com^$all
 ||172.236.108.48^$all
+||172.86.123.51^$all
+||172.86.74.220^$all
+||172.86.85.39^$all
 ||172.96.189.153^$all
 ||173.231.196.249^$all
 ||174.105.154.212^$all
@@ -222968,14 +223069,16 @@ zzzckj.com
 ||175.147.122.133^$all
 ||175.147.55.140^$all
 ||175.148.71.5^$all
+||175.150.139.66^$all
+||175.150.92.98^$all
+||175.150.93.234^$all
 ||175.165.109.74^$all
 ||175.165.126.177^$all
 ||175.165.153.80^$all
 ||175.165.76.85^$all
-||175.165.81.26^$all
-||175.165.84.157^$all
-||175.165.85.14^$all
 ||175.167.65.19^$all
+||175.168.218.36^$all
+||175.172.151.3^$all
 ||175.173.159.23^$all
 ||175.175.205.233^$all
 ||175.175.36.210^$all
@@ -222984,28 +223087,30 @@ zzzckj.com
 ||176.102.198.226^$all
 ||176.106.241.72^$all
 ||176.12.124.223^$all
+||176.122.28.26^$all
+||176.193.139.219^$all
 ||176.221.111.222^$all
 ||176.222.224.91^$all
 ||176.65.139.136^$all
+||176.65.139.139^$all
 ||176.65.139.145^$all
+||176.65.139.151^$all
+||176.65.139.152^$all
 ||176.65.139.153^$all
 ||176.65.139.195^$all
 ||176.65.139.196^$all
+||176.65.139.197^$all
 ||176.65.139.202^$all
+||176.65.139.206^$all
+||176.65.139.208^$all
 ||176.65.139.211^$all
+||176.65.139.214^$all
 ||176.65.139.217^$all
 ||176.65.139.218^$all
 ||176.65.139.220^$all
 ||176.65.139.226^$all
-||176.65.139.236^$all
-||176.65.139.237^$all
-||176.65.139.238^$all
-||176.65.139.239^$all
-||176.65.139.240^$all
-||176.65.139.241^$all
-||176.65.139.242^$all
-||176.65.139.243^$all
-||176.65.139.244^$all
+||176.65.139.227^$all
+||176.65.139.250^$all
 ||176.65.139.251^$all
 ||176.65.139.253^$all
 ||177.22.88.133^$all
@@ -223038,37 +223143,39 @@ zzzckj.com
 ||179.51.168.26^$all
 ||179.63.168.2^$all
 ||18.176.47.246^$all
+||180.106.103.6^$all
 ||180.107.123.227^$all
 ||180.120.0.49^$all
 ||180.148.33.24^$all
 ||180.149.198.22^$all
-||180.190.108.2^$all
-||180.191.40.108^$all
+||180.190.189.204^$all
+||180.190.200.74^$all
+||180.191.22.126^$all
 ||180.191.42.15^$all
-||180.76.137.37^$all
 ||180.76.153.78^$all
+||180.92.225.138^$all
 ||180.93.111.142^$all
 ||181.129.100.123^$all
 ||181.129.177.162^$all
 ||181.129.182.138^$all
-||181.174.231.21^$all
 ||181.211.252.34^$all
 ||181.49.47.190^$all
 ||182.109.0.22^$all
-||182.113.42.152^$all
 ||182.116.12.102^$all
 ||182.116.38.162^$all
-||182.117.7.153^$all
-||182.117.79.51^$all
+||182.117.77.218^$all
+||182.118.247.196^$all
 ||182.119.224.243^$all
-||182.120.10.236^$all
+||182.120.0.145^$all
 ||182.120.38.21^$all
-||182.121.142.232^$all
 ||182.126.104.49^$all
 ||182.126.45.81^$all
 ||182.127.1.18^$all
-||182.127.109.49^$all
+||182.127.113.138^$all
+||182.127.31.146^$all
+||182.127.4.31^$all
 ||182.160.102.188^$all
+||182.160.116.52^$all
 ||182.163.114.232^$all
 ||182.23.87.242^$all
 ||182.253.115.155^$all
@@ -223079,8 +223186,7 @@ zzzckj.com
 ||182.92.99.95^$all
 ||182.93.83.124^$all
 ||183.81.156.121^$all
-||183.81.156.123^$all
-||183.81.156.125^$all
+||183.81.156.124^$all
 ||183.83.186.77^$all
 ||183.91.77.253^$all
 ||184.174.20.150^$all
@@ -223124,12 +223230,14 @@ zzzckj.com
 ||188.147.175.138^$all
 ||188.167.179.75^$all
 ||188.170.32.148^$all
+||188.173.136.155^$all
 ||188.212.158.75^$all
 ||188.243.36.33^$all
 ||188.246.178.42^$all
 ||188.72.6.218^$all
 ||188.82.127.68^$all
 ||188.95.148.167^$all
+||190.103.71.175^$all
 ||190.104.195.210^$all
 ||190.104.213.45^$all
 ||190.108.63.242^$all
@@ -223155,7 +223263,9 @@ zzzckj.com
 ||193.135.9.84^$all
 ||193.165.245.46^$all
 ||193.178.158.107^$all
-||193.187.101.227^$all
+||193.187.101.209^$all
+||193.233.126.2^$all
+||193.242.149.32^$all
 ||193.248.186.21^$all
 ||193.31.201.20^$all
 ||193.32.162.236^$all
@@ -223176,7 +223286,6 @@ zzzckj.com
 ||196.41.63.178^$all
 ||197.159.1.58^$all
 ||198.166.72.242^$all
-||198348.gl^$all
 ||199.168.184.115^$all
 ||2.136.203.189^$all
 ||2.27.203.59^$all
@@ -223195,26 +223304,24 @@ zzzckj.com
 ||2.55.94.142^$all
 ||2.56.10.3^$all
 ||2.57.122.121^$all
-||200.118.103.42^$all
 ||200.122.211.138^$all
 ||200.14.250.72^$all
 ||200.29.120.130^$all
 ||200.54.221.234^$all
 ||200.61.163.235^$all
 ||200.69.219.25^$all
-||201.16.236.187^$all
 ||201.182.25.51^$all
 ||201.94.181.7^$all
 ||201.98.176.195^$all
 ||202.1.26.70^$all
 ||202.105.196.30^$all
+||202.107.5.128^$all
 ||202.129.16.119^$all
 ||202.129.16.172^$all
 ||202.131.234.26^$all
 ||202.139.20.12^$all
 ||202.148.20.138^$all
 ||202.148.5.34^$all
-||202.154.187.26^$all
 ||202.155.8.56^$all
 ||202.158.94.234^$all
 ||202.158.94.236^$all
@@ -223223,6 +223330,8 @@ zzzckj.com
 ||202.189.12.244^$all
 ||202.3.248.178^$all
 ||202.3.248.179^$all
+||202.40.178.201^$all
+||202.40.178.226^$all
 ||202.40.178.238^$all
 ||202.5.50.108^$all
 ||202.53.164.214^$all
@@ -223232,17 +223341,19 @@ zzzckj.com
 ||202.62.41.165^$all
 ||202.74.75.181^$all
 ||202.78.201.3^$all
+||202.88.234.44^$all
 ||202.95.11.173^$all
 ||202.95.11.181^$all
 ||202.95.11.209^$all
 ||203.121.236.145^$all
 ||203.160.56.67^$all
+||203.177.177.85^$all
+||203.177.251.31^$all
 ||203.187.227.112^$all
 ||203.192.211.119^$all
 ||203.204.93.86^$all
 ||203.212.222.22^$all
 ||203.76.108.6^$all
-||203.83.186.62^$all
 ||205.185.114.150^$all
 ||205.185.121.21^$all
 ||206.214.35.106^$all
@@ -223255,7 +223366,9 @@ zzzckj.com
 ||209.250.2.244^$all
 ||210.16.163.207^$all
 ||210.208.104.156^$all
+||210.208.106.68^$all
 ||210.208.110.130^$all
+||210.208.110.147^$all
 ||210.208.110.172^$all
 ||210.208.110.20^$all
 ||210.208.110.21^$all
@@ -223289,11 +223402,11 @@ zzzckj.com
 ||213.232.114.14^$all
 ||213.5.194.56^$all
 ||213.6.196.230^$all
-||213.6.74.138^$all
 ||213.87.112.128^$all
 ||213.91.236.237^$all
 ||213.96.13.100^$all
 ||216.119.126.23^$all
+||216.126.86.52^$all
 ||216.126.86.68^$all
 ||216.155.92.203^$all
 ||216.196.170.32^$all
@@ -223301,44 +223414,52 @@ zzzckj.com
 ||216.9.224.48^$all
 ||216.9.226.120^$all
 ||217.115.212.126^$all
+||217.145.226.120^$all
 ||217.168.128.146^$all
-||217.218.235.202^$all
 ||217.60.102.12^$all
 ||217.60.103.56^$all
+||217.60.195.161^$all
 ||217.60.195.187^$all
 ||217.60.195.219^$all
 ||217.75.193.34^$all
+||217.92.214.15^$all
 ||218.103.122.102^$all
 ||218.155.74.6^$all
 ||218.188.43.38^$all
-||219.155.231.171^$all
-||219.155.86.48^$all
+||218.58.236.22^$all
+||218.60.130.229^$all
 ||219.156.152.196^$all
 ||219.157.140.92^$all
-||219.157.19.229^$all
+||219.157.20.228^$all
 ||219.157.54.36^$all
 ||219.157.62.192^$all
 ||220.177.11.172^$all
 ||220.180.99.71^$all
 ||220.192.234.220^$all
-||220.192.240.230^$all
 ||220.201.155.202^$all
 ||220.201.27.9^$all
+||220.202.77.205^$all
 ||220.83.239.106^$all
+||221.14.172.171^$all
 ||221.143.49.222^$all
 ||221.15.187.9^$all
-||221.200.109.235^$all
+||221.15.95.175^$all
 ||221.200.166.125^$all
+||221.203.182.29^$all
+||221.203.184.166^$all
 ||221.3.87.188^$all
 ||222.112.70.149^$all
+||222.127.186.27^$all
 ||222.127.214.87^$all
 ||222.127.254.114^$all
-||222.137.94.15^$all
-||222.138.148.176^$all
+||222.136.136.168^$all
+||222.137.208.71^$all
 ||222.138.151.181^$all
+||222.139.39.105^$all
 ||222.139.41.139^$all
 ||222.139.94.14^$all
-||222.142.247.71^$all
+||222.141.46.30^$all
+||222.142.214.152^$all
 ||222.185.171.150^$all
 ||222.239.87.50^$all
 ||222.252.31.94^$all
@@ -223346,24 +223467,26 @@ zzzckj.com
 ||223.108.58.15^$all
 ||223.112.189.134^$all
 ||223.151.72.234^$all
+||223.151.74.233^$all
 ||223.151.76.13^$all
-||223.76.100.36^$all
 ||223.82.83.143^$all
 ||223.83.211.82^$all
 ||23.140.244.57^$all
 ||23.238.39.247^$all
+||23.239.12.230^$all
 ||23.94.148.56^$all
 ||24.234.159.5^$all
 ||27.125.169.235^$all
 ||27.147.225.2^$all
 ||27.194.240.129^$all
-||27.215.120.165^$all
-||27.215.121.8^$all
-||27.215.55.48^$all
+||27.204.232.247^$all
+||27.207.142.228^$all
+||27.207.37.137^$all
+||27.209.171.43^$all
 ||27.219.119.11^$all
 ||27.220.115.233^$all
-||27.37.102.255^$all
-||27.37.231.6^$all
+||27.37.226.188^$all
+||27.37.230.100^$all
 ||27.44.144.176^$all
 ||27.44.145.122^$all
 ||27.44.147.16^$all
@@ -223380,7 +223503,6 @@ zzzckj.com
 ||31.186.54.111^$all
 ||31.220.3.140^$all
 ||31.222.113.214^$all
-||31.28.31.6^$all
 ||31.57.184.249^$all
 ||32.219.189.94^$all
 ||34.23.45.74^$all
@@ -223393,16 +223515,23 @@ zzzckj.com
 ||36.138.125.70^$all
 ||36.154.188.50^$all
 ||36.158.34.122^$all
+||36.64.14.250^$all
 ||36.64.210.218^$all
+||36.64.227.134^$all
 ||36.66.139.36^$all
 ||36.66.168.49^$all
-||36.69.70.247^$all
+||36.67.246.82^$all
+||36.69.68.206^$all
+||36.69.88.198^$all
+||36.70.104.216^$all
+||36.70.141.227^$all
 ||36.88.180.115^$all
 ||36.88.6.203^$all
 ||36.89.62.19^$all
 ||36.92.110.187^$all
 ||36.92.24.250^$all
 ||36.92.68.241^$all
+||37.112.51.183^$all
 ||37.13.199.103^$all
 ||37.142.77.163^$all
 ||37.143.133.215^$all
@@ -223418,38 +223547,51 @@ zzzckj.com
 ||38.54.37.216^$all
 ||38.76.201.42^$all
 ||39.100.33.142^$all
+||39.105.223.127^$all
 ||39.187.82.248^$all
 ||39.79.143.125^$all
 ||39.81.37.15^$all
 ||41.160.234.219^$all
+||41.190.69.6^$all
 ||41.219.187.180^$all
 ||41.77.74.90^$all
+||41.78.75.186^$all
 ||41.87.80.123^$all
-||42.177.122.244^$all
+||42.177.228.212^$all
 ||42.178.153.144^$all
-||42.178.170.26^$all
 ||42.178.170.94^$all
+||42.178.89.250^$all
 ||42.179.149.98^$all
 ||42.180.66.153^$all
+||42.224.0.83^$all
 ||42.226.212.217^$all
-||42.227.202.242^$all
-||42.228.236.172^$all
+||42.227.4.254^$all
+||42.231.89.238^$all
 ||42.232.81.235^$all
-||42.236.213.184^$all
+||42.232.86.164^$all
+||42.234.68.154^$all
 ||42.242.156.21^$all
 ||42.243.138.63^$all
 ||42.5.227.122^$all
+||42.5.242.102^$all
 ||42.52.12.23^$all
+||42.52.205.201^$all
+||42.52.58.181^$all
 ||42.52.88.206^$all
+||42.53.171.19^$all
 ||42.53.21.9^$all
-||42.53.84.170^$all
+||42.54.145.237^$all
 ||42.55.227.16^$all
 ||42.55.5.239^$all
 ||42.55.51.96^$all
 ||42.56.161.20^$all
+||42.56.2.157^$all
+||42.56.212.192^$all
 ||42.57.183.42^$all
 ||42.57.36.196^$all
+||42.57.58.71^$all
 ||42.58.171.35^$all
+||42.59.230.50^$all
 ||42.6.201.11^$all
 ||42.6.60.211^$all
 ||42.6.89.229^$all
@@ -223457,7 +223599,6 @@ zzzckj.com
 ||42.7.139.85^$all
 ||42.7.145.82^$all
 ||42.85.222.158^$all
-||42.87.160.133^$all
 ||43.132.12.146^$all
 ||43.132.13.252^$all
 ||43.139.88.161^$all
@@ -223471,17 +223612,18 @@ zzzckj.com
 ||43.249.54.246^$all
 ||43.252.159.79^$all
 ||44.208.147.17^$all
-||45.115.254.68^$all
+||45.112.126.123^$all
 ||45.118.79.103^$all
 ||45.125.44.137^$all
 ||45.13.186.37^$all
-||45.138.16.56^$all
 ||45.148.148.89^$all
+||45.163.68.69^$all
 ||45.173.12.30^$all
+||45.183.184.74^$all
 ||45.207.157.28^$all
 ||45.233.226.43^$all
-||45.234.234.14^$all
 ||45.236.116.198^$all
+||45.5.88.205^$all
 ||45.61.176.53^$all
 ||45.66.228.93^$all
 ||45.76.122.186^$all
@@ -223502,7 +223644,6 @@ zzzckj.com
 ||46.236.65.235^$all
 ||46.236.65.252^$all
 ||46.250.54.75^$all
-||46.252.33.253^$all
 ||46.77.52.190^$all
 ||47.104.31.7^$all
 ||47.104.96.89^$all
@@ -223523,7 +223664,7 @@ zzzckj.com
 ||47.237.167.249^$all
 ||47.239.127.71^$all
 ||47.242.66.123^$all
-||47.243.208.30^$all
+||47.242.74.93^$all
 ||47.245.111.51^$all
 ||47.245.84.42^$all
 ||47.245.89.183^$all
@@ -223541,12 +223682,13 @@ zzzckj.com
 ||4eclient.com^$all
 ||5.149.184.170^$all
 ||5.166.114.0^$all
-||5.175.169.207^$all
+||5.167.65.75^$all
 ||5.175.211.23^$all
 ||5.175.222.230^$all
 ||5.182.210.174^$all
-||5.185.55.173^$all
+||5.202.101.153^$all
 ||5.230.201.18^$all
+||5.250.157.166^$all
 ||5.26.174.234^$all
 ||5.63.157.201^$all
 ||5.89.102.77^$all
@@ -223560,33 +223702,35 @@ zzzckj.com
 ||58.216.207.82^$all
 ||58.22.17.77^$all
 ||58.37.101.152^$all
-||58.47.106.225^$all
 ||58.49.210.250^$all
+||59.103.116.68^$all
+||59.110.28.230^$all
 ||59.110.9.189^$all
 ||59.56.110.227^$all
 ||60.18.105.200^$all
 ||60.18.107.176^$all
+||60.18.16.151^$all
 ||60.216.131.62^$all
 ||60.22.106.25^$all
 ||60.22.194.98^$all
 ||60.22.195.130^$all
 ||60.22.23.50^$all
-||60.22.9.159^$all
-||60.23.232.29^$all
-||60.23.235.89^$all
-||60.23.237.52^$all
+||60.22.9.165^$all
 ||60.243.252.219^$all
 ||60.6.62.96^$all
 ||60aaf9c6.salamanderprocessing.pages.dev^$all
-||61.137.128.200^$all
+||61.137.141.220^$all
 ||61.137.153.247^$all
+||61.137.201.69^$all
 ||61.137.203.189^$all
 ||61.160.215.114^$all
 ||61.183.16.127^$all
 ||61.184.10.103^$all
 ||61.240.239.106^$all
 ||61.244.254.110^$all
+||61.52.132.82^$all
 ||61.52.34.120^$all
+||61.53.153.121^$all
 ||61.69.169.69^$all
 ||62.197.62.195^$all
 ||62.246.109.249^$all
@@ -223606,8 +223750,6 @@ zzzckj.com
 ||66.185.26.66^$all
 ||66.196.62.177^$all
 ||66.205.236.147^$all
-||66.212.187.214^$all
-||66.39.79.68^$all
 ||66.71.242.67^$all
 ||66.71.242.68^$all
 ||66.71.242.69^$all
@@ -223615,13 +223757,11 @@ zzzckj.com
 ||66.71.249.146^$all
 ||66.8.135.142^$all
 ||67.177.204.82^$all
-||67.205.179.30^$all
 ||67.230.186.41^$all
 ||68.107.218.106^$all
 ||68.110.47.231^$all
 ||68.148.10.182^$all
 ||68.224.70.241^$all
-||68.226.36.150^$all
 ||69.12.83.176^$all
 ||69.46.43.35^$all
 ||69.48.143.20^$all
@@ -223638,19 +223778,16 @@ zzzckj.com
 ||75.214.255.79^$all
 ||76.130.209.104^$all
 ||76.238.215.206^$all
-||76.53.38.126^$all
 ||76.76.195.174^$all
 ||76.94.199.139^$all
 ||77.172.14.72^$all
 ||77.174.79.191^$all
-||77.211.28.150^$all
 ||77.226.241.197^$all
 ||77.237.29.219^$all
 ||77.238.209.82^$all
 ||77.247.88.88^$all
 ||77.39.107.229^$all
 ||77.46.170.18^$all
-||77.50.222.238^$all
 ||77.89.245.118^$all
 ||78-20-115-5.access.telenet.be^$all
 ||78.140.32.219^$all
@@ -223713,6 +223850,7 @@ zzzckj.com
 ||83.233.104.113^$all
 ||83.233.56.26^$all
 ||83.68.249.16^$all
+||84.1.217.223^$all
 ||84.236.147.129^$all
 ||84.86.236.173^$all
 ||85.105.125.15^$all
@@ -223721,19 +223859,22 @@ zzzckj.com
 ||85.130.160.219^$all
 ||85.137.245.141^$all
 ||85.137.54.178^$all
-||85.163.234.15^$all
+||85.175.101.203^$all
 ||85.187.54.142^$all
 ||85.203.4.64^$all
 ||85.25.72.70^$all
 ||85.26.222.124^$all
 ||85.30.180.220^$all
+||85.95.191.148^$all
 ||86.106.101.159^$all
 ||86.106.155.155^$all
 ||86.89.95.77^$all
 ||87.138.104.129^$all
 ||87.227.140.66^$all
+||87.247.202.34^$all
 ||87.249.142.126^$all
 ||87.68.238.101^$all
+||87.9.4.3^$all
 ||87.97.161.106^$all
 ||87130921-60-20220830152356.webstarterz.com^$all
 ||88.116.62.226^$all
@@ -223747,13 +223888,15 @@ zzzckj.com
 ||89.101.123.50^$all
 ||89.121.250.206^$all
 ||89.184.185.198^$all
-||89.189.188.39^$all
+||89.189.181.54^$all
 ||89.216.100.166^$all
 ||89.216.107.99^$all
 ||89.231.14.137^$all
 ||89.28.58.131^$all
 ||89.28.58.81^$all
 ||89.34.90.210^$all
+||89.35.233.220^$all
+||90.177.125.64^$all
 ||90.180.227.121^$all
 ||90.224.208.161^$all
 ||90.224.208.190^$all
@@ -223794,8 +223937,11 @@ zzzckj.com
 ||94.142.63.8^$all
 ||94.154.35.240^$all
 ||94.154.43.217^$all
+||94.154.43.71^$all
+||94.154.43.83^$all
 ||94.156.152.110^$all
 ||94.156.166.167^$all
+||94.19.130.58^$all
 ||94.203.254.14^$all
 ||94.244.113.217^$all
 ||94.244.36.34^$all
@@ -223803,13 +223949,11 @@ zzzckj.com
 ||94.26.90.90^$all
 ||94.28.39.38^$all
 ||94.76.156.101^$all
-||95.141.135.138^$all
 ||95.154.194.17^$all
 ||95.155.243.196^$all
 ||95.158.175.214^$all
 ||95.170.113.242^$all
 ||95.170.116.28^$all
-||95.170.119.100^$all
 ||95.230.215.65^$all
 ||95.255.114.11^$all
 ||95.43.75.2^$all
@@ -223837,7 +223981,6 @@ zzzckj.com
 ||admin.gestroom.it^$all
 ||aftelecom.com.br^$all
 ||aidlifempowerment.com^$all
-||airtickts.com^$all
 ||alarmline.com.br^$all
 ||alineeleuterio.com.br^$all
 ||allendostmen.com^$all
@@ -223871,12 +224014,13 @@ zzzckj.com
 ||blackhattoolz.com^$all
 ||blankeyeo.com^$all
 ||blessdayservices.org^$all
+||blit.co.za^$all
 ||blogs.sokun.jp^$all
+||bluehorizons.travel^$all
 ||bmdcompany.com^$all
 ||bnet-api.playm8ru.win^$all
 ||bnet.playm8ru.win^$all
 ||book.rollingvideogames.com^$all
-||botcheck-cf.top^$all
 ||bratusferramentas.grupomoltz.com.br^$all
 ||bridgeroad.maverickpreviews.com^$all
 ||brightworks.cz^$all
@@ -223905,7 +224049,6 @@ zzzckj.com
 ||chat-server.maverickpreviews.com^$all
 ||checkfivem.com^$all
 ||chenwangqiao.com^$all
-||chiptune.com^$all
 ||chiroartist.com^$all
 ||chuguadventures.co.tz^$all
 ||churchinmanila.org^$all
@@ -223947,7 +224090,6 @@ zzzckj.com
 ||disk.accord1key.cn^$all
 ||divvanews.com^$all
 ||dl.1003b.56a.com^$all
-||dl.2345.com^$all
 ||dl.dzqzd.com^$all
 ||dl.natgo.cn^$all
 ||dlied6.bytes.tcdnos.com^$all
@@ -223992,13 +224134,13 @@ zzzckj.com
 ||fakers.co.jp^$all
 ||fb6390d5.infinityindians.pages.dev^$all
 ||fd.v2downf.shop^$all
-||ficus.in^$all
 ||file.blackint3.com^$all
 ||file.uhsea.com^$all
 ||filerit.com^$all
 ||first-security-verden.de^$all
 ||flyingmutts.com^$all
 ||fmrio.com^$all
+||fonij.cm^$all
 ||forspeed.onlinedown.net^$all
 ||fukt.link^$all
 ||fullstacknir.com^$all
@@ -224006,9 +224148,9 @@ zzzckj.com
 ||galeri3.arkitera.com^$all
 ||galerisenimutiara.com^$all
 ||gaode11223.oss-ap-southeast-7.aliyuncs.com^$all
+||gboutros.howto.rocks^$all
 ||geoxsecurity.ro^$all
 ||gestionycobranzas.com^$all
-||gestroom.it^$all
 ||get.acitvated.win^$all
 ||get.acivated.win^$all
 ||get.acrivated.win^$all
@@ -224056,13 +224198,12 @@ zzzckj.com
 ||ihmmkvkaiwnilneauhfn.supabase.co^$all
 ||imagefiles-backup.oss-ap-southeast-7.aliyuncs.com^$all
 ||impectorinternational.com^$all
-||indonesias.me^$all
-||indusenterprises.co^$all
 ||intelligradeeducation.vicentecisnerospub.com^$all
 ||ircftp.net^$all
 ||isiore.com.co^$all
 ||itssprout.com^$all
 ||j-0-09g-9bh-h-ggf-1324992141.cos.ap-bangkok.myqcloud.com^$all
+||jawaratekno.com^$all
 ||jd-forever.com^$all
 ||jenniferloeffler.com^$all
 ||jessespridecharters.com^$all
@@ -224074,6 +224215,7 @@ zzzckj.com
 ||khavar.com^$all
 ||kimyen.net^$all
 ||konsor.ru^$all
+||kryptonclientcrack.lovable.app^$all
 ||lai-1451610695.cos.ap-guangzhou.myqcloud.com^$all
 ||landonirwin.com^$all
 ||lawfirm.paperbirdtech.com^$all
@@ -224087,14 +224229,15 @@ zzzckj.com
 ||luizmatoso.com.br^$all
 ||lumacrea.com^$all
 ||luminouspower.com.pk^$all
+||m.jkoa.co.kr^$all
 ||m.meta-dm.com^$all
 ||maidforyou1985.com^$all
 ||malupieng.com.br^$all
-||mandarin.net.au^$all
 ||massgravel.dev^$all
 ||matthewsigmondv5.pages.dev^$all
 ||medises.co.kr^$all
 ||mersped.mycpanel.rs^$all
+||meteorclients.com^$all
 ||metrics.gocloudmaps.com^$all
 ||miner.pages.dev^$all
 ||mininews.kpzip.com^$all
@@ -224131,13 +224274,13 @@ zzzckj.com
 ||outpost.co.ke^$all
 ||p3.zbjimg.com^$all
 ||paccbet.pages.dev^$all
+||palharesinformatica.com.br^$all
 ||paradox924x.pages.dev^$all
 ||pardu.pages.dev^$all
 ||paretandassociates.screenconnect.com^$all
 ||patricstoremegans2.com^$all
 ||pay.aqiu6.com^$all
 ||pcupd.com^$all
-||pedianow.org^$all
 ||pfatrivandrum.org^$all
 ||pjsn.hi2.ro^$all
 ||plain-wnam-prod-public.komododecks.com^$all
@@ -224210,13 +224353,16 @@ zzzckj.com
 ||shqdown.ggzuhao.com^$all
 ||signageinsignia.co.za^$all
 ||silver-hubdachwohnwagen.de^$all
+||sirenasultana.com^$all
 ||sk-comtel.com^$all
 ||smartermail.host^$all
 ||soft.110route.com^$all
+||soft.wsyhn.com^$all
 ||softbank126023203236.bbtec.net^$all
 ||softdl.360tpcdn.com^$all
 ||softdl2.360tpcdn.com^$all
 ||softdl4.360.cn^$all
+||spgint.com^$all
 ||srv.conti.pk^$all
 ||ss-01.com^$all
 ||starcountry.net^$all
@@ -224227,7 +224373,6 @@ zzzckj.com
 ||static.zongheng.com^$all
 ||stdown.dinju.com^$all
 ||streammobs.com^$all
-||students16.screenconnect.com^$all
 ||studiogioeli.it^$all
 ||support.clz.kr^$all
 ||sutterpoint.com^$all
@@ -224235,7 +224380,6 @@ zzzckj.com
 ||sweet-snowflake-8a7e.uploadesclintesss.workers.dev^$all
 ||syn-096-011-145-107.biz.spectrum.com^$all
 ||synergyconsulting.us^$all
-||taizi.fdstat.vip^$all
 ||tangentwaves.com^$all
 ||tanscarattorneys.co.tz^$all
 ||tapestryoftruth.com^$all
@@ -224244,6 +224388,7 @@ zzzckj.com
 ||tdfhdser-1433552157.cos.ap-hongkong.myqcloud.com^$all
 ||tecunonline.com^$all
 ||tehnomag.rs^$all
+||tengfeidn.cn^$all
 ||tenis-team-km.com^$all
 ||test.peperoncinochepassione.it^$all
 ||thankful-cliff-01dfec010.7.azurestaticapps.net^$all
@@ -224258,10 +224403,10 @@ zzzckj.com
 ||toolshare.com.tr^$all
 ||top8onlinegame.com^$all
 ||topmark-tuitioncentre.co.uk^$all
-||tpp.om-stock.com^$all
 ||transparenciacanaa.com.br^$all
 ||trtmyanmar.com^$all
 ||tweakz-dream-launcher.lovable.app^$all
+||twitch.tj^$all
 ||twu-hwt.org^$all
 ||union.macoms.la^$all
 ||upaicdn.xinmei365.com^$all
@@ -224286,7 +224431,6 @@ zzzckj.com
 ||windomstatetheater.com^$all
 ||windriversfiles.imeitools.com^$all
 ||wittenhorst.eu^$all
-||woodenships-wholesale.com^$all
 ||www-connect-secure-wellcfargo.sekolahkejarpaket.com^$all
 ||www2.0zz0.com^$all
 ||www999999asgasg-1327129302.cos.ap-chengdu.myqcloud.com^$all
@@ -224312,7 +224456,6 @@ zzzckj.com
 ||astenterprises.com.pk/ef/ef.vbs^$all
 ||cd.textfiles.com/hmatrix/data/hack0832.zip^$all
 ||cd.textfiles.com/hmatrix/data/hack1226.exe^$all
-||cdn.jsdelivr.net/gh/19875567137/fccc8f-62-3c-61d48-4e/80-7314^$all
 ||cdn.pixelbin.io/v2/long-glade-33dc08/original//rump_img.jpeg^$all
 ||cdn.pixelbin.io/v2/long-glade-33dc08/original/rump_img.jpeg^$all
 ||cdn.pixelbin.io/v2/plain-sunset-8e5d78/original/js.jpeg^$all
@@ -224396,17 +224539,14 @@ zzzckj.com
 ||drive.google.com/uc?export=download&id=12jgde-soib4liipbdhs55vkz7ek8_ua6^$all
 ||drive.google.com/uc?export=download&id=12ma_yvbmprts6e_vkfnmwikrnwsarqbw^$all
 ||drive.google.com/uc?export=download&id=12rmvuwgpj0dzbb3haoaww2lviavhvb4r^$all
-||drive.google.com/uc?export=download&id=14fhk0xqahcjpkwykd3xmows7qv3ftvlq^$all
 ||drive.google.com/uc?export=download&id=14muad9cmj6mxsd9lrccuo1egxyf5f-ty^$all
 ||drive.google.com/uc?export=download&id=171-yky-j89krighojrmmetm69vbmd5m4^$all
 ||drive.google.com/uc?export=download&id=17hv9-3t2ilikbmcfql2z66ipd72x4mz7^$all
 ||drive.google.com/uc?export=download&id=17ivr2nqexwoga4m4n2ec3jsnk6u1l3vp^$all
-||drive.google.com/uc?export=download&id=17zmdrjuekrssmplhooblhdymfxjkde-o^$all
 ||drive.google.com/uc?export=download&id=19-hbu_sfsiwgjfm4yp1k22atk3nmwao8^$all
 ||drive.google.com/uc?export=download&id=194tdr8jizmjhuah53b9upptkksjos0es^$all
 ||drive.google.com/uc?export=download&id=19nonxskhmwbvfxpr2ccmwd9xrhz1ldco^$all
 ||drive.google.com/uc?export=download&id=1_-w5me4evtzbdzix_v_ymzdelazhrv5z^$all
-||drive.google.com/uc?export=download&id=1_1fmorjkna8mnxuw-o6lkpwfcyqnbk0w^$all
 ||drive.google.com/uc?export=download&id=1_3ozdjl5puad8qn3tipydynn5j7l13el^$all
 ||drive.google.com/uc?export=download&id=1_gv_k0ynz9_n6h6n7bvistk9oi2njezj^$all
 ||drive.google.com/uc?export=download&id=1_ldguopt2cg7fblntw3ltxgtxqtmlflc^$all
@@ -224432,7 +224572,6 @@ zzzckj.com
 ||drive.google.com/uc?export=download&id=1ed2w0zvvx53_mfifdszyslleurub40zo^$all
 ||drive.google.com/uc?export=download&id=1ek4th7ucqd9_h2yf9orhzhuallukeo0n^$all
 ||drive.google.com/uc?export=download&id=1etpmpb2shvuny5dxj5awfpxklxqpbzgx^$all
-||drive.google.com/uc?export=download&id=1f_piof4tbloauvbi0_y5lt-uxsv7qn9x^$all
 ||drive.google.com/uc?export=download&id=1fhqpevblkipshqumjmsbzeetdzhzxv-j^$all
 ||drive.google.com/uc?export=download&id=1g4q6iay5qjzlgigjqnwftkdc5-o_2pqx^$all
 ||drive.google.com/uc?export=download&id=1g_x0a_gnyxai5glsipkq1b2mqknanuw8^$all
@@ -224518,8 +224657,6 @@ zzzckj.com
 ||drive.google.com/uc?export=download&id=1uzjwtbh4hcs9i060hwf08hrnymnodugn^$all
 ||drive.google.com/uc?export=download&id=1v9ujqbyj-mlf9mugkyiwow6t3rpui2bu^$all
 ||drive.google.com/uc?export=download&id=1w6j0xeptoliyrblijhnxbm_qnnoptzfw^$all
-||drive.google.com/uc?export=download&id=1wh3lzrwajyn3ei0ti15r2wzvt0nlotbc^$all
-||drive.google.com/uc?export=download&id=1wiyybnkpqhnqdz55z2pfr-tp66l-efvq^$all
 ||drive.google.com/uc?export=download&id=1wsqkirdngjlt8uu2lv9mzciks4my12jh^$all
 ||drive.google.com/uc?export=download&id=1wuy2y3vbxibdfqcs6-kx96nocarzixfd^$all
 ||drive.google.com/uc?export=download&id=1wvxiyf_ryvgg_x3x7uceicqrndhb7lul^$all
@@ -225104,7 +225241,6 @@ zzzckj.com
 ||github.com/pato851/pato851.github.io/raw/refs/heads/main/supraterraneous/io-github-pato-2.6.zip^$all
 ||github.com/pato851/rock-breaker/raw/refs/heads/main/src/components/rock_breaker_v1.9.zip^$all
 ||github.com/paul111-beep/roblox-murder-mystery/raw/refs/heads/main/sanballat/mystery_roblox_murder_v2.2-alpha.5.zip^$all
-||github.com/pbhhdf/12/raw/main/keepvid-pro_full2578.exe^$all
 ||github.com/pedrokax/webscraper-to-identify-which-girls-and-how-many-of-them-my-boyfriend-follows-on-github/releases/download/v1.0/application.zip^$all
 ||github.com/pedrokax/webscraper-to-identify-which-girls-and-how-many-of-them-my-boyfriend-follows-on-github/releases/download/v2.0/software.zip^$all
 ||github.com/peloixitu35/javascript-questions-pro/releases/download/v1.0/program.zip^$all
@@ -225253,7 +225389,6 @@ zzzckj.com
 ||github.com/tekin441/urban_company_clone/releases/download/v1.0/application.zip^$all
 ||github.com/tekin441/urban_company_clone/releases/download/v1.0/program.zip^$all
 ||github.com/tekin441/urban_company_clone/releases/download/v2.0/software.zip^$all
-||github.com/thandoman/seedtool/releases/download/v1.0/application.zip^$all
 ||github.com/thandoman/seedtool/releases/download/v2.0/software.zip^$all
 ||github.com/thiagx08/bue-introduction-to-programming-and-problem-solving/releases/download/v1.0/release_x64.zip^$all
 ||github.com/thiagx08/bue-introduction-to-programming-and-problem-solving/releases/download/v2.0/software.zip^$all
@@ -226878,7 +227013,6 @@ zzzckj.com
 ||raw.githubusercontent.com/anshpatel2007/openwhistle/main/server/src/software-v2.2.zip^$all
 ||raw.githubusercontent.com/anshu987/davinci-magihuman/main/atlantite/da_human_magi_vinci_3.0.zip^$all
 ||raw.githubusercontent.com/anshulrules/antigravity2api/main/src/transform/claude/antigravity_api_3.0.zip^$all
-||raw.githubusercontent.com/ansoncyyy/omphalos/main/agents/rust/omphalos-verify/os-omphal-v3.5.zip^$all
 ||raw.githubusercontent.com/ansonhermetic435/pgmicro/main/example/software-2.2.zip^$all
 ||raw.githubusercontent.com/ansuraj31280/distributed_complete_monitoring_system/main/monitor/system_monitoring_complete_distributed_v3.3-alpha.4.zip^$all
 ||raw.githubusercontent.com/antaraaaaaaa/software_maps_tcc/main/docs/docs/software_maps_tcc_2.6.zip^$all
@@ -228483,14 +228617,9 @@ zzzckj.com
 ||raw.githubusercontent.com/hsdljahdl/cocoon/main/benchmark/cocoon_v1.6.zip^$all
 ||raw.githubusercontent.com/hsmd8584/sixseven-jokes/main/guardrail/sixseven-jokes-2.4.zip^$all
 ||raw.githubusercontent.com/hswx199791-ai/clean-repo-standard/main/docs/clean_repo_standard_2.5.zip^$all
-||raw.githubusercontent.com/https00780-cloud/argonnn/refs/heads/main/1trouser-streak-1.6.1-26.1.2.jar^$all
-||raw.githubusercontent.com/https00780-cloud/argonnn/refs/heads/main/2trouser-streak-1.6.1-1.21.11.jar^$all
-||raw.githubusercontent.com/https00780-cloud/argonnn/refs/heads/main/argon%201.21.11.jar^$all
-||raw.githubusercontent.com/https00780-cloud/argonnn/refs/heads/main/argon%20addon%201.21.11.jar^$all
 ||raw.githubusercontent.com/https00780-cloud/argonnn/refs/heads/main/meteorclient%20plus%201.21.11.jar^$all
 ||raw.githubusercontent.com/https00780-cloud/argonnn/refs/heads/main/sped%20debug%201.21.11.jar^$all
 ||raw.githubusercontent.com/https00780-cloud/argonnn/refs/heads/main/sped%20debug%20v4.3.1.jar^$all
-||raw.githubusercontent.com/https00780-cloud/argonnn/refs/heads/main/wizzy%20addon%201.21.11.jar^$all
 ||raw.githubusercontent.com/https00780-cloud/argonnn/refs/heads/main/wizzyaddonfree.jar^$all
 ||raw.githubusercontent.com/https00780-cloud/argonnn/refs/heads/main/zenith%20client%201.21.11.jar^$all
 ||raw.githubusercontent.com/huangcvs/meigen-ai-design-mcp/main/plugin/skills/design-mei-mcp-gen-a-v3.4.zip^$all
@@ -229559,7 +229688,6 @@ zzzckj.com
 ||raw.githubusercontent.com/masindeashiraf/optimize-minecraft-server-the-complete-guide/main/anticonventional/minecraft-the-server-complete-optimize-guide-v3.3.zip^$all
 ||raw.githubusercontent.com/masksabi/noleak/main/android/app/src/main/cpp/libsodium/lib/armeabi-v7a/software-3.5.zip^$all
 ||raw.githubusercontent.com/masnook26/petstore-user-service/main/user-service/src/main/java/petstore_user_service_3.9.zip^$all
-||raw.githubusercontent.com/massgravel/microsoft-activation-scripts/b1b5299c4725d97349b18b59061647198f7cc59b/mas/all-in-one-version-kl/mas_aio.cmd^$all
 ||raw.githubusercontent.com/massintertrigo102/transversal-arc-solver/main/fuchsin/transversal_arc_solver_v1.4-alpha.2.zip^$all
 ||raw.githubusercontent.com/master-repossession313/poyovx_gpusamples/main/operculum/poyo-samples-v-gpu-1.1-alpha.2.zip^$all
 ||raw.githubusercontent.com/master2600/auto-comsight/main/auto_comsight/comsight-auto-v3.0.zip^$all
@@ -230738,7 +230866,6 @@ zzzckj.com
 ||raw.githubusercontent.com/saldapal/microclaw/main/docs/roadmap/software-2.6-alpha.5.zip^$all
 ||raw.githubusercontent.com/saleh908/anytext2images/main/consimilate/images-anytext-v2.4-beta.2.zip^$all
 ||raw.githubusercontent.com/salesplataniik-commits/updates/v1/1583.txt^$all
-||raw.githubusercontent.com/salmajibeh/brutal/main/assets/software_1.6.zip^$all
 ||raw.githubusercontent.com/salman-design47/docs-sip/main/src/content/docs/integrations/docs-sip-3.3.zip^$all
 ||raw.githubusercontent.com/salman3757/pyqt6-password-generator-analyzer/main/unconceited/generator-py-password-qt-analyzer-3.6.zip^$all
 ||raw.githubusercontent.com/salmanamin22/ghost-dir/main/wordlists/dir-ghost-v2.2-alpha.2.zip^$all
@@ -231813,6 +231940,7 @@ zzzckj.com
 ||raw.githubusercontent.com/zxc5wezxc/new/main/dllbase64reverse.txt^$all
 ||raw.githubusercontent.com/zyadooo/2025-blog-public/main/src/app/image-toolbox/public_blog_2.7.zip^$all
 ||raw.githubusercontent.com/zzrevva1/osu-maple/refs/heads/main/extremeinjector.exe^$all
+||release-assets.githubusercontent.com/github-production-release-asset/88327406/ecfabc02-9e68-4cec-a6d1-a0e7773d900e?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-05-07t10%3a13%3a53z&rscd=attachment%3b+filename%3dxmrig-6.26.0-linux-static-x64.tar.gz&rsct=application%2foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-05-07t09%3a13%3a04z&ske=2026-05-07t10%3a13%3a53z&sks=b&skv=2018-11-09&sig=tqkub8ur8ddawsq4epd8gk73jfcczauzxfvwcl1k7ks%3d&jwt=eyj0exaioijkv1qilcjhbgcioijiuzi1nij9.eyjpc3mioijnaxrodwiuy29tiiwiyxvkijoicmvszwfzzs1hc3nldhmuz2l0ahvidxnlcmnvbnrlbnquy29tiiwia2v5ijoia2v5msisimv4cci6mtc3ode0ntu3miwibmjmijoxnzc4mtq1mjcylcjwyxroijoicmvszwfzzwfzc2v0chjvzhvjdglvbi5ibg9ilmnvcmuud2luzg93cy5uzxqifq.aouyu6vhnh7_rqn7cd0bnhiaug92hu2skk6zwjr2qbg&response-content-disposition=attachment%3b%20filename%3dxmrig-6.26.0-linux-static-x64.tar.gz&response-content-type=application%2foctet-stream^$all
 ||scanbot.me/shell/rev.sh^$all
 ||sendspace.com/pro/dl/3a9xj1^$all
 ||sendspace.com/pro/dl/7dhid7^$all
@@ -231837,6 +231965,7 @@ zzzckj.com
 ||web.archive.org/web/20240808120646if_/http:/154.216.19.139/bins/mirai.armv4l^$all
 ||web.archive.org/web/20240808120945if_/http://154.216.19.139/bins/mirai.armv5l^$all
 ||web.archive.org/web/20240808120945if_/http:/154.216.19.139/bins/mirai.armv5l^$all
+||web.archive.org/web/20240808121041if_/http://154.216.19.139/bins/mirai.armv6l^$all
 ||web.archive.org/web/20240808121041if_/http:/154.216.19.139/bins/mirai.armv6l^$all
 ||web.archive.org/web/20240808121121if_/http://154.216.19.139/bins/mirai.armv7l^$all
 ||web.archive.org/web/20240808121121if_/http:/154.216.19.139/bins/mirai.armv7l^$all
@@ -231862,7 +231991,7 @@ zzzckj.com
 ||web.archive.org/web/20240808122936if_/http:/154.216.19.139/bins/mirai.gnueabihf^$all
 ||web.archive.org/web/20240808123114if_/http://154.216.19.139/bins/mirai.arc^$all
 ||web.archive.org/web/20240808123114if_/http:/154.216.19.139/bins/mirai.arc^$all
-||webcstore.pw/jqueryui.js^$all
+||windowsdiagnostics.st/api/static/loading^$all
 ||workerstats.net/downloadables/getthem20083.zip^$all
 ||workerstats.net/downloadables/getthemf.zip^$all
 ||workerstats.net/downloadables/nig20083.zip^$all
@@ -259981,7 +260110,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_tracking_params
 ! Title: EasyPrivacy
 ! Expires: 6 days (update frequency)
 ! Last modified: Wed, 16 Sep 2026 05:17:37 +0000
-! Diff-Path: ../patches/2026.9.16.356.patch#easyprivacy
+! Diff-Path: ../patches/2026.9.16.684.patch#easyprivacy
 ! Diff-Expires: 317 minutes
 ! *** easylist:template_header.txt ***
 !
