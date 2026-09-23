@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: 7G6xXjWNkDEToxJMXxrBOw
-! Diff-Path: ../patches/11/11-s-1790093432-3600.patch
+! Checksum: RuP0ieLoeaWg4Khs249U6Q
+! Diff-Path: ../patches/11/11-s-1790176161-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.20
-! TimeUpdated: 2026-09-22T16:06:34+00:00
+! Version: 2.0.72.25
+! TimeUpdated: 2026-09-23T15:05:36+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2477,6 +2477,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+wikiwiki.jp##.caption-flybox:has(> div[id*="ad-container"])
+bluebirdbanter.com##div[class]:has(> div[data-concert*="frontpage_hero_mobile"])
+alba.co.jp##li[class^="RelationPostItem_postItemStyle_"]:has(> div[id][style="height: 102px;"])
 wineverygame.com##.weg-mobile-campaign
 telugutimes.net##.tt-sticky-footer-ad
 jikayosha.jp##.photo-ad__fv
@@ -8414,7 +8417,7 @@ contexto.me##.top-ad-padding:style(padding-top: 15px !important;)
 ! !SECTION: Regular rules
 !
 ! TXXX network/tubecorp/Adultnext
-inporn.com##.video__wrapper > div[class]:not(.wrapper)
+in-porn.com,xmilf.com,blackporn.tube,inporn.com##.video__wrapper > div[class]:not(.wrapper)
 tporn.xxx##.video__header
 mrgay.com,mrgay.tube,bdsmx.tube,manysex.com,manysex.tube,inporn.com##.video__wrapper > div.header__item
 txxxporn.tube,txxx.*##.video-conten > div[class] > div[class]:has(> div[class] > div[style="height: 100px;"])
@@ -8683,6 +8686,8 @@ livejournal.com##div[id^="billboard_mobile_"]
 ! END: Livejournal.com
 !
 !
+!+ NOT_OPTIMIZED
+heise.de##.ad-mobile-group-3
 !+ NOT_OPTIMIZED
 stackoverflow.com##.js-sidebar-zone
 !+ NOT_OPTIMIZED
@@ -9253,7 +9258,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/unbreak.txt ---
 ! Title: uBlock filters – Unbreak
-! Last modified: Thu, 17 Sep 2026 16:19:33 +0000
+! Last modified: Wed, 23 Sep 2026 10:04:33 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock Origin, to unbreak sites broken as a result of 3rd-party filter lists enabled by default.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -15323,10 +15328,13 @@ hktvmall.com##+js(set, Object.prototype.componentInScreen, noopFunc)
 ! https://github.com/uBlockOrigin/uAssets/issues/34525
 expatexplorer.hsbc.com##+js(trusted-set, HSBC, 'json:{"SITE":{},"DCS":{},"PAGE":{}}')
 
+! https://github.com/uBlockOrigin/uAssets/issues/34562
+@@||homedepot.com.ssl.d2.sc.omtrdc.net^$xhr,domain=homedepot.com
+
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Tue, 22 Sep 2026 12:00:02 +0000
+! Last modified: Wed, 23 Sep 2026 06:20:59 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15836,7 +15844,7 @@ flipkart.com#@#div[data-id][style]:has([width][height][fill])
 ! https://github.com/uBlockOrigin/uAssets/issues/34009
 pdftoshokan.com##+js(aeld, /click|load/, /document\.location|pop\.|exo|cookie|\.php/)
 pdftoshokan.com##+js(nowoif, /ok_|pemsrv\.com/)
-pdftoshokan.com##+js(trusted-rpnt, script, if(now-last>c*1e3), if(0))
+pdftoshokan.com##+js(trusted-rpnt, script, /if\(n(ow)?-l(ast)?>c\*1e3\)/, if(0))
 pdftoshokan.com##+js(trusted-replace-outbound-text, atob, /^https:\/\/s\.pemsrv\.com.+/, 'window.location.href')
 !#if cap_html_filtering
 pdftoshokan.com##^script:has-text(/ad.?Config|prepare.?Pop|\/popunder|ads_host/)
@@ -15865,7 +15873,7 @@ igorslab.de##span[style]:has(svg path)
 igorslab.de##span[aria-label][role="img"][style*="data:image"] + a
 igorslab.de##svg
 igorslab.de##[class]:has-text(/^\s*(Advertisement|Werbung|广告)\s*$/)
-igorslab.de##div[class]:matches-css-before(content: /^\s*\"(Advertise۞nt|Werbung|广告)\"\s*$/)
+igorslab.de##div[class]:matches-css-before(content: /^\s*\"(Advertis.+|Werbung|广告)\"\s*$/)
 igorslab.de##[aria-label="Advertisement" i]
 igorslab.de##[aria-label="Werbung" i]
 igorslab.de##[aria-label="广告"]
