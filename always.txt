@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: RuP0ieLoeaWg4Khs249U6Q
-! Diff-Path: ../patches/11/11-s-1790176161-3600.patch
+! Checksum: i8YXbTD6L8eZCpVLWidLoA
+! Diff-Path: ../patches/11/11-s-1790186993-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.25
-! TimeUpdated: 2026-09-23T15:05:36+00:00
+! Version: 2.0.72.26
+! TimeUpdated: 2026-09-23T18:07:09+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2477,6 +2477,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+wallpapers.com##.cd-mobile-creator-ad
 wikiwiki.jp##.caption-flybox:has(> div[id*="ad-container"])
 bluebirdbanter.com##div[class]:has(> div[data-concert*="frontpage_hero_mobile"])
 alba.co.jp##li[class^="RelationPostItem_postItemStyle_"]:has(> div[id][style="height: 102px;"])
@@ -15334,7 +15335,7 @@ expatexplorer.hsbc.com##+js(trusted-set, HSBC, 'json:{"SITE":{},"DCS":{},"PAGE":
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Wed, 23 Sep 2026 06:20:59 +0000
+! Last modified: Wed, 23 Sep 2026 11:56:33 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15894,6 +15895,9 @@ igorslab.de##div[style*="blob:http"]:style(background: none !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/27044#issuecomment-5723020527
 wolt.com#@#div:has(> div > div > div > div > div > div > p:has-text(Sponsored))
 wolt.com#@#div:has(> div > div > div > div > div > p:has-text(Sponsored))
+
+! https://github.com/uBlockOrigin/uAssets/issues/34588
+sulpanaro.net#@#div[class^="sulpa-"]
 
 
 ! --- Source: https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt ---
