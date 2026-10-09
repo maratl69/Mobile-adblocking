@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: efGx1kP46hPBmH2qzDZUDw
-! Diff-Path: ../patches/11/11-s-1791461571-3600.patch
+! Checksum: jUFlm+ajsemBDttT3kJq4A
+! Diff-Path: ../patches/11/11-s-1791537184-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.60
-! TimeUpdated: 2026-10-08T12:08:56+00:00
+! Version: 2.0.72.61
+! TimeUpdated: 2026-10-09T09:09:13+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2496,9 +2496,11 @@ troypoint.com##.tp-vpn-banner
 comandir.com##noindex > div.hblock
 myinstants.com##.large-rectangle-ad-mobile-only
 moneydj.com##div.MDJCom-MDJADLoader
+xfastest.com##.xfm-ad-break
+xfastest.com##.has-ad:not(#style_important)
+xfastest.com###xfmTop385
 mumsnet.com###mn-leaderboard-mobile-container:style(display: none !important;)
 mumsnet.com##.pt-\[120px\]:style(padding-top: 0 !important;)
-xfastest.com###xfmTop385
 tavovaikas.lt##.entry-content > div[style]:has(> div[id^="stpd-inarticle-mobile"])
 mamaslatinas.com##.gam-injector__ad-footer-wrapper
 routinehub.co##.rh-ad-slot
@@ -15376,7 +15378,7 @@ expatexplorer.hsbc.com##+js(trusted-set, HSBC, 'json:{"SITE":{},"DCS":{},"PAGE":
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Thu, 08 Oct 2026 15:14:22 +0000
+! Last modified: Fri, 09 Oct 2026 05:56:52 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15870,12 +15872,14 @@ fo76db.com##+js(trusted-rpnt, script, / ads\.map[\S\s\n]+?join\(''\)/)
 pdftoshokan.com##+js(aeld, /click|load/, /document\.location|pop\.|exo|cookie|\.php/)
 pdftoshokan.com##+js(nowoif, /ok_|pemsrv\.com|window\.location\.href/)
 pdftoshokan.com##+js(trusted-replace-argument, parseInt, 0, json:"1800000000000", condition, /^(179\d{10}|null)$/)
+pdftoshokan.com##+js(trusted-replace-argument, parseFloat, 0, json:"1800000000000", condition, /^(179\d{10}|null)$/)
 pdftoshokan.com##+js(trusted-replace-argument, Number, 0, json:"1800000000000", condition, /^179\d{10}$/)
 pdftoshokan.com##+js(trusted-replace-outbound-text, atob, /^https:\/\/s\.pemsrv\.com.+/, 'window.location.href')
 pdftoshokan.com##+js(set, doAdRedirect, noopFunc)
 !#if cap_html_filtering
 pdftoshokan.com##^script:has-text(/ad.?Config|prepare.?Pop|\/popunder|ads_host/)
-||pdftoshokan.com^$script,replace=/if\s*\(\s*[-\$0-9A-Z_a-z]+-[-\$0-9A-Z_a-z]+\s*>\s*[-\$0-9A-Z_a-z]+\s*\*\d+(e\d)?\s*\)/if(0)/
+||pdftoshokan.com^$script,replace=/if\s*\(\s*[-\$0-9A-Z_a-z]+\s*-\s*[-\$0-9A-Z_a-z]+\s*>\s*[-\$0-9A-Z_a-z]+\s*\*\s*\d+(e\d)?\s*\)/if(0)/
+||pdftoshokan.com^$script,replace=/if\s*\(\s*\(\s*[-\$0-9A-Z_a-z]+\s*-\s*[-\$0-9A-Z_a-z]+\s*\)\s*\/\s*\d+(e\d)?\s*>\s*[-\$0-9A-Z_a-z]+\s*\)//
 !#endif
 ||pdftoshokan.com/window.location.href$doc,uritransform=/window\.location\.href//
 ||pdftoshokan.com/manga/window.location.href$doc,uritransform=/manga\/window\.location\.href//
@@ -15991,14 +15995,18 @@ elektroda.pl##.ad-resize.container:style(padding:0 !important)
 /?catalog_visit=$doc,uritransform=/\?catalog_visit=.+//,domain=genshin-soku.com|monhan-soku.com|xn--gckdevd5myivf.site|yamiisoku.com
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##a:not(.yrss-list__a):matches-attr("href"="/^.{100,}/")
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##a:matches-attr("/^data-/")
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##a:matches-attr("href"="/=[0-9a-f]{32}$/")
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##a[rel*="sponsored"]:not(.aedr-form__purchase[href="https://amzn.to/4g4yOhg"])
-genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##a:has(img[src^="https://m.media-amazon.com"])
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##a:has(img[src^="https://m.media-amazon.com" i])
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##[href*="aHR0"]
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##[class*="pdx-"]
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##[id*="-remote"]
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##[id*="-sale"]
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##.catalog-content
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(json-prune, html)
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(prevent-innerHTML)
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(trusted-suppress-native-method, DOMParser.prototype.parseFromString, '"/<[Aa]/"')
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(no-fetch-if, method:POST)
 
 ! https://github.com/uBlockOrigin/uAssets/pull/34750
 ligainsider.de##+js(trusted-replace-argument, document.getElementById, 0, '', condition, /^wall-backdrop$/)
