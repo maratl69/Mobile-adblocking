@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: XWI1R9LnYqzcrKehbBPuUw
-! Diff-Path: ../patches/11/11-s-1791879361-3600.patch
+! Checksum: d5r/+sXO5zw7M24/H3XzAw
+! Diff-Path: ../patches/11/11-s-1791915075-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.67
-! TimeUpdated: 2026-10-13T08:12:13+00:00
+! Version: 2.0.72.69
+! TimeUpdated: 2026-10-13T18:07:40+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2480,6 +2480,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+ostsee-zeitung.de##div[class^="Adstyled__MinHeightContainerForStickyAd"]
+newtalk.tw##.ad-half
+newtalk.tw##.extend_ad
 fp1-siken.com,fp2-siken.com,fp3-siken.com,ap-siken.com,db-siken.com,fe-siken.com,itpassportsiken.com,nw-siken.com,pm-siken.com,sc-siken.com,sg-siken.com##.ads_wrap
 asiaflix.net##body > div#af-dl-1[style*="z-index: 999999999999;"]
 cheatingporn.net##aside#sidebar:has(> div.happy-sidebar > script[src*="/invoke.js"])
@@ -9297,7 +9300,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/unbreak.txt ---
 ! Title: uBlock filters – Unbreak
-! Last modified: Thu, 08 Oct 2026 14:31:37 +0000
+! Last modified: Tue, 13 Oct 2026 08:48:49 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock Origin, to unbreak sites broken as a result of 3rd-party filter lists enabled by default.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -15375,10 +15378,13 @@ expatexplorer.hsbc.com##+js(trusted-set, HSBC, 'json:{"SITE":{},"DCS":{},"PAGE":
 ! https://github.com/uBlockOrigin/uAssets/issues/34743
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=aryplus.tv
 
+! https://github.com/uBlockOrigin/uAssets/issues/34837
+www.bankofamerica.com##+js(no-fetch-if, smetrics.bankofamerica.com)
+
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Mon, 12 Oct 2026 11:35:58 +0000
+! Last modified: Tue, 13 Oct 2026 17:24:52 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15481,6 +15487,8 @@ www.youtube.com##+js(trusted-rpfr, '"adSlots"', '"no_ads"', /get_watch?)
 /\.googlevideo\.com\/videoplayback\?expire=(?:[02-9]\d+|1[1-68-9]\d+|17[1-7]\d+)&/$xhr,3p,method=get,domain=www.youtube.com
 ! https://github.com/uBlockOrigin/uAssets/issues/27415#issuecomment-3276882899
 ||youtube.com/api/stats/atr?ns=*&ver=2&cmt=1.*&fs=0&*&euri&lact=$xhr,method=post,badfilter
+!
+www.youtube.com###toast:has(> #text-container > yt-formatted-string#text.yt-notification-action-renderer)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3367
 ! web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.viewer.sideFeed.nodes.0.{-}.nodes.0.rhc_ad)
@@ -15693,6 +15701,7 @@ gledaitv.*##+js(trusted-replace-argument, document.querySelector, 0, json:"body"
 gledaitv.*##+js(set, scriptBlocked, false)
 gledaitv.*##+js(set, blocked, false)
 gledaitv.*##+js(set, testUrls, [])
+gledaitv.*##+js(nostif, adblock)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=bg-gledai.video,redirect=google-ima.js
 ||viads.com^$script,domain=bg-gledai.video,redirect=noopjs
 
@@ -15855,9 +15864,12 @@ openchat-review.me##+js(aost, document.querySelectorAll, security.js)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33280
 streamcash.to##+js(rmnt, script, /\${''}|body:JSON\.stringify/)
-streamcash.to##+js(trusted-replace-argument, document.getElementById, 0, '', condition, pv-notice)
-streamcash.to##span[id][style*="z-index: 2147483647;"]
-streamcash.to##div[id][style*="40px"]
+streamcash.to##+js(set, Element.prototype.attachShadow, noopFunc)
+streamcash.to##a[rel*="sp0nsored"]:upward(1)
+streamcash.to##+js(trusted-override-element-method, HTMLAnchorElement.prototype.click, a[target="_blank"])
+streamcash.to##div.video-js:style(z-index:2147483647 !important)
+||mjzeexubcswjka.com^
+||uijarxbm.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24714
 decompiler.com##+js(set, OffscreenCanvas.prototype.getContext, undefined)
@@ -16013,7 +16025,8 @@ genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(json-
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(prevent-innerHTML)
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(trusted-suppress-native-method, DOMParser.prototype.parseFromString, '"/<[Aa]/"')
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(no-fetch-if, method:POST)
-genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(rmnt, script, adsbygoogle)
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(rmnt, script, /adsby|console|data-ad|modal|requestAnimationFrame|srcdoc|tagName|text\/html|userAgent|visibility|zucks|^[\S\s]{3200\,}$|\\u00|ブロッカ/)
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##^script[id]:not([src], :empty, #wp-emoji-settings)
 
 ! https://github.com/uBlockOrigin/uAssets/pull/34750
 ligainsider.de##+js(trusted-replace-argument, document.getElementById, 0, '', condition, /^wall-backdrop$/)
