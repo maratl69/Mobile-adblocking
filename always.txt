@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: eFxhl1A7ansR8RIX8bz5rQ
-! Diff-Path: ../patches/11/11-s-1792466193-3600.patch
+! Checksum: fKeJBoEQua3kbFIC0tD9rw
+! Diff-Path: ../patches/11/11-s-1792473344-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.83
-! TimeUpdated: 2026-10-20T03:12:57+00:00
+! Version: 2.0.72.85
+! TimeUpdated: 2026-10-20T05:11:28+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2481,6 +2481,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+polandball.jp##div[class^="myadd"]
 kako-mon.com###ad-under-header
 psicoactiva.com##aside[style="position:sticky; position:-webkit-sticky; top:0px; min-height:250px;"]
 .ixbt.com/banner/
@@ -9315,7 +9316,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/unbreak.txt ---
 ! Title: uBlock filters – Unbreak
-! Last modified: Mon, 19 Oct 2026 14:55:30 +0000
+! Last modified: Tue, 20 Oct 2026 05:31:41 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock Origin, to unbreak sites broken as a result of 3rd-party filter lists enabled by default.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -15245,9 +15246,6 @@ temperatur.nu#@#.holidAds:upward(1)
 
 ! https://github.com/uBlockOrigin/uAssets/discussions/32384
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=fastcompany.com,redirect=google-ima.js,important
-
-! https://github.com/uBlockOrigin/uAssets/issues/32074
-@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,3p,redirect-rule,from=webmd.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/32196
 ||ruamupr.com^$script,redirect=noopjs,domain=thegatewaypundit.com
