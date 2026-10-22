@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: E9t7c3kq3km0SSw7IzbZ9g
-! Diff-Path: ../patches/11/11-s-1792660622-3600.patch
+! Checksum: on+xCJjrlHLPx31lBTi2KQ
+! Diff-Path: ../patches/11/11-s-1792678558-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.90
-! TimeUpdated: 2026-10-22T09:12:59+00:00
+! Version: 2.0.72.93
+! TimeUpdated: 2026-10-22T14:12:04+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -173,6 +173,7 @@
 !
 !NOTE: Regular rules
 !
+||da.flvcdn.net^
 ||rtb.nefta.app^
 ||ads-proxy-aka.prod.bo.canal.canalplustech.pro^
 ||acdn.newshuntads.com^
@@ -2481,9 +2482,10 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+respublika.lt###onnetwork_container
+otakuma.net###otkm-anchor
 yahoo.com###mid-center-ad-1
 ksta.de##.fixed.bottom-0
-polandball.jp##div[class^="myadd"]
 kako-mon.com###ad-under-header
 psicoactiva.com##aside[style="position:sticky; position:-webkit-sticky; top:0px; min-height:250px;"]
 .ixbt.com/banner/
@@ -15406,7 +15408,7 @@ roaringapps.com##+js(set, Sentry.onLoad, noopFunc)
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Wed, 21 Oct 2026 14:33:52 +0000
+! Last modified: Thu, 22 Oct 2026 13:23:38 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15725,6 +15727,7 @@ gledaitv.*##+js(set, scriptBlocked, false)
 gledaitv.*##+js(set, blocked, false)
 gledaitv.*##+js(set, testUrls, [])
 gledaitv.*##+js(nostif, adblock)
+bg-gledai.video###gledai-access-notice
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=bg-gledai.video,redirect=google-ima.js
 ||viads.com^$script,domain=bg-gledai.video,redirect=noopjs
 
