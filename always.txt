@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: bRBUpXHBG4t3FpdbhI2jGw
-! Diff-Path: ../patches/11/11-s-1792991767-3600.patch
+! Checksum: ZM84CxJFR2mtc6zgj6oWoA
+! Diff-Path: ../patches/11/11-s-1793034925-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.99
-! TimeUpdated: 2026-10-26T05:12:52+00:00
+! Version: 2.0.73.1
+! TimeUpdated: 2026-10-26T17:11:12+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2076,6 +2076,8 @@ deviantart.com##div[class*="dp-ad-"]:style(height: 0!important; width: 0!importa
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/245100
+sector.sk#@##frs:style(margin-top: 100px !important;)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/242033
 @@||anymind360.com/js/*/ats.js$domain=hotosena.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/236078
@@ -2482,6 +2484,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+russiatoday.ru##.sparrow-banner
+dengekionline.com##div[class$="_headerBannerForSp"]
+dengekionline.com##div[class$="_pickUpBannerForSp"]
 memo.wiki##div[style="width:300px; height:250px; "]
 erogamescape.dyndns.org##div[id^="mobile_ad_"]
 2dfan.com##.nexus-banner-ad
@@ -9320,7 +9325,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/unbreak.txt ---
 ! Title: uBlock filters – Unbreak
-! Last modified: Sat, 24 Oct 2026 13:11:04 +0000
+! Last modified: Mon, 26 Oct 2026 18:24:50 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock Origin, to unbreak sites broken as a result of 3rd-party filter lists enabled by default.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -15416,10 +15421,14 @@ funradio.fr##+js(trusted-set, getUserConsentStatus, json:{"dailymotion":true}, a
 ! https://github.com/uBlockOrigin/uAssets/issues/34996
 @@||speedcubeshop.com/cdn/shopifycloud/consent-tracking-api/v*/consent-tracking-api.js$1p
 
+! https://github.com/AdguardTeam/AdguardFilters/issues/80265#issuecomment-818787175
+||log.nordot.jp^$badfilter
+||log.nordot.jp/pageview
+
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Mon, 26 Oct 2026 03:18:53 +0000
+! Last modified: Mon, 26 Oct 2026 09:39:48 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15738,7 +15747,7 @@ gledaitv.*##+js(set, scriptBlocked, false)
 gledaitv.*##+js(set, blocked, false)
 gledaitv.*##+js(set, testUrls, [])
 gledaitv.*##+js(nostif, adblock)
-bg-gledai.video###gledai-access-notice
+bg-gledai.video,gledaitv.*###gledai-access-notice
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=bg-gledai.video,redirect=google-ima.js
 ||viads.com^$script,domain=bg-gledai.video,redirect=noopjs
 
