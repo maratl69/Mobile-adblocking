@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: ZM84CxJFR2mtc6zgj6oWoA
-! Diff-Path: ../patches/11/11-s-1793034925-3600.patch
+! Checksum: rHKVIMkyGuiYS/ksCt9i0w
+! Diff-Path: ../patches/11/11-s-1793082155-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.73.1
-! TimeUpdated: 2026-10-26T17:11:12+00:00
+! Version: 2.0.73.2
+! TimeUpdated: 2026-10-27T06:18:32+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2484,6 +2484,10 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+pornhub.com###mobileContainer.notPremium:style(padding-top: 0px !important;)
+pornhub.com###mobileContainer.notPremium > div[class$="ad"]:has(> div.watchpageAd):style(height: 0px !important;)
+rbc.ru##.ui-branding-logo
+rbc.ru##.indicators-bar-branding
 russiatoday.ru##.sparrow-banner
 dengekionline.com##div[class$="_headerBannerForSp"]
 dengekionline.com##div[class$="_pickUpBannerForSp"]
@@ -15428,7 +15432,7 @@ funradio.fr##+js(trusted-set, getUserConsentStatus, json:{"dailymotion":true}, a
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Mon, 26 Oct 2026 09:39:48 +0000
+! Last modified: Tue, 27 Oct 2026 05:08:17 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15458,6 +15462,7 @@ www.youtube.com##+js(trusted-edit-inbound-object, JSON.stringify, 0, [?.attestat
 www.youtube.com##+js(trusted-edit-inbound-object, JSON.stringify, 0, [?.attestationRequest][?.context.client.userAgent*="instream"].playbackContext[?.contentPlaybackContext]+={"adPlaybackContext":{"adType":"AD_TYPE_INSTREAM"}})
 www.youtube.com##+js(trusted-edit-inbound-object, JSON.stringify, 0, [?.attestationRequest][?.context.client.userAgent=/channel|lactmilli|instream/].playbackContext.contentPlaybackContext.lactMilliseconds="${now}")
 www.youtube.com##+js(trusted-edit-inbound-object, JSON.stringify, 0, [?.attestationRequest][?.context.client.userAgent=/adunit|channel|lactmilli|instream|inline|yahi|eafg/].playbackContext.contentPlaybackContext.referer=repl({"regex":"(?:#reloadxhr)?$"\,"replacement":"#reloadxhr"}))
+www.youtube.com##+js(trusted-edit-inbound-object, JSON.stringify, 0, [?.createCommentParams].context.client.userAgent=repl({"regex":"/; (adunit|channel|lactmilli|instream|inline|yahi|eafg)\b/"\,"replacement":""}))
 ! https://github.com/uBlockOrigin/uAssets/issues/30157#issuecomment-5206026055
 ! www.youtube.com##+js(set, ytcfg.data_.EXPERIMENT_FLAGS.all_web_enable_network_machine, false)
 ! www.youtube.com##+js(set, ytcfg.data_.EXPERIMENT_FLAGS.all_web_network_machine_raw_request, false)
@@ -15512,7 +15517,8 @@ www.youtube.com##^script[id]:has-text(window,"fetch")
 !#endif
 www.youtube.com##+js(trusted-prevent-dom-bypass, Node.prototype.appendChild, fetch)
 www.youtube.com##+js(trusted-prevent-dom-bypass, Node.prototype.appendChild, Request)
-www.youtube.com##+js(trusted-prevent-dom-bypass, Node.prototype.appendChild, JSON.parse)
+! https://github.com/uBlockOrigin/uAssets/issues/30157#issuecomment-6433494926
+! www.youtube.com##+js(trusted-prevent-dom-bypass, Node.prototype.appendChild, JSON.parse)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/172033#issuecomment-1991263854
 youtube.com##+js(json-prune, entries.[-].command.reelWatchEndpoint.adClientParams.isAd)
 ! https://github.com/uBlockOrigin/uAssets/issues/27415#issuecomment-2945534175
