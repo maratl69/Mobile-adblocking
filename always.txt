@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: HQIZy/zL3giKFuF6h4Z8Yw
-! Diff-Path: ../patches/11/11-s-1793441547-3600.patch
+! Checksum: kNeF+TKhrjv+qGaCi1GciA
+! Diff-Path: ../patches/11/11-s-1793614396-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.73.14
-! TimeUpdated: 2026-10-31T10:08:25+00:00
+! Version: 2.0.73.15
+! TimeUpdated: 2026-11-02T10:09:17+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2486,6 +2486,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+109cinemas.net##.ad-banner-sp
 search.yahoo.co.jp##.infeedAds
 goal.com##.fco-sticky-wrapper__space-placeholder
 goal.com##.fco-gameday-with-ad-container__ads
@@ -9347,7 +9348,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/unbreak.txt ---
 ! Title: uBlock filters – Unbreak
-! Last modified: Sat, 31 Oct 2026 14:06:58 +0000
+! Last modified: Mon, 02 Nov 2026 05:41:32 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock Origin, to unbreak sites broken as a result of 3rd-party filter lists enabled by default.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -10523,7 +10524,6 @@ ebay.com#@#li.s-item:has(span:has-text(SPONSORED))
 
 ! To counter the adswizz filter in Peter Lowe's list
 ||adswizz.com^$badfilter
-||adswizz.com^$3p
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/d6zbqv/login_popup_for_disqus_being_blocked/
 @@||disqus.com/next/login/$popup
@@ -13577,7 +13577,6 @@ delta.com#@#.adv-container
 ! To counter `statcounter.com` in Peter Lowe's
 ! https://github.com/uBlockOrigin/uAssets/commit/1142bef68ee287d27f6191c433ff8491570b6612
 ||statcounter.com^$badfilter
-||statcounter.com^$3p
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/142003
 vindobona.org#@#.ads_footer
