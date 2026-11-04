@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: KFZRgNQ6xsjRC2N4V3g6Cg
-! Diff-Path: ../patches/11/11-s-1793733107-3600.patch
+! Checksum: 5Ih2t4JjKKBt2hx3+PiB7Q
+! Diff-Path: ../patches/11/11-s-1793794571-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.73.22
-! TimeUpdated: 2026-11-03T19:07:45+00:00
+! Version: 2.0.73.26
+! TimeUpdated: 2026-11-04T12:11:49+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2487,7 +2487,12 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
-official.ameba.jp##.bxud9W_slot
+famitsu.com##div[class^="ArticleDetailMiddleRectangle-"]
+famitsu.com##div[class^="HeaderBannerForSp-"]
+metasrc.com##div[data-ad-disabled]
+goal.com##div[class*="-mpu-mobile_"]
+techspot.com##.product-wrapper > div[style]:has(> .tsadinc)
+tass.ru##div[class^="InlineAdMobile_wrapper"]
 j-town.net##.video_ad_area
 quoka.de##.mobile-anz-container
 quoka.de##.searchresult > div.row:has(> div[style^="width: 100%;"] > div#QUO_M_Search_Footer > div[id^="div-gpt-ad-"])
@@ -15461,7 +15466,7 @@ funradio.fr##+js(trusted-set, getUserConsentStatus, json:{"dailymotion":true}, a
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Tue, 03 Nov 2026 16:44:36 +0000
+! Last modified: Wed, 04 Nov 2026 04:47:12 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -16115,9 +16120,9 @@ ligainsider.de##+js(nostif, /unknown|BLOCKED/i)
 iplookup.flagfox.net##.adsbygoogle
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/245961
-wakuraw.com,klmanga.cloud,trogiupnhanh.com,mangaruu.com,rawfree.top,soraraw.*##+js(no-fetch-if, /\?abg=|adsbygoogle|tpc\.googlesyndication\.com|doubleclick\.net|googleadservices\.com/)
-||connect.facebook.net/*/fbevents.js$script,redirect=noop.js,domain=soraraw.net|soraraw.site|rawfree.top|mangaruu.com|trogiupnhanh.com|wakuraw.com|klmanga.cloud
-||googleadservices.com/pagead/conversion.js$script,redirect=noop.js,domain=soraraw.net|soraraw.site|rawfree.top|mangaruu.com|trogiupnhanh.com|wakuraw.com|klmanga.cloud
+tonuriaz.info,wakuraw.com,klmanga.cloud,trogiupnhanh.com,mangaruu.com,rawfree.top,soraraw.*##+js(no-fetch-if, /\?abg=|adsbygoogle|tpc\.googlesyndication\.com|doubleclick\.net|googleadservices\.com/)
+||connect.facebook.net/*/fbevents.js$script,redirect=noop.js,domain=soraraw.net|soraraw.site|rawfree.top|mangaruu.com|trogiupnhanh.com|wakuraw.com|klmanga.cloud|tonuriaz.info
+||googleadservices.com/pagead/conversion.js$script,redirect=noop.js,domain=soraraw.net|soraraw.site|rawfree.top|mangaruu.com|trogiupnhanh.com|wakuraw.com|klmanga.cloud|tonuriaz.info
 
 ! https://github.com/AdguardTeam/AdguardFilters/commit/7520124db2eaae69b2d0de4eb8111bc15fbd4193
 ||city.yubari.lg.jp/uploaded/banner/$badfilter
