@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: SF4V9ix/fdgp1Tx5GjyOKA
-! Diff-Path: ../patches/11/11-s-1793859357-3600.patch
+! Checksum: 4AoaWLVkDpbcuOnKyfl2ew
+! Diff-Path: ../patches/11/11-s-1793970781-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.73.27
-! TimeUpdated: 2026-11-05T06:12:50+00:00
+! Version: 2.0.73.30
+! TimeUpdated: 2026-11-06T13:08:56+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2487,6 +2487,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+winfuture.de###ab_google_336x280_35_35
+po-kaki-to.com###supplementary
+po-kaki-to.com###tertiary
 kitco.com###in-content-1
 kitco.com###in-content-2
 famitsu.com##div[class^="ArticleDetailMiddleRectangle-"]
@@ -2500,7 +2503,7 @@ quoka.de##.mobile-anz-container
 quoka.de##.searchresult > div.row:has(> div[style^="width: 100%;"] > div#QUO_M_Search_Footer > div[id^="div-gpt-ad-"])
 lastwordonsports.com###page:style(margin-top: 0px !important;)
 lastwordonsports.com##.ar82zL-partner-container
-goal.com##div[class^="overview_top-mpu-mpbile"]:has(> div[class^="ad-slot"])
+goal.com##div[class^="overview_top-mpu-mobile"]:has(> div[class^="ad-slot"])
 109cinemas.net##.ad-banner-sp
 search.yahoo.co.jp##.infeedAds
 goal.com##.fco-sticky-wrapper__space-placeholder
@@ -9363,7 +9366,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/unbreak.txt ---
 ! Title: uBlock filters – Unbreak
-! Last modified: Thu, 05 Nov 2026 00:33:15 +0000
+! Last modified: Fri, 06 Nov 2026 02:39:15 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock Origin, to unbreak sites broken as a result of 3rd-party filter lists enabled by default.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -15464,6 +15467,9 @@ funradio.fr##+js(trusted-set, getUserConsentStatus, json:{"dailymotion":true}, a
 
 ! https://github.com/uBlockOrigin/uAssets/issues/35085
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect-rule=googletagservices_gpt.js:5,domain=theglobeandmail.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/35181
+@@||h-visa2.online-metrix.net^$frame,domain=src.visa.com
 
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
