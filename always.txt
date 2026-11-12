@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: 19/Nfwtn3f/V3YMmXUvGOQ
-! Diff-Path: ../patches/11/11-s-1794427952-3600.patch
+! Checksum: BhXXeJB5ALiTkD/bLHVUvQ
+! Diff-Path: ../patches/11/11-s-1794485754-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.73.41
-! TimeUpdated: 2026-11-11T20:08:26+00:00
+! Version: 2.0.73.42
+! TimeUpdated: 2026-11-12T12:11:52+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2490,6 +2490,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+cars.tvbs.com.tw##.h-\[250px\].w-\[970px\]
+cars.tvbs.com.tw##.h-\[100px\].w-\[320px\]
+cars.tvbs.com.tw##.max-h-\[280px\].min-h-\[250px\]
 ||luxuretv.com/includes/pop-mobile/
 full-porn.com##div[class^="ad-container"]
 full-porn.com##.come-gauge-gent
@@ -15492,7 +15495,7 @@ funradio.fr##+js(trusted-set, getUserConsentStatus, json:{"dailymotion":true}, a
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Wed, 11 Nov 2026 12:21:34 +0000
+! Last modified: Thu, 12 Nov 2026 10:24:44 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15992,6 +15995,7 @@ streamcash.to##a[rel*="sp0nsored"]:upward(1)
 streamcash.to##+js(trusted-override-element-method, HTMLAnchorElement.prototype.click, a[target="_blank"])
 streamcash.to##div.video-js:style(z-index:2147483647 !important)
 streamcash.to##style:has-text(2147483647):remove()
+streamcash.to##+js(ra, style, div[class][style*="2147483647"], asap, quitAfter, 10)
 ||mjzeexubcswjka.com^
 ||uijarxbm.com^
 
@@ -16157,7 +16161,10 @@ tonuriaz.info,wakuraw.com,klmanga.cloud,trogiupnhanh.com,mangaruu.com,rawfree.to
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/245421
 socialxup.com##+js(aeld, click, /\[native code\]|^\s*e\s*=>\s*.+\(\s*e\s*\)\s*$/)
-socialxup.com##a[target][href^="/"]
+socialxup.com##a[target][href^="https://socialxup.com/"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/25273#issuecomment-6821014851
+||api.community.fox.com/*/metrics$badfilter
 
 
 ! --- Source: https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt ---
