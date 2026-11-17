@@ -5,8 +5,8 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: pt53U51p5bH5WVzWzzyqiw
-! Diff-Path: ../patches/11/11-s-1794838915-3600.patch
+! Checksum: pfcj6ndwft33iRmzNOBHxQ
+! Diff-Path: ../patches/11/11-s-1794845502-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
 ! Version: 2.0.73.49
@@ -9189,7 +9189,6 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 ! https://github.com/AdguardTeam/AdguardFilters/issues/21078
 ||mangaapi.manhuaren.com/*/public/getRecommendedGame^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/10315
-||ads.adfox.ru/*/getCode?p1=$domain=auth.wi-fi.ru,replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/,important
 ! https://forum.adguard.com/index.php?threads/23599/
 ! https://github.com/AdguardTeam/AdguardFilters/issues/5676
 !
@@ -15511,7 +15510,7 @@ funradio.fr##+js(trusted-set, getUserConsentStatus, json:{"dailymotion":true}, a
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Mon, 16 Nov 2026 04:30:36 +0000
+! Last modified: Mon, 16 Nov 2026 17:42:47 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15967,6 +15966,7 @@ chzzkban.xyz##+js(trusted-suppress-native-method, Node.prototype.contains, '{"cl
 
 ! https://github.com/uBlockOrigin/uAssets/issues/26527
 historicaerials.com##+js(aeld, load, showFallbackModal)
+historicaerials.com##+js(rpnt, script, /if \(result && checkSlotData == "\w+"\)/, if (true))
 historicaerials.com##+js(trusted-create-html, #historicaerials_g_728x90_ATF, <div id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0" width="2" height="2" data-load-complete="true"></iframe></div>)
 @@||historicaerials.com^$ghide
 historicaerials.com##.left_col
