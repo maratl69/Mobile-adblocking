@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: Ytz7UwKUOdNKMQaShIaoSw
-! Diff-Path: ../patches/11/11-s-1794921151-3600.patch
+! Checksum: oT35ntRof3oVKL+yF/7oBg
+! Diff-Path: ../patches/11/11-s-1794975140-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.73.53
-! TimeUpdated: 2026-11-17T13:09:13+00:00
+! Version: 2.0.73.54
+! TimeUpdated: 2026-11-18T04:09:49+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2490,6 +2490,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+chouseisan.com##.ad-header-div
+chouseisan.com##.chousei-ad-div
 newsru.co.il##div[class^="amp_"]
 newsru.co.il##.M_hp_content
 newsru.co.il##div[id^="M_HP_"]
@@ -15516,7 +15518,7 @@ funradio.fr##+js(trusted-set, getUserConsentStatus, json:{"dailymotion":true}, a
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Tue, 17 Nov 2026 02:41:18 +0000
+! Last modified: Wed, 18 Nov 2026 04:13:30 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -16187,8 +16189,8 @@ tonuriaz.info,wakuraw.com,klmanga.cloud,trogiupnhanh.com,mangaruu.com,rawfree.to
 ||city.yubari.lg.jp/uploaded/banner/$badfilter
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/245421
-socialxup.com##a[href^="/"]:not([data-track], :has(> img[src^="/avatar/"])):matches-attr("href"="/^\/(?=[A-Z_a-z]*[0-9])[0-9A-Z_a-z]+$/"):not(:has-text(/注目|達成|凍結|増加|減少|フォロワー/))
-||socialxup.com/_next/static/chunks/$script,replace=/if\("auxclick"===e\.type&&1!==e\.button\)return;/if(1)e.preventDefault();return;/
+socialxup.com##a[data-track="related_click"]:not([data-track-context="user_page_related"])
+||socialxup.com/_next/static/chunks/$script,replace=/(["&'()\,.:0-9A-Z_a-z{|}]+?\.onClick&&[\$0-9A-Z_a-z]+\.onClick\(e\))/e.preventDefault();return;\$1/
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25273#issuecomment-6821014851
 ||api.community.fox.com/*/metrics$badfilter
