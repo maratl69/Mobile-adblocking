@@ -5,12 +5,12 @@
 
 ! --- Source: https://filters.adtidy.org/extension/ublock/filters/11.txt ---
 ![Adblock Plus 2.0]
-! Checksum: U/a9iXKJdcKfEnPx+l61uw
-! Diff-Path: ../patches/11/11-s-1795028987-3600.patch
+! Checksum: vwjPklB1nLSqQVsh2flQxg
+! Diff-Path: ../patches/11/11-s-1795194690-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.73.56
-! TimeUpdated: 2026-11-18T19:07:26+00:00
+! Version: 2.0.73.57
+! TimeUpdated: 2026-11-20T17:07:44+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2490,6 +2490,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+ncaa.com##.mobile-persistent-bottom
+ncaa.com##.footer-ad
 esquire.com##div[data-gpt-wrapper="true"]
 u.gg##div.media-query_MOBILE_SMALL__MOBILE_LARGE:has(> div.flex > a[href="/plus?utm_source=uggbuilds"])
 chouseisan.com##.ad-header-div
@@ -15492,7 +15494,7 @@ funradio.fr##+js(trusted-set, getUserConsentStatus, json:{"dailymotion":true}, a
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Thu, 19 Nov 2026 12:02:41 +0000
+! Last modified: Fri, 20 Nov 2026 16:36:46 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -15568,7 +15570,7 @@ www.youtube.com##+js(trusted-replace-xhr-response, /"adPlacements.*?("adSlots"|"
 www.youtube.com##+js(trusted-rpfr, '"adPlacements"', '"no_ads"', player?)
 www.youtube.com##+js(trusted-rpfr, '"adSlots"', '"no_ads"', player?)
 www.youtube.com##+js(trusted-rpfr, '"adSlots"', '"no_ads"', /^\W+$/)
-www.youtube.com##+js(rmnt, script, window\,"fetch")
+www.youtube.com##+js(rmnt, script, 'window,"fetch"')
 !#else
 ||www.youtube.com/playlist?list=$xhr,1p,replace=/"adPlacements"/"no_ads"/
 ||www.youtube.com/playlist?list=$xhr,1p,replace=/"adSlots"/"no_ads"/
@@ -16164,11 +16166,7 @@ tonuriaz.info,wakuraw.com,klmanga.cloud,trogiupnhanh.com,mangaruu.com,rawfree.to
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/245421
 socialxup.com##^responseheader(location)
-socialxup.com##a.bg-yellow-300
-socialxup.com##a.border-indigo-300
-socialxup.com##aside *:has(> a:not([href*="/tools/"], [href*="/genre/"], [data-track^="sidebar_"]))
-socialxup.com##a[data-track="home_popular_tweet_profile_click"]:not( .bg-gray-100, .text-gray-500, [data-track-context="user_page_related"])
-socialxup.com##a[href^="/"]:not(.truncate, .text-blue-600, [data-track-context], :has(> img[src^="/"]), td > a):matches-attr("href"="/^\/(?=[A-Z_a-z]*[0-9])[0-9A-Z_a-z]+$/"):not(:contains(/注目|達成|凍結|増加|減少|フォロワー|\d人/))
+socialxup.com##a[data-track="related_click"]:not(:has-text(フォロワー))
 socialxup.com#@#a[href^="/"]:not([data-track], :has(> img[src^="/avatar/"])):matches-attr("href"="/^\/(?=[A-Z_a-z]*[0-9])[0-9A-Z_a-z]+$/"):not(:contains(/注目|達成|凍結|増加|減少|フォロワー/))
 socialxup.com#@#+js(aeld, click, /\[native code\]|^\s*e\s*=>\s*.+\(\s*e\s*\)\s*$/)
 
