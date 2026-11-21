@@ -9404,7 +9404,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/unbreak.txt ---
 ! Title: uBlock filters – Unbreak
-! Last modified: Fri, 20 Nov 2026 11:05:13 +0000
+! Last modified: Sat, 21 Nov 2026 14:22:06 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock Origin, to unbreak sites broken as a result of 3rd-party filter lists enabled by default.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -15491,10 +15491,15 @@ funradio.fr##+js(trusted-set, getUserConsentStatus, json:{"dailymotion":true}, a
 ||sy.ameba.jp^$badfilter
 ||sy.amebame.com^$badfilter
 
+! unbreak LIVE channel at asianetnews.com
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=dashboard.videograph.ai,important
+
+! unbreak video at https://www.newstak.in/uttarakhand/video/elephant-attack-bullet-rider-jolly-grant-dehradun-3560637-2026-11-12
+||scorecardresearch.com/plugins/streaming-jwplayer/$script,redirect=noopjs,domain=newstak.in
 
 ! --- Source: https://raw.githubusercontent.com/ublockorigin/uassetscdn/refs/heads/main/filters/quick-fixes.txt ---
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Fri, 20 Nov 2026 16:36:46 +0000
+! Last modified: Sat, 21 Nov 2026 15:51:48 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -16166,7 +16171,7 @@ tonuriaz.info,wakuraw.com,klmanga.cloud,trogiupnhanh.com,mangaruu.com,rawfree.to
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/245421
 socialxup.com##^responseheader(location)
-socialxup.com##a[data-track="related_click"]:not(:has-text(フォロワー))
+socialxup.com##a[data-track="related_click"]:not(:has(> div[class="flex flex-col items-center text-center"] > img[src^="/avatar/"][src$=".png"][height="48"][width="48"][style="color: transparent;"] + p + p[class="text-xs text-gray-500 truncate w-full"] + p[class="text-xs text-blue-600 mt-1"]:has-text(/^\d+(,\d+)* フォロワー$/)))
 socialxup.com#@#a[href^="/"]:not([data-track], :has(> img[src^="/avatar/"])):matches-attr("href"="/^\/(?=[A-Z_a-z]*[0-9])[0-9A-Z_a-z]+$/"):not(:contains(/注目|達成|凍結|増加|減少|フォロワー/))
 socialxup.com#@#+js(aeld, click, /\[native code\]|^\s*e\s*=>\s*.+\(\s*e\s*\)\s*$/)
 
